@@ -1,0 +1,13 @@
+//Colors
+
+
+
+//fonts
+@mixin Cinzel($font-size) {
+	font-family: 'Cinzel', serif;
+	font-size: $font-size;
+}
+@mixin Ubuntu($font-size) {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: $font-size;
+}
