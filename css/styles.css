@@ -28,7 +28,8 @@ footer, header, hgroup, menu, nav, section, main {
   display: block; }
 
 body {
-  line-height: 1; }
+  line-height: 1;
+  overflow-x: none; }
 
 ol, ul {
   list-style: none; }
@@ -106,28 +107,31 @@ Modules - reusable parts of our design
   height: 100px;
   z-index: 2;
   background-color: black; }
-#site-intro h1 {
-  position: absolute;
-  display: none;
-  font-family: 'Cinzel', serif;
-  font-size: 100px;
-  color: white;
-  max-width: 890px;
-  text-align: center;
-  z-index: 3; }
 #site-intro .sub-title {
   position: absolute;
   display: none;
   font-size: 30px;
   color: #6b6a6a;
+  opacity: 0;
   z-index: 1; }
 #site-intro .horizontal-line {
   position: absolute;
   display: none;
-  width: 100%;
+  width: 0%;
   height: 2px;
   background-color: white;
   z-index: 5; }
+
+header {
+  display: none; }
+
+.siteTitle {
+  display: none;
+  font-family: 'Cinzel', serif;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  z-index: 3; }
 
 body.overflow-hidden {
   /* when author bio is visible, the out-of-focus content won't scroll */
