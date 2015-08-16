@@ -18,7 +18,8 @@ jQuery(function($){
 			this.nav = $('nav ul');
 			this.navItem = $('nav a');
 			this.navHoverOverlay = $('.nav-hover-overlay');
-			this.mainContainer = $('main');
+			this.pageMarquee = $('.page-marquee');
+			this.mainContainer = $('main, .member-bio');
 			this.aboutPage = $('#about');
 		},
 		
@@ -170,10 +171,10 @@ jQuery(function($){
 		},
 		navHoverOutOverlayHandler : function(){
 			//hide the overlay
-			TweenLite.to(intro.navHoverOverlay, 0.3, {opacity : 0, scale : 1.3});
+			TweenLite.to(intro.navHoverOverlay, 0.2, {opacity : 0, scale : 1.3});
 			setTimeout(function(){
 				intro.mainContainer.css({'zIndex' : 101});
-			},300);
+			},200);
 			
 		},
 		callPageHandler : function(){
@@ -181,6 +182,11 @@ jQuery(function($){
 			switch(this.text){
 				case 'ABOUT' :
 				intro.aboutPage.show();
+				intro.pageMarquee.css({backgroundImage : 'url(img/about-hover-img.jpg)'});
+				//slide the About Marquee into position
+				TweenLite.to(intro.pageMarquee, 1, {height: '26%', opacity: 1});    
+				//slide the About page into frame
+				TweenLite.to(intro.aboutPage, 1, {position:'fixed', top: intro.header.height()});
 				break;
 				case 'WORK' :
 				intro.navHoverOverlay.css({backgroundImage : 'url(img/work-hover-img.jpg)'});
