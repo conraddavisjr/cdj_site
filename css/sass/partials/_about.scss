@@ -84,14 +84,20 @@ main.slide-out {
 	padding: 12em 6em 10em 6em;
 }
 .section h2 {
-	margin-bottom: 0.7em;
+	margin-bottom: 0.2em;
 }
 .section p {
-	line-height: 1.8;
+	line-height: 1.3;
 	font-size: 18px;
 	width: 100%;
-	max-width: 550px;
+	color:#797979;
+	max-width: 840px;
 	font-size: 1.125rem;
+	&.about-subtitle{
+		color:#6F6F6F;
+		max-width: 520px;
+		font-style:italic;
+	}
 }
 }
 #about {
@@ -106,7 +112,7 @@ main.slide-out {
 	max-width: 1200px;
 }
 #about h2 {
-	color: #1a2f2a;
+	color: #DCDCDC;
 }
 #about li {
 	margin-bottom: 2em;
@@ -173,6 +179,18 @@ main.slide-out {
 	font-size: 14px;
 	font-size: 0.875rem;
 	margin-top: .5em;
+}
+
+summary {
+	max-width: 840px;
+	margin: 47px auto 70px auto;
+	text-align: left;
+
+	h4{
+		@include Ubuntu(20px);
+		font-weight:bold;
+		color:#7B868C;
+	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -344,9 +362,10 @@ main.slide-out {
 	width: 100%;
 	height: 2000%;
 	height:100vh;
-	background: rgba(138, 190, 178, 0.8);
+	background: rgba(138, 163, 190, 0.8);
 	cursor: pointer;
 	display: none;
+	z-index: 100;
 }
 
 /* -------------------------------- 
