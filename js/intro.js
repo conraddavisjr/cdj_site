@@ -15,9 +15,11 @@ jQuery(function($){
 			this.introTitle = $('#site-intro .siteTitle');
 			this.subTitle = $('#site-intro .sub-title');
 			this.header = $('header');
-			this.nav = $('nav');
+			this.nav = $('nav ul');
 			this.navItem = $('nav a');
 			this.navHoverOverlay = $('.nav-hover-overlay');
+			this.mainContainer = $('main');
+			this.aboutPage = $('#about');
 		},
 		
 		introAnimation: function() {
@@ -163,9 +165,36 @@ jQuery(function($){
 			}
 			//reveal the overlay and scale it down
 			TweenLite.to(intro.navHoverOverlay, 0.5, { opacity : 0.6, scale : 1});
+			//hide the main container
+			intro.mainContainer.css({'zIndex' : 2});
 		},
 		navHoverOutOverlayHandler : function(){
 			//hide the overlay
+			TweenLite.to(intro.navHoverOverlay, 0.3, {opacity : 0, scale : 1.3});
+			setTimeout(function(){
+				intro.mainContainer.css({'zIndex' : 101});
+			},300);
+			
+		},
+		callPageHandler : function(){
+			//check which item was clicked
+			switch(this.text){
+				case 'ABOUT' :
+				intro.aboutPage.show();
+				break;
+				case 'WORK' :
+				intro.navHoverOverlay.css({backgroundImage : 'url(img/work-hover-img.jpg)'});
+				intro.navHoverOverlay.attr('class', 'nav-hover-overlay work-btn');
+				break;
+				case 'CONTACT' :
+				intro.navHoverOverlay.css({backgroundImage : 'url(img/contact-hover-img.jpg)'});
+				intro.navHoverOverlay.attr('class', 'nav-hover-overlay contact-btn');
+				break;
+				default:
+				//do nothing
+			}
+			//reveal the main container
+			intro.mainContainer.css({'zIndex' : 101});
 			TweenLite.to(intro.navHoverOverlay, 0.3, {opacity : 0, scale : 1.3});
 		}
 

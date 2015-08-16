@@ -180,7 +180,8 @@ header {
   display: none;
   padding: 15px 0;
   background-color: black;
-  z-index: 101; }
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 102 !important; }
 
 .header-spacer {
   display: none;
@@ -204,6 +205,9 @@ header {
   height: 100%;
   width: 100%;
   background-color: white; }
+
+#about {
+  position: relative; }
 
 article.opening-statement {
   margin-top: 18%; }
