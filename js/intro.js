@@ -14,6 +14,7 @@ jQuery(function($){
 			this.introTitle = $('#site-intro .siteTitle');
 			this.subTitle = $('#site-intro .sub-title');
 			this.header = $('header');
+			this.nav = $('nav');
 		},
 		
 		introAnimation: function() {
@@ -35,6 +36,9 @@ jQuery(function($){
 			//dimensions for the Intro subTitle Cover
 			var introSubTitleCoverHeight = intro.introSubTitleCover.height();
 			console.log("introSubTitleCoverHeight" + introSubTitleCoverHeight);
+
+			//dimensions for the nav menu
+			var navHeight = intro.nav.height();
 
 			
 			//position the introLine in the center of the page
@@ -85,6 +89,11 @@ jQuery(function($){
 				'marginLeft' : subTitleLeftPos
 			});
 
+			//position the nav underneath the page fold
+			intro.nav.css({
+				bottom: -navHeight
+			})
+
 
 			//Animate the intro
 
@@ -112,6 +121,8 @@ jQuery(function($){
 			.to($('.header-spacer'), 0, {display:'block'})
 			.to($('.header-spacer'), 0, {display:'block'})
 			.to($('.intro-veil'), 1, {height: intro.header.height() + 30}, "-=1")
+			//animate the Navigation into frame
+			.to($('nav'), 1, {bottom:0, opacity:1})
 		},
 		
 	};

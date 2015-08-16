@@ -14,7 +14,7 @@ header{
 	font-size: 50px;
 	color: white;
 	text-align: center;
-	z-index: 5;
+	z-index: 6;
 }
 
 #home-page{
@@ -27,8 +27,13 @@ header{
 	background-color:white;
 }
 article.opening-statement{
-	@include Cinzel(35px);
 	margin-top: 18%;
+	h1{
+		@include Cinzel(35px);
+	}
+	h2{
+		@include Ubuntu(35px);
+	}
 }
 
 /* -------------------------------- 
