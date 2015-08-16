@@ -58,36 +58,39 @@ main.slide-out {
 	max-width: 768px;
 }
 .section h2 {
- @include Ubuntu(20px);
+ @include Ubuntu(45px);
 	font-weight: bold;
 	text-transform: uppercase;
-	margin-bottom: 1em;
-	font-size: 20px;
-	font-size: 1.25rem;
+	margin-bottom: 0.3em;
 }
 .section p {
 	line-height: 1.4;
 }
 
 @media only screen and (min-width: 768px) {
-.section {
-	padding: 4em;
-}
-.section p {
-	line-height: 1.6;
-}
+	.section {
+		padding: 14em 4em 8em 4em;
+	}
+	.section p {
+		line-height: 1.6;
+		width: 100%;
+	    max-width: 610px;
+	    margin: 0 auto 20px auto;
+	}
 }
 
 @media only screen and (min-width: 1200px) {
 .section {
-	padding: 26% 6em 6em 6em;
+	padding: 12em 6em 10em 6em;
 }
 .section h2 {
-	margin-bottom: 2em;
+	margin-bottom: 0.7em;
 }
 .section p {
 	line-height: 1.8;
 	font-size: 18px;
+	width: 100%;
+	max-width: 550px;
 	font-size: 1.125rem;
 }
 }
@@ -95,6 +98,9 @@ main.slide-out {
 	display:none;
 	overflow-y:scroll;
 	background: #fff;
+	-webkit-transform: translateX(16px);
+	-moz-transform: translateX(16px);
+	transform: translateX(16px);
 }
 #about .container {
 	max-width: 1200px;

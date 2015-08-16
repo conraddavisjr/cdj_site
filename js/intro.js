@@ -186,6 +186,7 @@ jQuery(function($){
 				//slide the About Marquee into position
 				TweenLite.to(intro.pageMarquee, 1, {height: '26%', opacity: 1});    
 				//slide the About page into frame
+				//intro.aboutPage.css({'paddingTop' : intro.pageMarquee.height()});
 				TweenLite.to(intro.aboutPage, 1, {position:'fixed', top: intro.header.height()});
 				break;
 				case 'WORK' :
