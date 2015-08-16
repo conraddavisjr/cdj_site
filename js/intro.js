@@ -13,6 +13,7 @@ jQuery(function($){
 			this.introLine = $('#site-intro .horizontal-line');
 			this.introTitle = $('#site-intro .siteTitle');
 			this.subTitle = $('#site-intro .sub-title');
+			this.header = $('header');
 		},
 		
 		introAnimation: function() {
@@ -101,10 +102,16 @@ jQuery(function($){
 			.to(intro.introLine, 1, {left: '100%', width:'0%'}, "+=1")
 			.to(intro.subTitle, 0.7, {top: subTitleTopPos - subTitleHeight}, "-=1")
 			//move the Title up to the header position
-			.to(intro.introTitle, 1, {top: 0, scale:1}, "-=1")
+			.to(intro.introTitle, 1, {top: '15px', scale:1}, "-=1")
 			//reveal the header and remove the animated title
 			.to($('header'), 0, {position: 'fixed', width: '100%', display: 'block'})
 			.to(intro.introTitle, 0, {display: 'none'})
+			.to(intro.subTitle, 0, {display: 'none'}, "-=0.7")
+			.to(intro.introTitleCover, 0, {display: 'none'}, "-=0.5")
+			.to(intro.introSubTitleCover, 0, {display: 'none'}, "-=0.7")
+			.to($('.header-spacer'), 0, {display:'block'})
+			.to($('.header-spacer'), 0, {display:'block'})
+			.to($('.intro-veil'), 1, {height: intro.header.height() + 30}, "-=1")
 		},
 		
 	};
