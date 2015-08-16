@@ -3,6 +3,7 @@ jQuery(function($){
 		init: function() {
 			this.setupElements();
 			this.introAnimation();
+			this.eventHandlers();
 		},
 		setupElements: function() {
 			//vars
@@ -15,6 +16,8 @@ jQuery(function($){
 			this.subTitle = $('#site-intro .sub-title');
 			this.header = $('header');
 			this.nav = $('nav');
+			this.navItem = $('nav a');
+			this.navHoverOverlay = $('.nav-hover-overlay');
 		},
 		
 		introAnimation: function() {
@@ -92,10 +95,18 @@ jQuery(function($){
 			//position the nav underneath the page fold
 			intro.nav.css({
 				bottom: -navHeight
+			});
+
+			//position the nav-hover-overlay above the nav
+			intro.navHoverOverlay.css({
+				//bottom: intro.nav.height()
 			})
 
 
-			//Animate the intro
+
+			/*
+			Animate the intro
+			*/
 
 			tl = new TimelineLite();
 			//animate the line in
@@ -124,6 +135,40 @@ jQuery(function($){
 			//animate the Navigation into frame
 			.to($('nav'), 1, {bottom:0, opacity:1})
 		},
+
+		eventHandlers: function() {
+			intro.navItem.hover(this.navHoverInOverlayHandler, this.navHoverOutOverlayHandler);
+			intro.navItem.on('click', this.callPageHandler);
+		},
+
+
+		/* Event Handlers */
+		navHoverInOverlayHandler : function(){
+			//check which item was hovered over
+			switch(this.text){
+				case 'ABOUT' :
+				intro.navHoverOverlay.css({backgroundImage : 'url(img/about-hover-img.jpg)'});
+				intro.navHoverOverlay.attr('class', 'nav-hover-overlay about-btn');
+				break;
+				case 'WORK' :
+				intro.navHoverOverlay.css({backgroundImage : 'url(img/work-hover-img.jpg)'});
+				intro.navHoverOverlay.attr('class', 'nav-hover-overlay work-btn');
+				break;
+				case 'CONTACT' :
+				intro.navHoverOverlay.css({backgroundImage : 'url(img/contact-hover-img.jpg)'});
+				intro.navHoverOverlay.attr('class', 'nav-hover-overlay contact-btn');
+				break;
+				default:
+				//do nothing
+			}
+			//reveal the overlay and scale it down
+			TweenLite.to(intro.navHoverOverlay, 0.5, { opacity : 0.6, scale : 1});
+		},
+		navHoverOutOverlayHandler : function(){
+			//hide the overlay
+			TweenLite.to(intro.navHoverOverlay, 0.3, {opacity : 0, scale : 1.3});
+		}
+
 		
 	};
 

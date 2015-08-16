@@ -1,7 +1,9 @@
 header{
+	position: relative;
 	display:none;
 	padding: 15px 0;
 	background-color:black;
+	z-index:101;
 }
 .header-spacer{
 	display:none;
