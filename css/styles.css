@@ -143,6 +143,7 @@ header {
 .siteTitle {
   display: none;
   font-family: 'Cinzel', serif;
+  font-size: 30px;
   font-size: 50px;
   color: white;
   text-align: center;
@@ -151,9 +152,100 @@ header {
 #home-page {
   position: fixed;
   top: 0;
+  margin: 0 auto;
+  padding-top: 100px;
   height: 100%;
   width: 100%;
   background-color: white; }
+
+article.opening-statement {
+  font-family: 'Cinzel', serif;
+  font-size: 35px;
+  margin-top: 18%; }
+
+/* -------------------------------- 
+
+Home page clip 
+
+-------------------------------- */
+.title {
+  position: relative;
+  height: 160px;
+  line-height: 230px;
+  text-align: center; }
+  .title h1 {
+    font-size: 2.4rem;
+    font-weight: 700; }
+  @media only screen and (min-width: 768px) {
+    .title {
+      line-height: 250px; } }
+  @media only screen and (min-width: 1170px) {
+    .title {
+      height: 200px;
+      line-height: 300px; }
+      .title h1 {
+        font-size: 3rem; } }
+
+.intro {
+  width: 90%;
+  text-align: center; }
+
+.intro {
+  margin: 4em auto; }
+  @media only screen and (min-width: 768px) {
+    .intro {
+      margin: 5em auto; } }
+  @media only screen and (min-width: 1170px) {
+    .intro {
+      margin: 6em auto; } }
+
+.headline {
+  font-size: 3rem;
+  line-height: 1.2; }
+  @media only screen and (min-width: 768px) {
+    .headline {
+      font-size: 4.4rem;
+      font-weight: 300; } }
+  @media only screen and (min-width: 1170px) {
+    .headline {
+      font-size: 6rem; } }
+
+.words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left; }
+  .words-wrapper b {
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+    left: 0;
+    top: 0; }
+    .words-wrapper b.is-visible {
+      position: relative; }
+  .no-js .words-wrapper b {
+    opacity: 0; }
+    .no-js .words-wrapper b.is-visible {
+      opacity: 1; }
+
+.headline.clip span {
+  display: inline-block;
+  padding: .2em 0; }
+.headline.clip .words-wrapper {
+  overflow: hidden;
+  vertical-align: top; }
+  .headline.clip .words-wrapper::after {
+    /* line */
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background-color: gray; }
+.headline.clip b {
+  opacity: 0; }
+  .headline.clip b.is-visible {
+    opacity: 1; }
 
 body.overflow-hidden {
   /* when author bio is visible, the out-of-focus content won't scroll */
