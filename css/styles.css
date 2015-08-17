@@ -344,11 +344,11 @@ main.slide-out .overlay {
     transform: translateX(-600px); } }
 @media only screen and (min-width: 1200px) {
   main.slide-out {
-    -webkit-transform: translateX(-800px);
-    -moz-transform: translateX(-800px);
-    -ms-transform: translateX(-800px);
-    -o-transform: translateX(-800px);
-    transform: translateX(-800px); } }
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%); } }
 .section {
   padding: 2em 0;
   text-align: center; }
@@ -582,18 +582,18 @@ summary {
     margin: 2em 0; } }
 @media only screen and (min-width: 1200px) {
   .member-bio {
-    width: 800px;
-    -webkit-transform: translateX(800px);
-    -moz-transform: translateX(800px);
-    -ms-transform: translateX(800px);
-    -o-transform: translateX(800px);
-    transform: translateX(800px); }
+    width: 50%;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%); }
 
   .member-bio .member-bio-pict::after {
     height: 150px; }
 
   .member-bio .bio-content {
-    padding: 4em;
+    padding: 0em 3em;
     /* we move the content up so the title is over the color gradient */
     -webkit-transform: translateY(-80px);
     -moz-transform: translateY(-80px);
