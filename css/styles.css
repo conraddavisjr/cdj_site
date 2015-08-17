@@ -487,8 +487,13 @@ summary {
     color: #7B868C; }
 
 .skillIcons figure {
-  margin: 10px;
-  display: inline-block; }
+  margin: 15px;
+  display: inline-block;
+  width: 60px; }
+  .skillIcons figure figcaption {
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center; }
 .skillIcons img {
   width: auto; }
 
