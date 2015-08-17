@@ -109,6 +109,10 @@ Modules - reusable parts of our design
     .nav-hover-overlay, .page-marquee {
       background-position: 0% 17%; } }
 
+.page-marquee {
+  opacity: 0.5;
+  background-color: transparent; }
+
 .contact-btn {
   background-size: 100%; }
 
@@ -195,7 +199,10 @@ header {
   font-size: 50px;
   color: white;
   text-align: center;
+  cursor: pointer;
   z-index: 6; }
+  .siteTitle a {
+    color: white; }
 
 #home-page {
   position: fixed;
@@ -486,16 +493,18 @@ summary {
     font-weight: 500;
     color: #7B868C; }
 
-.skillIcons figure {
-  margin: 15px;
-  display: inline-block;
-  width: 60px; }
-  .skillIcons figure figcaption {
-    margin-top: 5px;
-    font-size: 12px;
-    text-align: center; }
-.skillIcons img {
-  width: auto; }
+.skillIcons {
+  margin-bottom: 25px; }
+  .skillIcons figure {
+    margin: 15px;
+    display: inline-block;
+    width: 65px; }
+    .skillIcons figure figcaption {
+      margin-top: 5px;
+      font-size: 12px;
+      text-align: center; }
+  .skillIcons img {
+    width: auto; }
 
 @media only screen and (min-width: 768px) {
   #about li {
@@ -615,6 +624,10 @@ summary {
   .member-bio .bio-content h2 {
     font-size: 40px;
     font-size: 2.5rem; }
+
+  .member-bio .bio-content h3 {
+    font-size: 30px;
+    padding-top: 20px; }
 
   .member-bio .bio-content p {
     font-size: 16px;
