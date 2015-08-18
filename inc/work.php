@@ -8,7 +8,7 @@
 				<a href="#">View more</a>
 			</figcaption>			
 		</figure>
-		<figure class="work-bucket">
+		<figure class="work-bucket" data-type="panel-4">
 			<img src="img/20.jpg" alt="img20"/>
 			<figcaption>
 				<h2>Free <span>Sarah</span></h2>
@@ -16,7 +16,7 @@
 				<a href="#">View more</a>
 			</figcaption>			
 		</figure>
-		<figure class="work-bucket">
+		<figure class="work-bucket" data-type="panel-5">
 			<img src="img/13.jpg" alt="img13"/>
 			<figcaption>
 				<h2>Free <span>Sarah</span></h2>
@@ -24,7 +24,7 @@
 				<a href="#">View more</a>
 			</figcaption>			
 		</figure>
-		<figure class="work-bucket">
+		<figure class="work-bucket" data-type="panel-6">
 			<img src="img/13.jpg" alt="img13"/>
 			<figcaption>
 				<h2>Free <span>Sarah</span></h2>
@@ -32,7 +32,7 @@
 				<a href="#">View more</a>
 			</figcaption>			
 		</figure>
-		<figure class="work-bucket">
+		<figure class="work-bucket" data-type="panel-7">
 			<img src="img/20.jpg" alt="img20"/>
 			<figcaption>
 				<h2>Free <span>Sarah</span></h2>
@@ -40,7 +40,7 @@
 				<a href="#">View more</a>
 			</figcaption>			
 		</figure>
-		<figure class="work-bucket">
+		<figure class="work-bucket" data-type="panel-8">
 			<img src="img/13.jpg" alt="img13"/>
 			<figcaption>
 				<h2>Free <span>Sarah</span></h2>
