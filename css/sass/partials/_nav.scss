@@ -21,4 +21,19 @@ nav{
             }
     	}
     }
+    @include MQ(L) {
+       ul{
+            li{
+                width:32%;
+                @include Cinzel(28px);
+            }
+        }
+    }
+    @include MQ(S) {
+       ul{
+            li{
+                @include Cinzel(19px);
+            }
+        }
+    }
 }

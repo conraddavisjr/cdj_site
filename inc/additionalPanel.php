@@ -52,7 +52,7 @@
 
     <div class="bio-content">
         <h2>Geek + Chic = Sleek</h2>
-        <p style="text-align:center;">My love for learning has earned me an expansive repertoire of proficiencies and I continue to improve it.
+        <p style="text-align:center; width:99%;">My love for learning has earned me an expansive repertoire of proficiencies and I continue to improve it.
         Whether I'm on a PC or a MAC, I feel right at home. Please, take a look.</p>
         <h3>SOFTWARE</h3>      
         <div class="skillIcons">

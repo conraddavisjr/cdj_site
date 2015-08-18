@@ -2,6 +2,7 @@ jQuery(function($){
 	var main = {
 		init: function() {
 			this.setupElements();
+			this.setupBreakpoints();
 			this.introAnimation();
 			this.eventHandlers();
 		},
@@ -25,6 +26,25 @@ jQuery(function($){
 			this.contactPage = $('#contact');
 			this.homeLink = $('.siteTitle a');
 			
+		},
+
+		setupBreakpoints: function(){
+			var isBreakPoint = function (bp) {
+		    	var bps = [320, 480, 768, 1024],
+		        w = $(window).width(), min, max
+			    for (var i = 0, l = bps.length; i < l; i++) {
+			      if (bps[i] === bp) {
+			        min = bps[i-1] || 0
+			        max = bps[i]
+			        break
+			      }
+			    }
+			    return w > min && w <= max
+			}
+			// Usage
+			if (isBreakPoint(480)) { 
+				alert("SUCCESS");
+			} // Breakpoint between 320 and 480
 		},
 		
 		introAnimation: function() {
@@ -140,7 +160,7 @@ jQuery(function($){
 			.to(main.introSubTitleCover, 0, {display: 'none'}, "-=0.7")
 			.to($('.header-spacer'), 0, {display:'block'})
 			.to($('.header-spacer'), 0, {display:'block'})
-			.to($('.intro-veil'), 1, {height: main.header.height() + 30}, "-=1")
+			.to($('.intro-veil'), 1, {height: 80}, "-=1")
 			//animate the Navigation into frame
 			.to($('nav'), 1, {bottom:0, opacity:1})
 		},

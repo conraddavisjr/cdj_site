@@ -145,6 +145,15 @@ nav {
       font-size: 32px; }
       nav ul li a:hover {
         color: black; }
+  @media only screen and (max-width: 1170px) {
+    nav ul li {
+      width: 32%;
+      font-family: 'Cinzel', serif;
+      font-size: 28px; } }
+  @media only screen and (max-width: 480px) {
+    nav ul li {
+      font-family: 'Cinzel', serif;
+      font-size: 19px; } }
 
 #site-intro .introTitleCover {
   position: absolute;
@@ -187,11 +196,11 @@ header {
   position: relative;
   display: none;
   padding: 15px 0;
-  height: 80px;
+  height: auto;
   font-family: 'Cinzel', serif;
   font-size: 50px;
   background-color: black;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.95);
   z-index: 102 !important; }
 
 .header-spacer {
@@ -210,6 +219,13 @@ header {
   .siteTitle a {
     cursor: pointer;
     color: white; }
+  @media only screen and (max-width: 768px) {
+    .siteTitle {
+      font-size: 33px; } }
+
+@media only screen and (max-width: 768px) {
+  .intro-veil {
+    font-size: 33px; } }
 
 #home-page {
   position: fixed;
@@ -234,6 +250,18 @@ article.opening-statement {
   article.opening-statement h2 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 35px; }
+  @media only screen and (max-width: 1300px) {
+    article.opening-statement {
+      margin-top: 23%; } }
+  @media only screen and (max-width: 768px) {
+    article.opening-statement {
+      margin-top: 39%; } }
+  @media only screen and (max-width: 480px) {
+    article.opening-statement {
+      margin-top: 68%; }
+      article.opening-statement h1 {
+        font-family: 'Cinzel', serif;
+        font-size: 33px; } }
 
 /* -------------------------------- 
 
@@ -248,10 +276,10 @@ Home page clip
   .title h1 {
     font-size: 2.4rem;
     font-weight: 700; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (max-width: 768px) {
     .title {
       line-height: 250px; } }
-  @media only screen and (min-width: 1170px) {
+  @media only screen and (max-width: 1170px) {
     .title {
       height: 200px;
       line-height: 300px; }
@@ -264,21 +292,21 @@ Home page clip
 
 .intro {
   margin: 4em auto; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (max-width: 768px) {
     .intro {
       margin: 5em auto; } }
-  @media only screen and (min-width: 1170px) {
+  @media only screen and (max-width: 1170px) {
     .intro {
       margin: 6em auto; } }
 
 .headline {
   font-size: 3rem;
   line-height: 1.2; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (max-width: 768px) {
     .headline {
       font-size: 4.4rem;
       font-weight: 300; } }
-  @media only screen and (min-width: 1170px) {
+  @media only screen and (max-width: 1170px) {
     .headline {
       font-size: 6rem; } }
 
