@@ -123,6 +123,9 @@ Modules - reusable parts of our design
   background-color:transparent;
   background-position: -41% 17%;
   background-size: 120%;
+  @include MQ(S) {
+      background-position: -41% 3%;
+  }
 }
 .contact-btn{
   background-size:100%;

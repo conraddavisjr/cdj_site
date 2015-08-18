@@ -52,6 +52,9 @@ main.slide-out {
 .section {
 	padding: 2em 0;
 	text-align: center;
+	@include MQ(M) {
+		padding: 5em 0;
+	}
 }
 .section .container {
 	/* this modifies the .container default max-width */
@@ -62,9 +65,16 @@ main.slide-out {
 	font-weight: bold;
 	text-transform: uppercase;
 	margin-bottom: 0.3em;
+	@include MQ(M) {
+		font-size: 21px;
+	}
 }
 .section p {
 	line-height: 1.4;
+	@include MQ(M) {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -107,6 +117,11 @@ main.slide-out {
 	-webkit-transform: translateX(16px);
 	-moz-transform: translateX(16px);
 	transform: translateX(16px);
+	@include MQ(M) {
+		-webkit-transform: translateX(0px);
+	    -moz-transform: translateX(0px);
+	    transform: translateX(0px);
+	}
 }
 #about .container {
 	max-width: 1400px;
@@ -121,6 +136,10 @@ main.slide-out {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
+	@include MQ(M) {
+		width: 90%;
+    	margin: 0 auto;
+	}
 }
 .no-touch #about li:hover {
 	box-shadow: 0 0 10px rgba(92, 75, 81, 0.3);

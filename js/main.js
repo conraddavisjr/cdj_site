@@ -10,6 +10,7 @@ jQuery(function($){
 			//vars
 			this.headerHeight = 80;
 			this.leftValue = '50%';
+			this.pageMarqueeHeight = '220px';
 			//elements
 			this.introTitleCover = $('#site-intro .introTitleCover');
 			this.introSubTitleCover = $('#site-intro .introSubTitleCover');
@@ -48,9 +49,11 @@ jQuery(function($){
 			} // Breakpoint between 768
 			if (isBreakPoint(480)) { 
 				main.headerHeight = 55;
+				main.pageMarqueeHeight = '90px';
 			} // Breakpoint between 320 and 480
 			if (isBreakPoint(320)) { 
-				main.headerHeight = 45;
+				main.headerHeight = 47.5;
+				main.pageMarqueeHeight = '90px';
 			} // Breakpoint between 320 and 480
 		},
 		
@@ -237,7 +240,7 @@ jQuery(function($){
 					main.aboutPage.show();
 					main.pageMarquee.css({backgroundImage : 'url(img/about-hover-img.jpg)'});
 					//slide the About Marquee into position
-					TweenLite.to(main.pageMarquee, 1, {height: '220px', opacity: 1});    
+					TweenLite.to(main.pageMarquee, 1, {height: main.pageMarqueeHeight, opacity: 1});    
 					//slide the About page into frame
 					TweenLite.to(main.aboutPage, 1, {position:'fixed', top: main.header.height()});
 				break;

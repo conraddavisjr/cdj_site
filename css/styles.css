@@ -114,6 +114,9 @@ Modules - reusable parts of our design
   background-color: transparent;
   background-position: -41% 17%;
   background-size: 120%; }
+  @media only screen and (max-width: 480px) {
+    .page-marquee {
+      background-position: -41% 3%; } }
 
 .contact-btn {
   background-size: 100%; }
@@ -176,6 +179,9 @@ nav {
   color: #6b6a6a;
   opacity: 0;
   z-index: 4; }
+  @media only screen and (max-width: 480px) {
+    #site-intro .sub-title {
+      font-size: 20px; } }
 #site-intro .horizontal-line {
   position: absolute;
   display: none;
@@ -225,7 +231,7 @@ header {
       font-size: 27px; } }
   @media only screen and (max-width: 480px) {
     .siteTitle {
-      font-size: 20px; } }
+      font-size: 17.5px; } }
 
 @media only screen and (max-width: 768px) {
   .intro-veil {
@@ -398,6 +404,9 @@ main.slide-out .overlay {
 .section {
   padding: 2em 0;
   text-align: center; }
+  @media only screen and (max-width: 768px) {
+    .section {
+      padding: 5em 0; } }
 
 .section .container {
   /* this modifies the .container default max-width */
@@ -409,9 +418,16 @@ main.slide-out .overlay {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 0.3em; }
+  @media only screen and (max-width: 768px) {
+    .section h2 {
+      font-size: 21px; } }
 
 .section p {
   line-height: 1.4; }
+  @media only screen and (max-width: 768px) {
+    .section p {
+      font-size: 14px;
+      margin-bottom: 10px; } }
 
 @media only screen and (min-width: 768px) {
   .section {
@@ -447,6 +463,11 @@ main.slide-out .overlay {
   -webkit-transform: translateX(16px);
   -moz-transform: translateX(16px);
   transform: translateX(16px); }
+  @media only screen and (max-width: 768px) {
+    #about {
+      -webkit-transform: translateX(0px);
+      -moz-transform: translateX(0px);
+      transform: translateX(0px); } }
 
 #about .container {
   max-width: 1400px; }
@@ -461,6 +482,10 @@ main.slide-out .overlay {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s; }
+  @media only screen and (max-width: 768px) {
+    #about li {
+      width: 90%;
+      margin: 0 auto; } }
 
 .no-touch #about li:hover {
   box-shadow: 0 0 10px rgba(92, 75, 81, 0.3); }
