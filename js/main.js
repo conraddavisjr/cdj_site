@@ -21,6 +21,7 @@ jQuery(function($){
 			this.pageMarquee = $('.page-marquee');
 			this.mainContainer = $('main, .member-bio');
 			this.aboutPage = $('#about');
+			this.contactPage = $('#contact');
 			this.homeLink = $('.siteTitle a');
 			
 		},
@@ -183,22 +184,20 @@ jQuery(function($){
 			
 		},
 		callPageHandler : function(){
+			//open the selected page
+			main.pageCloseHandler(); //close all pages 1st
 			//check which item was clicked
 			switch(this.text){
 				case 'Conrad Davis Jr' :
-				main.aboutPage.hide();
-				//slide the About Marquee out of Frame
-				TweenLite.to(main.pageMarquee, 0.5, {height: '100%', opacity: 0});    
-				//slide the About page out of Frame
-				TweenLite.to(main.aboutPage, 1, {position:'fixed', display:'block', top: '100%'});
+					// main.pageCloseHandler(); handles the Home pg
 				break;
 				case 'ABOUT' :
-				main.aboutPage.show();
-				main.pageMarquee.css({backgroundImage : 'url(img/about-hover-img.jpg)'});
-				//slide the About Marquee into position
-				TweenLite.to(main.pageMarquee, 1, {height: '220px', opacity: 1});    
-				//slide the About page into frame
-				TweenLite.to(main.aboutPage, 1, {position:'fixed', top: main.header.height()});
+					main.aboutPage.show();
+					main.pageMarquee.css({backgroundImage : 'url(img/about-hover-img.jpg)'});
+					//slide the About Marquee into position
+					TweenLite.to(main.pageMarquee, 1, {height: '220px', opacity: 1});    
+					//slide the About page into frame
+					TweenLite.to(main.aboutPage, 1, {position:'fixed', top: main.header.height()});
 				break;
 				case 'WORK' :
 				main.navHoverOverlay.css({backgroundImage : 'url(img/work-hover-img.jpg)'});
@@ -207,6 +206,8 @@ jQuery(function($){
 				case 'CONTACT' :
 				main.navHoverOverlay.css({backgroundImage : 'url(img/contact-hover-img.jpg)'});
 				main.navHoverOverlay.attr('class', 'nav-hover-overlay contact-btn');
+				//slide the Contact page into frame
+				TweenLite.to(main.contactPage, 1, {top: 0});
 				break;
 				default:
 				//do nothing
@@ -214,6 +215,23 @@ jQuery(function($){
 			//reveal the main container
 			main.mainContainer.css({'zIndex' : 101});
 			TweenLite.to(main.navHoverOverlay, 0.3, {opacity : 0, scale : 1.3});
+		},
+		pageCloseHandler : function(){
+			//Close all pages when this function is called
+
+			//slide the pageMarquee out of Frame
+			TweenLite.to(main.pageMarquee, 0.5, {height: '100%', opacity: 0});    
+			
+			/*About*/
+			main.aboutPage.hide();
+			//slide the About page out of Frame
+			TweenLite.to(main.aboutPage, 1, {position:'fixed', display:'block', top: '100%'});
+
+			/*Work*/
+
+			/*Contact*/
+			//slide the Contact page out of frame
+			TweenLite.to(main.contactPage, 1, {top: '100%'});
 		}
 
 		

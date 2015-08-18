@@ -16,6 +16,9 @@ nav{
     		padding: 13px 0;
     		text-align: center;
     		@include Cinzel(32px);
+            a:hover{
+                color:black;
+            }
     	}
     }
 }
