@@ -33,7 +33,9 @@ jQuery(function($){
 
 			//dimensions for the Intro title
 			var titleHeight = main.introTitle.height();
-			var titleWidth = main.introTitle.width() + (main.introTitle.width() * 0.37);
+			//var titleWidth = main.introTitle.width() + (main.introTitle.width() * 0.37);
+			var titleWidth = main.introTitle.width();
+			console.log('titleWidth: ' + titleWidth);
 			var windowHeight = $(window).innerHeight();
 
 			//dimensions for the Intro subTitle
@@ -78,9 +80,9 @@ jQuery(function($){
 			var titleTopPos = introLineOffset.top - (titleHeight / 2);
 			main.introTitle.css({
 				'position' : 'absolute',
+				'display' : 'block',
 				'opacity' : '0',
 				'transform' : 'scale(2)',
-				'display' : 'block',
 				'top'  : titleTopPos,
 				'left' :  '50%',
 				'marginLeft' : titleLeftPos

@@ -2,6 +2,8 @@ header{
 	position: relative;
 	display:none;
 	padding: 15px 0;
+	height:80px;
+	@include Cinzel(50px);
 	background-color:black;
 	background-color:rgba(0,0,0,0.5);
 	z-index:102 !important;
@@ -13,8 +15,8 @@ header{
 }
 .siteTitle{
 	display: none;
-	@include Cinzel(30px);
-	font-size: 50px;
+	width:50%;
+	@include Cinzel(50px);
 	color: white;
 	text-align: center;
 	z-index: 6;
