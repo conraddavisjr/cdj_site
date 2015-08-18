@@ -21,6 +21,7 @@ jQuery(function($){
 			this.pageMarquee = $('.page-marquee');
 			this.mainContainer = $('main, .member-bio');
 			this.aboutPage = $('#about');
+			this.contactPage = $('#contact');
 			this.homeLink = $('.siteTitle a');
 			
 		},
@@ -155,7 +156,12 @@ jQuery(function($){
 				case 'ABOUT' :
 				main.navHoverOverlay.css({backgroundImage : 'url(img/about-hover-img.jpg)'});
 				main.navHoverOverlay.attr('class', 'nav-hover-overlay about-btn');
-				main.pageMarquee.css({backgroundImage : 'none', opacity:0.5});
+				if($(this).hasClass('nav-active')){
+					//keep the about marquee
+				}else{
+					//remove it
+					main.pageMarquee.css({backgroundImage : 'none', opacity:0.5});
+				}
 				break;
 				case 'WORK' :
 				main.navHoverOverlay.css({backgroundImage : 'url(img/work-hover-img.jpg)'});
@@ -169,7 +175,9 @@ jQuery(function($){
 				//do nothing
 			}
 			//reveal the overlay and scale it down
-			TweenLite.to(main.navHoverOverlay, 0.5, { opacity : 0.6, scale : 1});
+			main.navHoverOverlay.css({'zIndex' : 102});
+			TweenLite.to(main.navHoverOverlay, 0.5, {opacity : 0.9, scale : 1});
+			TweenLite.to(main.pageMarquee, 0.5, {opacity : 0.9});
 			//hide the main container
 			main.mainContainer.css({'zIndex' : 2});
 		},
@@ -178,27 +186,30 @@ jQuery(function($){
 			TweenLite.to(main.navHoverOverlay, 0.2, {opacity : 0, scale : 0.95});
 			TweenLite.to(main.navHoverOverlay, 0, {opacity : 0.5, scale : 1.3, delay: 0.4});
 			setTimeout(function(){
+				main.navHoverOverlay.css({'zIndex' : 2});
 				main.mainContainer.css({'zIndex' : 101});
 			},200);
 			
 		},
 		callPageHandler : function(){
+			//remove all .nav-active classes
+			$('a').removeClass('nav-active');
+			//add .nav-active class to nav item
+			$(this).addClass('nav-active');
+			//open the selected page
+			main.pageCloseHandler(); //close all pages 1st
 			//check which item was clicked
 			switch(this.text){
 				case 'Conrad Davis Jr' :
-				main.aboutPage.hide();
-				//slide the About Marquee out of Frame
-				TweenLite.to(main.pageMarquee, 0.5, {height: '100%', opacity: 0});    
-				//slide the About page out of Frame
-				TweenLite.to(main.aboutPage, 1, {position:'fixed', display:'block', top: '100%'});
+					// main.pageCloseHandler(); handles the Home pg
 				break;
 				case 'ABOUT' :
-				main.aboutPage.show();
-				main.pageMarquee.css({backgroundImage : 'url(img/about-hover-img.jpg)'});
-				//slide the About Marquee into position
-				TweenLite.to(main.pageMarquee, 1, {height: '220px', opacity: 1});    
-				//slide the About page into frame
-				TweenLite.to(main.aboutPage, 1, {position:'fixed', top: main.header.height()});
+					main.aboutPage.show();
+					main.pageMarquee.css({backgroundImage : 'url(img/about-hover-img.jpg)'});
+					//slide the About Marquee into position
+					TweenLite.to(main.pageMarquee, 1, {height: '220px', opacity: 1});    
+					//slide the About page into frame
+					TweenLite.to(main.aboutPage, 1, {position:'fixed', top: main.header.height()});
 				break;
 				case 'WORK' :
 				main.navHoverOverlay.css({backgroundImage : 'url(img/work-hover-img.jpg)'});
@@ -207,13 +218,43 @@ jQuery(function($){
 				case 'CONTACT' :
 				main.navHoverOverlay.css({backgroundImage : 'url(img/contact-hover-img.jpg)'});
 				main.navHoverOverlay.attr('class', 'nav-hover-overlay contact-btn');
+				//slide the Contact page into frame
+				TweenLite.to(main.contactPage, 1, {top: 0});
 				break;
 				default:
 				//do nothing
 			}
 			//reveal the main container
 			main.mainContainer.css({'zIndex' : 101});
-			TweenLite.to(main.navHoverOverlay, 0.3, {opacity : 0, scale : 1.3});
+			TweenLite.to(main.navHoverOverlay, 0, {opacity : 0, scale : 1});
+		},
+		pageCloseHandler : function(){
+			//Close all pages when this function is called
+
+			//slide the pageMarquee out of Frame
+			TweenLite.to(main.pageMarquee, 0.5, {height: '100%', opacity: 0});
+
+			//remove the pageMarquee img source
+			if($('header a').hasClass('nav-active')){
+				//delay before removing the pageMarquee img
+				setTimeout(function(){
+					main.pageMarquee.css('backgroundImage', 'none');  
+				},500);
+			}else{
+				//remove it
+			}
+			 
+			
+			/*About*/
+			main.aboutPage.hide();
+			//slide the About page out of Frame
+			TweenLite.to(main.aboutPage, 1, {position:'fixed', display:'block', top: '100%'});
+
+			/*Work*/
+
+			/*Contact*/
+			//slide the Contact page out of frame
+			TweenLite.to(main.contactPage, 1, {top: '100%'});
 		}
 
 		
