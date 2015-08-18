@@ -490,6 +490,9 @@ main.slide-out .overlay {
 .no-touch #about li:hover {
   box-shadow: 0 0 10px rgba(92, 75, 81, 0.3); }
 
+#about li:hover .img-overlay {
+  opacity: 1; }
+
 .no-touch #about li:hover .img-overlay {
   opacity: 1; }
 
@@ -536,6 +539,9 @@ main.slide-out .overlay {
   font-weight: bold;
   padding-top: 20px;
   border-radius: 0 0 .25em .25em; }
+  @media only screen and (max-width: 1170px) {
+    #about .panel-info {
+      font-size: 18px; } }
 
 #about .panel-info span {
   display: block;
@@ -575,7 +581,7 @@ summary {
 
 @media only screen and (min-width: 768px) {
   #about li {
-    width: 46%;
+    width: 29%;
     max-width: 400px;
     margin: 0 1.5%;
     display: inline-block; } }
@@ -651,6 +657,10 @@ summary {
   margin: 1em 0;
   line-height: 1.4;
   color: #d7cfd2; }
+  .info-panel .bio-content p a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline; }
 
 @media only screen and (min-width: 768px) {
   .info-panel {
@@ -1674,6 +1684,9 @@ input[type=text]::-ms-clear {
 
   .fs-form.fs-form-overview {
     padding: 4.5em 1em 33em 1em; } }
+@media only screen and (max-width: 1170px) {
+  button.fs-continue {
+    bottom: 90px; } }
 /* cs-select*/
 /* Default custom select styles */
 div.cs-select {

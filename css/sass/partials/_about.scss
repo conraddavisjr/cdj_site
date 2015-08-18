@@ -144,6 +144,9 @@ main.slide-out {
 .no-touch #about li:hover {
 	box-shadow: 0 0 10px rgba(92, 75, 81, 0.3);
 }
+#about li:hover .img-overlay {
+	opacity: 1;
+}
 .no-touch #about li:hover .img-overlay {
 	opacity: 1;
 }
@@ -185,14 +188,17 @@ main.slide-out {
 	height: 80px;
 	background: #FFF;
 	text-align: center;
- @include Ubuntu(20px);
+ 	@include Ubuntu(20px);
 	font-weight: bold;
 	padding-top: 20px;
 	border-radius: 0 0 .25em .25em;
+	@include MQ(L){
+		font-size: 18px;
+	}
 }
 #about .panel-info span {
 	display: block;
- @include Ubuntu(20px);
+ 	@include Ubuntu(20px);
 	font-weight: normal;
 	color: #999999;
 	font-size: 14px;
@@ -235,7 +241,7 @@ summary {
 
 @media only screen and (min-width: 768px) {
 #about li {
-	width: 46%;
+	width: 29%;
 	max-width: 400px;
 	margin: 0 1.5%;
 	display: inline-block;
@@ -312,6 +318,11 @@ summary {
 	margin: 1em 0;
 	line-height: 1.4;
 	color: #d7cfd2;
+	a{
+		color:white;
+		font-weight: bold;
+		text-decoration: underline;
+	}
 }
 
 @media only screen and (min-width: 768px) {

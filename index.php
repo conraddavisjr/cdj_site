@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Conrad Davis Jr" />
+	<link id="page_favicon" href="img/icons/favicon.ico" rel="icon" type="image/x-icon" />
 	<link href='http://fonts.googleapis.com/css?family=Cinzel:700|Ubuntu:300italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/styles.css">
 	<script src="js/modernizr.js"></script>

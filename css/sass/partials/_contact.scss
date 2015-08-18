@@ -1006,6 +1006,11 @@ input[type=text]::-ms-clear {
 		padding: 4.5em 1em 33em 1em;
 	}
 }
+@include MQ(L){
+	button.fs-continue{
+		bottom:90px;
+	}
+}
 
 /* cs-select*/
 
