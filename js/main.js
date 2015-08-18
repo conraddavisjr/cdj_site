@@ -247,11 +247,13 @@ jQuery(function($){
 				//remove it
 			}
 			 
+			//clear the sliding overlay
+			$('main, .info-panel').removeClass('slide-in slide-out');
+
 			
 			/*About*/
-			main.aboutPage.hide();
 			//slide the About page out of frame
-			TweenLite.to(main.aboutPage, 1, {position:'fixed', display:'block', top: '100%'});
+			TweenLite.to(main.aboutPage, 1, {position:'fixed', top: '100%'});
 
 			/*Work*/
 			//stagger and slide the Work page out of frame

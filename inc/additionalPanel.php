@@ -309,24 +309,7 @@ Work Page panels
     </div> <!-- info-panel-pict -->
 
     <div class="bio-content">
-        <h2>Vend-A-Friend</h2>
-        <figure class="role-icon">
-            <img src="img/icons/pm-hat.svg">
-            <figcaption>Project Management</figcaption>
-        </figure>
-        <figure class="role-icon">
-            <img src="img/icons/ux-hat.svg">
-            <figcaption>User Experience</figcaption>
-        </figure>
-        <figure class="role-icon">
-            <img src="img/icons/web-hat.svg">
-            <figcaption>Web Development</figcaption>
-        </figure>
-        <figure class="role-icon">
-            <img src="img/icons/dsg-hat.svg">
-            <figcaption>Design</figcaption>
-        </figure>
-        
+        <h2>Vend-A-Friend</h2>        
         <p>Vend-A-Friend is one of my pride and joys. PJA labs sponsored an internal campaign to produce a fun and engaging experience that's driven by data. I had the priviladge of leading our awesome development team in producing this App and delivering it on the PhoneGap platform. 
 
         <p>I developed the framework for the team to build upon. I also coded robust and custom animations using GSAP, and worked with design and strategy to plan the experience, then tied it all together with timers, HTML5 sound, and nifty touch events. I linked a demo below, to learn more about the full experience, see the <a href="#">PJA blog post</a> about Vend-A-Friend. Enjoy!</p>               
