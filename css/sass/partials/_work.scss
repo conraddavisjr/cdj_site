@@ -11,7 +11,14 @@
 	height: 100vh;
 	z-index: 101;
 	overflow-y: auto;
-	background-color:white;
+	background-color:#171717;
+}
+
+.role-icon{
+	display:inline-block;
+	max-width:70px;
+	font-size:12px;
+	text-align:center;
 }
 
 .grid {
@@ -33,7 +40,7 @@
 	max-width: 480px;
 	max-height: 360px;
 	width: 31.33%;
-	background: #3085a3;
+	background: #000000;
 	text-align: center;
 	cursor: pointer;
 }
@@ -85,7 +92,8 @@
 }
 
 .grid figure h2 span {
-	font-weight: 800;
+	font-weight: 400;
+	text-transform: none;
 }
 
 .grid figure h2,
@@ -103,7 +111,7 @@
 /*---------------*/
 
 figure.work-bucket {
-	background: #42b078;
+	//background: #42b078;
 }
 
 figure.work-bucket img {
@@ -132,6 +140,7 @@ figure.work-bucket h2 {
 	position: relative;
 	overflow: hidden;
 	padding: 0.5em 0;
+	text-shadow: 1px 1px 4px black;
 }
 
 figure.work-bucket h2::after {

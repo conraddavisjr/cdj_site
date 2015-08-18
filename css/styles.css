@@ -2020,7 +2020,13 @@ div.cs-skin-boxes:focus > span {
   height: 100vh;
   z-index: 101;
   overflow-y: auto;
-  background-color: white; }
+  background-color: #171717; }
+
+.role-icon {
+  display: inline-block;
+  max-width: 70px;
+  font-size: 12px;
+  text-align: center; }
 
 .grid {
   position: relative;
@@ -2041,7 +2047,7 @@ div.cs-skin-boxes:focus > span {
   max-width: 480px;
   max-height: 360px;
   width: 31.33%;
-  background: #3085a3;
+  background: #000000;
   text-align: center;
   cursor: pointer; }
 
@@ -2086,7 +2092,8 @@ div.cs-skin-boxes:focus > span {
   font-weight: 300; }
 
 .grid figure h2 span {
-  font-weight: 800; }
+  font-weight: 400;
+  text-transform: none; }
 
 .grid figure h2,
 .grid figure p {
@@ -2099,9 +2106,6 @@ div.cs-skin-boxes:focus > span {
 /*-----------------*/
 /** Work Buckets **/
 /*---------------*/
-figure.work-bucket {
-  background: #42b078; }
-
 figure.work-bucket img {
   max-width: none;
   width: -webkit-calc(100% + 20px);
@@ -2124,7 +2128,8 @@ figure.work-bucket figcaption {
 figure.work-bucket h2 {
   position: relative;
   overflow: hidden;
-  padding: 0.5em 0; }
+  padding: 0.5em 0;
+  text-shadow: 1px 1px 4px black; }
 
 figure.work-bucket h2::after {
   position: absolute;

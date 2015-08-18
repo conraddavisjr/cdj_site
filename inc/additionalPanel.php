@@ -305,67 +305,51 @@ Work Page panels
 -->
 <div class="info-panel panel-3">
     <div class="info-panel-pict">
-        <img src="img/about-profile.jpg" alt="Bio image">
+        <img src="img/work-site-vaf.jpg" alt="Vend-A-Friend">
     </div> <!-- info-panel-pict -->
 
     <div class="bio-content">
-        <h2>panel-3</h2>
-        <p>Since I was six years old, I've been around computers and gadgets. I was the child who meddled with devices and toys; 
-        piecing them apart and seeing what they were made of. I wanted to know what made things work, why it was attractive to me,
-        and how I could improve it. I was naturally drawn to fine arts, performance, and presentation. As a child I drew, sang, 
-        played piano, designed presentations on my PC and made video games for my younger brother and I. I enjoyed impressing people
-        with beautiful art.</p>                
+        <h2>Vend-A-Friend</h2>
+        <figure class="role-icon">
+            <img src="img/icons/pm-hat.svg">
+            <figcaption>Project Management</figcaption>
+        </figure>
+        <figure class="role-icon">
+            <img src="img/icons/ux-hat.svg">
+            <figcaption>User Experience</figcaption>
+        </figure>
+        <figure class="role-icon">
+            <img src="img/icons/web-hat.svg">
+            <figcaption>Web Development</figcaption>
+        </figure>
+        <figure class="role-icon">
+            <img src="img/icons/dsg-hat.svg">
+            <figcaption>Design</figcaption>
+        </figure>
         
-        <p>I love presentation, and websites are among the epitome of presentations. When I build websites,
-        I don't think about the site, I think about the people I'm building it for. Websites are, as I like to think of them, human 
-        interaction and I apply the interactions from my life to my work. Let's take design into consideration. When you see something 
-        you are attracted to for the first time, you're not immediately evaluating its traits, initially, you are simply indulged 
-        in the attraction; it's intuitive and it's natural; that is beauty. I strive to incorporate these qualities and invoke these 
-        emotions into my design.</p>
+        <p>Vend-A-Friend is one of my pride and joys. PJA labs sponsored an internal campaign to produce a fun and engaging experience that's driven by data. I had the priviladge of leading our awesome development team in producing this App and delivering it on the PhoneGap platform. 
 
-        <p>Development is the "electricity" of our industry, its everywhere and involved in practically everything we do. It runs 24/7 behind the curtains and works until the moment it doesn't; our lights turn out, and everything comes to a hault while we suddenly realize how many things it was powering. Solid development works without you noticing. It's rapid, problem-free, and graceful; those are the qualities I focus on when I develop. </p>
-         
-        <p>Great design draws us in, it makes things useable; great development keeps us there, it makes things
-        useful. The marriage of the two creates effective technology and I absolutely love when they come together.</p>
-
-        <p>I love learning new things, this passion led me to develop quite a few hobbies and interests like dancing, playing piano, exercise, singing (shower quality), and trying something new quite often. </p>
+        <p>I developed the framework for the team to build upon. I also coded robust and custom animations using GSAP, and worked with design and strategy to plan the experience, then tied it all together with timers, HTML5 sound, and nifty touch events. I linked a demo below, to learn more about the full experience, see the <a href="#">PJA blog post</a> about Vend-A-Friend. Enjoy!</p>               
+        
     </div> <!-- bio-content -->
 </div> <!-- info-panel -->
 <div class="info-panel panel-4">
     <div class="info-panel-pict">
-        <img src="img/about-profile.jpg" alt="Bio image">
+        <img src="img/work-site-sts.jpg" alt="Bio image">
     </div> <!-- info-panel-pict -->
 
     <div class="bio-content">
-        <h2>panel-4</h2>
-        <p>Since I was six years old, I've been around computers and gadgets. I was the child who meddled with devices and toys; 
-        piecing them apart and seeing what they were made of. I wanted to know what made things work, why it was attractive to me,
-        and how I could improve it. I was naturally drawn to fine arts, performance, and presentation. As a child I drew, sang, 
-        played piano, designed presentations on my PC and made video games for my younger brother and I. I enjoyed impressing people
-        with beautiful art.</p>                
-        
-        <p>I love presentation, and websites are among the epitome of presentations. When I build websites,
-        I don't think about the site, I think about the people I'm building it for. Websites are, as I like to think of them, human 
-        interaction and I apply the interactions from my life to my work. Let's take design into consideration. When you see something 
-        you are attracted to for the first time, you're not immediately evaluating its traits, initially, you are simply indulged 
-        in the attraction; it's intuitive and it's natural; that is beauty. I strive to incorporate these qualities and invoke these 
-        emotions into my design.</p>
-
-        <p>Development is the "electricity" of our industry, its everywhere and involved in practically everything we do. It runs 24/7 behind the curtains and works until the moment it doesn't; our lights turn out, and everything comes to a hault while we suddenly realize how many things it was powering. Solid development works without you noticing. It's rapid, problem-free, and graceful; those are the qualities I focus on when I develop. </p>
-         
-        <p>Great design draws us in, it makes things useable; great development keeps us there, it makes things
-        useful. The marriage of the two creates effective technology and I absolutely love when they come together.</p>
-
-        <p>I love learning new things, this passion led me to develop quite a few hobbies and interests like dancing, playing piano, exercise, singing (shower quality), and trying something new quite often. </p>
+        <h2>Straight Talk Switch</h2>
+        <p>Straight Talk Switch is Tracfone's premier service for providing phones with the "same networks for up to half the cost". The Straight Talk Switch campaign spans across more than 20 sites, including landing pages, responsive multi-page sites, dedicated-mobile, and HTML5 games to name a few. Among my various accounts, I am responcible for maintaining all of Straight Talk Switch's sites and campaigns which means I could, in one day, launch an email campaign, a flash banner campaign, edit and launch more than a douzen sites, all while managing analytics development, A/B testing, Git versioning, automated testing and everything in between.</p>                
     </div> <!-- bio-content -->
 </div> <!-- info-panel -->
 <div class="info-panel panel-5">
     <div class="info-panel-pict">
-        <img src="img/about-profile.jpg" alt="Bio image">
+        <img src="img/work-site-vpd.jpg" alt="Visnapuu Design">
     </div> <!-- info-panel-pict -->
 
     <div class="bio-content">
-        <h2>panel-5</h2>
+        <h2>Visnapuu Design</h2>
         <p>Since I was six years old, I've been around computers and gadgets. I was the child who meddled with devices and toys; 
         piecing them apart and seeing what they were made of. I wanted to know what made things work, why it was attractive to me,
         and how I could improve it. I was naturally drawn to fine arts, performance, and presentation. As a child I drew, sang, 
