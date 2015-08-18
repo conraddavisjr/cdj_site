@@ -417,7 +417,7 @@ main.slide-out .overlay {
   transform: translateX(16px); }
 
 #about .container {
-  max-width: 1200px; }
+  max-width: 1400px; }
 
 #about h2 {
   color: #DCDCDC; }
@@ -1254,7 +1254,7 @@ button.fs-continue,
 /* Progress bar */
 .fs-progress {
   position: absolute;
-  top: 92px;
+  top: 80px;
   width: 0%;
   height: 0.5em;
   background: #FFFED8;

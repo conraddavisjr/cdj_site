@@ -3,17 +3,19 @@
 	<div class="container">
 		<h2>"Be like water"</h2>
 		<p class="about-subtitle">I am adaptive and ever-changing. I am a glutten for new challenges. I prefer to live life at the edge of my comfort.</p>
-		<summary>
-			<h4>Fulltime: Web Developer | PJA Advertizing + Marketing</h4>
-			<p>Develop websites, web applications, CMSs, and Rich Media Ads using the latest technologies and techniques including HTML5, CSS3, jQuery, AJAX, AS3, responsive design, standards-based markup, 3rd party API integration, and more.</p>
-			<h4>Partime: Freelance Developer | Designer | UX</h4>
-			<p>Work closely with clients, to help achieve their objectives using the web, video, and print. Work through the full life of the project through all aspects of its development including strategy, accounts, project management, UX, design, development, social media, analytics, and user testing.</p>
-			<h4>Newest Endeavour: Native App Development (Android).</h4>
-			<br>
-			<h4>Current infatuation: The mobile world and the Internet of things... and coffee.</h4>
-			
-		</summary>
 		<ul>
+			<li>
+				<a href="#0" data-type="panel-0">
+					<figure>
+						<img src="img/about-summary-bucket.jpg" alt="Summary image Icon">
+						<div class="img-overlay"><span>View Summary</span></div>
+					</figure>
+
+					<div class="panel-info">
+						Check out my Stats <span>Summary</span>
+					</div> <!-- panel-info -->
+				</a>
+			</li>
 			<li>
 				<a href="#0" data-type="panel-1">
 					<figure>

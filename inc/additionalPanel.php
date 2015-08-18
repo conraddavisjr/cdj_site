@@ -1,3 +1,21 @@
+<div class="info-panel panel-0">
+    <div class="info-panel-pict">
+        <img src="img/about-summary.jpg" alt="Summary image">
+    </div> <!-- info-panel-pict -->
+
+    <div class="bio-content">
+        <h2>What I'm up to</h2>
+        <summary>
+            <h4>Fulltime: Web Developer | PJA Advertizing + Marketing</h4>
+            <p>Develop websites, web applications, CMSs, and Rich Media Ads using the latest technologies and techniques including HTML5, CSS3, jQuery, AJAX, AS3, responsive design, standards-based markup, 3rd party API integration, and more.</p>
+            <h4>Part-time: Freelance Developer | Designer | UX</h4>
+            <p>Work closely with clients, to help achieve their objectives using the web, video, and print. Work through the full life of the project through all aspects of its development including strategy, accounts, project management, UX, design, development, social media, analytics, and user testing.</p>
+            <h4>Newest Endeavour: Native App Development (Android).</h4>
+            <p>I'm betting that the apps + website combination will have a huge future; I'm gearing up for it.</p>
+            <h4>Current infatuation: The mobile world and the Internet of things... and coffee.</h4>
+        </summary>
+    </div> <!-- bio-content -->
+</div> <!-- info-panel -->
 <div class="info-panel panel-1">
     <div class="info-panel-pict">
         <img src="img/about-profile.jpg" alt="Bio image">
@@ -310,9 +328,9 @@ Work Page panels
 
     <div class="bio-content">
         <h2>Vend-A-Friend</h2>        
-        <p>Vend-A-Friend is one of my pride and joys. PJA labs sponsored an internal campaign to produce a fun and engaging experience that's driven by data. I had the priviladge of leading our awesome development team in producing this App and delivering it on the PhoneGap platform. 
+        <p>Vend-A-Friend is one of my pride and joys. PJA labs sponsored an internal campaign to produce a fun and engaging experience that's driven by data. I had the privilege of leading our awesome development team in producing this App and delivering it on the PhoneGap platform. 
 
-        <p>I developed the framework for the team to build upon. I also coded robust and custom animations using GSAP, and worked with design and strategy to plan the experience, then tied it all together with timers, HTML5 sound, and nifty touch events. I linked a demo below, to learn more about the full experience, see the <a href="#">PJA blog post</a> about Vend-A-Friend. Enjoy!</p>               
+        <p>I developed the framework for the team to build upon. I also coded robust and custom animations using GSAP, and worked with design and strategy to plan the experience, then tied it all together with timers, HTML5 sound, and nifty touch events. I linked a demo below, to learn more about the full experience, see the <a href="http://www.agencypja.com/thebigyellowbox/vend-a-friend/">PJA blog post</a> about Vend-A-Friend. Enjoy!</p>               
         
     </div> <!-- bio-content -->
 </div> <!-- info-panel -->
@@ -394,7 +412,7 @@ Work Page panels
         in the attraction; it's intuitive and it's natural; that is beauty. I strive to incorporate these qualities and invoke these 
         emotions into my design.</p>
 
-        <p>Development is the "electricity" of our industry, its everywhere and involved in practically everything we do. It runs 24/7 behind the curtains and works until the moment it doesn't; our lights turn out, and everything comes to a hault while we suddenly realize how many things it was powering. Solid development works without you noticing. It's rapid, problem-free, and graceful; those are the qualities I focus on when I develop. </p>
+        <p>Development is the "electricity" of our industry, its everywhere and involved in practically everything we do. It runs 24/7 behind the curtains and works until the moment it doesn't; our lights turn out, and everything comes to a halt while we suddenly realize how many things it was powering. Solid development works without you noticing. It's rapid, problem-free, and graceful; those are the qualities I focus on when I develop. </p>
          
         <p>Great design draws us in, it makes things useable; great development keeps us there, it makes things
         useful. The marriage of the two creates effective technology and I absolutely love when they come together.</p>
