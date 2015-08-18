@@ -21,6 +21,7 @@ jQuery(function($){
 			this.pageMarquee = $('.page-marquee');
 			this.mainContainer = $('main, .member-bio');
 			this.aboutPage = $('#about');
+			this.workPage = $('#work');
 			this.contactPage = $('#contact');
 			this.homeLink = $('.siteTitle a');
 			
@@ -212,8 +213,10 @@ jQuery(function($){
 					TweenLite.to(main.aboutPage, 1, {position:'fixed', top: main.header.height()});
 				break;
 				case 'WORK' :
-				main.navHoverOverlay.css({backgroundImage : 'url(img/work-hover-img.jpg)'});
-				main.navHoverOverlay.attr('class', 'nav-hover-overlay work-btn');
+					main.navHoverOverlay.css({backgroundImage : 'url(img/work-hover-img.jpg)'});
+					main.navHoverOverlay.attr('class', 'nav-hover-overlay work-btn');
+					//animate the grid buckets in
+					main.workPageAnimation();
 				break;
 				case 'CONTACT' :
 				main.navHoverOverlay.css({backgroundImage : 'url(img/contact-hover-img.jpg)'});
@@ -247,16 +250,28 @@ jQuery(function($){
 			
 			/*About*/
 			main.aboutPage.hide();
-			//slide the About page out of Frame
+			//slide the About page out of frame
 			TweenLite.to(main.aboutPage, 1, {position:'fixed', display:'block', top: '100%'});
 
 			/*Work*/
+			//stagger and slide the Work page out of frame
+			//TweenMax.staggerTo('.work-bucket', 0.6, {top: '-1000px', delay:1}, 0.1);
+			//slide the work page out
+			TweenLite.to(main.workPage, 1, {top: '100%'});
 
 			/*Contact*/
 			//slide the Contact page out of frame
 			TweenLite.to(main.contactPage, 1, {top: '100%'});
-		}
+		},
 
+		//Work Page animation
+		workPageAnimation : function(){
+			var workPageTl = new TimelineLite();
+			//slide the work page in
+			TweenLite.to(main.workPage, 1, {top: '0%', paddingTop: main.header.height() + 20});
+			//grid buckets drop effect
+			TweenMax.staggerFrom('.work-bucket', 0.6, {top: '-1000px', delay:1}, 0.1);
+		}
 		
 	};
 

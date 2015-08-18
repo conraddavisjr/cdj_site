@@ -2014,10 +2014,12 @@ div.cs-skin-boxes:focus > span {
 
 #work {
   position: fixed;
+  top: 100%;
   width: 100%;
   height: 100%;
   z-index: 101;
-  overflow-y: auto; }
+  overflow-y: auto;
+  background-color: white; }
 
 .grid {
   position: relative;

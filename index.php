@@ -28,11 +28,11 @@
         <?php include('inc/home.php') ?>
         <!--About-->
         <?php include('inc/about.php') ?>
+        <!--Work-->
+    	<?php include('inc/work.php') ?>
     <!--</main> in about include-->
 	<!--Contact-->
     <?php include('inc/contact.php') ?>
-    <!--Work-->
-    <?php include('inc/work.php') ?>
 </div>
 	<a href="#0" class="member-bio-close">Close</a> <!-- close the author bio section -->
 	<nav>
@@ -45,9 +45,7 @@
 	</nav>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!--GSAP-->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TimelineLite.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
 <!--GSAP (END)-->
 <script src="js/main.js"></script>
 <script src="js/home.js"></script>
