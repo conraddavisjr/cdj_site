@@ -1180,6 +1180,12 @@ div.cs-skin-boxes:focus > span {
 		height: 80%;
 	}
 }
+@media(max-width:480px){
+	.cs-skin-boxes .cs-options{
+		padding-top: 30px;
+		height: 100%;
+	}
+}
 
 .cs-skin-boxes.cs-active .cs-options {
 	opacity: 1;

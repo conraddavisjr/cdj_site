@@ -569,6 +569,9 @@ summary {
       text-align: center; }
   .skillIcons img {
     width: auto; }
+  @media only screen and (max-width: 480px) {
+    .skillIcons figure {
+      width: 75px; } }
 
 @media only screen and (min-width: 768px) {
   #about li {
@@ -1818,6 +1821,10 @@ div.cs-skin-boxes:focus > span {
   .cs-skin-boxes .cs-options {
     padding-top: 30px;
     height: 80%; } }
+@media (max-width: 480px) {
+  .cs-skin-boxes .cs-options {
+    padding-top: 30px;
+    height: 100%; } }
 .cs-skin-boxes.cs-active .cs-options {
   opacity: 1;
   -webkit-transition: opacity 0.3s;

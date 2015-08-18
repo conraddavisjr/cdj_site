@@ -226,7 +226,11 @@ summary {
 	img{
 		width:auto;
 	}
-
+	@include MQ(S){
+		figure{
+			width: 75px;
+		}
+	}
 }
 
 @media only screen and (min-width: 768px) {
