@@ -63,15 +63,16 @@ Contact Main
 	z-index: 1;
 }
 
+#contact{
+	a {
+		color: rgba(0,0,0,0.3);
+		text-decoration: none;
+		outline: none;
+	}
 
-a {
-	color: rgba(0,0,0,0.3);
-	text-decoration: none;
-	outline: none;
-}
-
-a:hover, a:focus {
-	color: #fff;
+	a:hover, a:focus {
+		color: #fff;
+	}
 }
 
 

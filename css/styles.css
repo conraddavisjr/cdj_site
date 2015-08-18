@@ -130,7 +130,7 @@ nav {
   width: 100%;
   border-top: solid 1px black;
   background-color: rgba(255, 255, 255, 0.5);
-  z-index: 101; }
+  z-index: 110; }
   nav ul {
     display: block;
     margin: 0 auto;
@@ -793,12 +793,11 @@ Contact Main
   line-height: 400px;
   z-index: 1; }
 
-a {
+#contact a {
   color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
   outline: none; }
-
-a:hover, a:focus {
+#contact a:hover, #contact a:focus {
   color: #fff; }
 
 /* Main form wrapper */
