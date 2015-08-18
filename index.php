@@ -30,7 +30,9 @@
         <?php include('inc/about.php') ?>
         <!--Work-->
     	<?php include('inc/work.php') ?>
-    <!--</main> in about include-->
+    </main>
+    <!--Slide-in Side Panel-->
+    <?php include('inc/additionalPanel.php') ?>
 	<!--Contact-->
     <?php include('inc/contact.php') ?>
 </div>
