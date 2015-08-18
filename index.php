@@ -32,7 +32,7 @@
 	<!--Contact-->
     <?php include('inc/contact.php') ?>
     <!--Work-->
-    <?php //include('inc/work.php') ?>
+    <?php include('inc/work.php') ?>
 </div>
 	<a href="#0" class="member-bio-close">Close</a> <!-- close the author bio section -->
 	<nav>
