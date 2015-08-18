@@ -1,6 +1,6 @@
 <div id="work">
 	<div class="grid">
-		<figure class="work-bucket">
+		<figure class="work-bucket" data-type="panel-3">
 			<img src="img/13.jpg" alt="img13"/>
 			<figcaption>
 				<h2>Free <span>Sarah</span></h2>

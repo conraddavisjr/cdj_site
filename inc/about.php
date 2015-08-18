@@ -15,27 +15,27 @@
 		</summary>
 		<ul>
 			<li>
-				<a href="#0" data-type="member-1">
+				<a href="#0" data-type="panel-1">
 					<figure>
 						<img src="img/about-bio-bucket.jpg" alt="Bio image Icon">
 						<div class="img-overlay"><span>View Bio</span></div>
 					</figure>
 
-					<div class="member-info">
+					<div class="panel-info">
 						A little bit about Me <span>Bio</span>
-					</div> <!-- member-info -->
+					</div> <!-- panel-info -->
 				</a>
 			</li>
 			<li>
-				<a href="#0" data-type="member-2">
+				<a href="#0" data-type="panel-2">
 					<figure>
 						<img src="img/about-work-bucket.jpg" alt="Work image Icon">
 						<div class="img-overlay"><span>View Skills</span></div>
 					</figure>
 
-					<div class="member-info">
+					<div class="panel-info">
 						My Toolbox <span>See the skills</span>
-					</div> <!-- member-info -->
+					</div> <!-- panel-info -->
 				</a>
 			</li>
 		</ul>

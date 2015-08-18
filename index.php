@@ -36,7 +36,7 @@
 	<!--Contact-->
     <?php include('inc/contact.php') ?>
 </div>
-	<a href="#0" class="member-bio-close">Close</a> <!-- close the author bio section -->
+	<a href="#0" class="info-panel-close">Close</a> <!-- close the info panel section -->
 	<nav>
 		<ul>
 			<li><a id="about-btn" href="#about">ABOUT</a></li>
@@ -51,6 +51,6 @@
 <!--GSAP (END)-->
 <script src="js/main.js"></script>
 <script src="js/home.js"></script>
-<script src="js/about.js"></script>
+<script src="js/slidePanel.js"></script>
 </body>
 </html>

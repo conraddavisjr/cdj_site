@@ -467,7 +467,7 @@ main.slide-out .overlay {
   transform: translateX(-50%) translateY(-50%);
   color: #FFF; }
 
-#about .member-info {
+#about .panel-info {
   height: 80px;
   background: #FFF;
   text-align: center;
@@ -477,7 +477,7 @@ main.slide-out .overlay {
   padding-top: 20px;
   border-radius: 0 0 .25em .25em; }
 
-#about .member-info span {
+#about .panel-info span {
   display: block;
   font-family: 'Ubuntu', sans-serif;
   font-size: 20px;
@@ -516,17 +516,17 @@ summary {
     max-width: 400px;
     margin: 0 1.5%;
     display: inline-block; } }
-.member-bio {
+.info-panel {
   position: fixed;
   top: 0;
   right: 0;
   width: 270px;
   height: 100%;
   overflow-y: auto;
+  z-index: 101;
   /* smooth scrolling on mobile phones and tablets */
   -webkit-overflow-scrolling: touch;
   background: #5c4b51;
-  z-index: 1;
   /* this how we move the author bio section off the canvas */
   -webkit-transform: translateX(270px);
   -moz-transform: translateX(270px);
@@ -540,18 +540,18 @@ summary {
   -moz-transition-duration: 0.3s;
   transition-duration: 0.3s; }
 
-.member-bio.slide-in {
-  /* the author bio section slides in when the user clicks on the team member picture */
+.info-panel.slide-in {
+  /* the author bio section slides in when the user clicks on the team panel picture */
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
   transform: translateX(0); }
 
-.member-bio .member-bio-pict {
+.info-panel .info-panel-pict {
   position: relative; }
 
-.member-bio .member-bio-pict::after {
+.info-panel .info-panel-pict::after {
   /* gradient at the bottom of the image - same color of the background of the section */
   content: '';
   position: absolute;
@@ -562,18 +562,18 @@ summary {
   background: -webkit-linear-gradient(bottom, #5c4b51, rgba(92, 75, 81, 0));
   background: linear-gradient(to top, #5c4b51, rgba(92, 75, 81, 0)); }
 
-.no-cssgradients .member-bio .member-bio-pict::after {
+.no-cssgradients .info-panel .info-panel-pict::after {
   display: none; }
 
-.member-bio img {
+.info-panel img {
   width: 100%;
   display: block; }
 
-.member-bio .bio-content {
+.info-panel .bio-content {
   padding: 1em;
   color: #FFF; }
 
-.member-bio .bio-content h2 {
+.info-panel .bio-content h2 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 20px;
   font-weight: bold;
@@ -582,7 +582,7 @@ summary {
   font-size: 20px;
   font-size: 1.25rem; }
 
-.member-bio .bio-content p {
+.info-panel .bio-content p {
   font-size: 14px;
   font-size: 0.875rem;
   margin: 1em 0;
@@ -590,7 +590,7 @@ summary {
   color: #d7cfd2; }
 
 @media only screen and (min-width: 768px) {
-  .member-bio {
+  .info-panel {
     width: 600px;
     -webkit-transform: translateX(600px);
     -moz-transform: translateX(600px);
@@ -598,14 +598,14 @@ summary {
     -o-transform: translateX(600px);
     transform: translateX(600px); }
 
-  .member-bio .bio-content {
+  .info-panel .bio-content {
     padding: 2em; }
 
-  .member-bio .bio-content p {
+  .info-panel .bio-content p {
     line-height: 1.6;
     margin: 2em 0; } }
 @media only screen and (min-width: 1200px) {
-  .member-bio {
+  .info-panel {
     width: 50%;
     -webkit-transform: translateX(100%);
     -moz-transform: translateX(100%);
@@ -613,10 +613,10 @@ summary {
     -o-transform: translateX(100%);
     transform: translateX(100%); }
 
-  .member-bio .member-bio-pict::after {
+  .info-panel .info-panel-pict::after {
     height: 150px; }
 
-  .member-bio .bio-content {
+  .info-panel .bio-content {
     padding: 0em 3em;
     /* we move the content up so the title is over the color gradient */
     -webkit-transform: translateY(-80px);
@@ -625,25 +625,25 @@ summary {
     -o-transform: translateY(-80px);
     transform: translateY(-80px); }
 
-  .member-bio .bio-content h2 {
+  .info-panel .bio-content h2 {
     font-size: 40px;
     font-size: 2.5rem; }
 
-  .member-bio .bio-content h3 {
+  .info-panel .bio-content h3 {
     font-size: 30px;
     padding-top: 20px; }
 
-  .member-bio .bio-content p {
+  .info-panel .bio-content p {
     font-size: 16px;
     font-size: 1rem; }
 
-  .no-cssgradients .member-bio .bio-content {
+  .no-cssgradients .info-panel .bio-content {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
     transform: translateY(0); } }
-.member-bio-close {
+.info-panel-close {
   width: 32px;
   height: 32px;
   overflow: hidden;
@@ -656,14 +656,14 @@ summary {
   z-index: 3;
   display: none; }
 
-.member-bio-close.is-visible {
+.info-panel-close.is-visible {
   display: block;
   -webkit-animation: move-in 0.8s;
   -moz-animation: move-in 0.8s;
   animation: move-in 0.8s; }
 
 @media only screen and (min-width: 1200px) {
-  .member-bio-close {
+  .info-panel-close {
     right: 20px;
     top: 80px;
     z-index: 101; } }

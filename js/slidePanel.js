@@ -2,11 +2,11 @@ jQuery(document).ready(function($){
 	var is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
 
 	//open team-member bio
-	$('#about').find('ul a').on('click', function(event){
+	$('#about ul a, #work .work-bucket').on('click', function(event){
 		event.preventDefault();
 		var selected_member = $(this).data('type');
-		$('.member-bio.'+selected_member+'').addClass('slide-in');
-		$('.member-bio-close').addClass('is-visible');
+		$('.info-panel.'+selected_member+'').addClass('slide-in');
+		$('.info-panel-close').addClass('is-visible');
 
 		// firefox transitions break when parent overflow is changed, so we need to wait for the end of the trasition to give the body an overflow hidden
 		if( is_firefox ) {
@@ -21,10 +21,10 @@ jQuery(document).ready(function($){
 	});
 
 	//close team-member bio
-	$(document).on('click', '.overlay, .member-bio-close', function(event){
+	$(document).on('click', '.overlay, .info-panel-close', function(event){
 		event.preventDefault();
-		$('.member-bio').removeClass('slide-in');
-		$('.member-bio-close').removeClass('is-visible');
+		$('.info-panel').removeClass('slide-in');
+		$('.info-panel-close').removeClass('is-visible');
 
 		if( is_firefox ) {
 			$('main').removeClass('slide-out').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
