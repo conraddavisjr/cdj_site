@@ -19,13 +19,17 @@ header{
 	@include Cinzel(50px);
 	color: white;
 	text-align: center;
+	white-space: nowrap;
 	z-index: 6;
 	a{
 		cursor:pointer;
 		color: white;
 	}
 	@include MQ(M) {
-		font-size: 33px;
+		font-size: 27px;
+	}
+	@include MQ(S) {
+		font-size: 20px;
 	}
 }
 .intro-veil{
@@ -64,10 +68,10 @@ article.opening-statement{
 		margin-top: 39%;
 	}
 	@include MQ(S) {
+		margin-top: 31%;
 		h1{
 			@include Cinzel(33px);
 		}
-		margin-top: 68%;
 	}
 
 }

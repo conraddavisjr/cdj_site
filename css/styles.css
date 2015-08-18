@@ -215,13 +215,17 @@ header {
   font-size: 50px;
   color: white;
   text-align: center;
+  white-space: nowrap;
   z-index: 6; }
   .siteTitle a {
     cursor: pointer;
     color: white; }
   @media only screen and (max-width: 768px) {
     .siteTitle {
-      font-size: 33px; } }
+      font-size: 27px; } }
+  @media only screen and (max-width: 480px) {
+    .siteTitle {
+      font-size: 20px; } }
 
 @media only screen and (max-width: 768px) {
   .intro-veil {
@@ -258,7 +262,7 @@ article.opening-statement {
       margin-top: 39%; } }
   @media only screen and (max-width: 480px) {
     article.opening-statement {
-      margin-top: 68%; }
+      margin-top: 31%; }
       article.opening-statement h1 {
         font-family: 'Cinzel', serif;
         font-size: 33px; } }

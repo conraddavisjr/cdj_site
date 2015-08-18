@@ -8,7 +8,8 @@ jQuery(function($){
 		},
 		setupElements: function() {
 			//vars
-			
+			this.headerHeight = 80;
+			this.leftValue = '50%';
 			//elements
 			this.introTitleCover = $('#site-intro .introTitleCover');
 			this.introSubTitleCover = $('#site-intro .introSubTitleCover');
@@ -42,8 +43,14 @@ jQuery(function($){
 			    return w > min && w <= max
 			}
 			// Usage
+			if (isBreakPoint(768)) { 
+				main.headerHeight = 55;
+			} // Breakpoint between 768
 			if (isBreakPoint(480)) { 
-				alert("SUCCESS");
+				main.headerHeight = 55;
+			} // Breakpoint between 320 and 480
+			if (isBreakPoint(320)) { 
+				main.headerHeight = 45;
 			} // Breakpoint between 320 and 480
 		},
 		
@@ -104,7 +111,7 @@ jQuery(function($){
 				'opacity' : '0',
 				'transform' : 'scale(2)',
 				'top'  : titleTopPos,
-				'left' :  '50%',
+				'left' :  main.leftValue,
 				'marginLeft' : titleLeftPos
 			});
 
@@ -160,7 +167,7 @@ jQuery(function($){
 			.to(main.introSubTitleCover, 0, {display: 'none'}, "-=0.7")
 			.to($('.header-spacer'), 0, {display:'block'})
 			.to($('.header-spacer'), 0, {display:'block'})
-			.to($('.intro-veil'), 1, {height: 80}, "-=1")
+			.to($('.intro-veil'), 1, {height: main.headerHeight}, "-=1")
 			//animate the Navigation into frame
 			.to($('nav'), 1, {bottom:0, opacity:1})
 		},
