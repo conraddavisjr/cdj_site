@@ -35,7 +35,7 @@
 	<a href="#0" class="member-bio-close">Close</a> <!-- close the author bio section -->
 	<nav>
 		<ul>
-			<li><a href="#about">ABOUT</a></li>
+			<li><a id="about-btn" href="#about">ABOUT</a></li>
 			<li><a href="#work">WORK</a></li>
 			<!--<li>LAB</li>-->
 			<li><a class="contact-btn" href="#contact">CONTACT</a></li>
