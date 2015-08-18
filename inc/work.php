@@ -12,7 +12,7 @@
 			<img src="img/work-site-sts.jpg" alt="Straight Talk Switch"/>
 			<figcaption>
 				<h2><span>Straight Talk Switch</span></h2>
-				<p>Tracfone's premier phone service</p>
+				<p>Tracfone's premier phone service.</p>
 				<a href="#">View more</a>
 			</figcaption>			
 		</figure>
@@ -25,26 +25,26 @@
 			</figcaption>			
 		</figure>
 		<figure class="work-bucket" data-type="panel-6">
-			<img src="img/13.jpg" alt="img13"/>
+			<img src="img/work-site-3syll.jpg" alt="3 Syllable Boston"/>
 			<figcaption>
-				<h2>Free <span>Sarah</span></h2>
-				<p>Sarah likes to watch clouds. She's quite depressed.</p>
+				<h2><span>3 Syllable Boston</span></h2>
+				<p>A partnership that lead to a Boston-wide mobile campaign.</p>
 				<a href="#">View more</a>
 			</figcaption>			
 		</figure>
 		<figure class="work-bucket" data-type="panel-7">
-			<img src="img/20.jpg" alt="img20"/>
+			<img src="img/work-site-rdi.jpg" alt="Rubic Design Interactive"/>
 			<figcaption>
-				<h2>Free <span>Sarah</span></h2>
-				<p>Sarah likes to watch clouds. She's quite depressed.</p>
+				<h2><span>Rubic Design Interactive</span></h2>
+				<p>Company website redesign on the Drupal platform.</p>
 				<a href="#">View more</a>
 			</figcaption>			
 		</figure>
 		<figure class="work-bucket" data-type="panel-8">
-			<img src="img/13.jpg" alt="img13"/>
+			<img src="img/work-site-ver.jpg" alt="Veracode"/>
 			<figcaption>
-				<h2>Free <span>Sarah</span></h2>
-				<p>Sarah likes to watch clouds. She's quite depressed.</p>
+				<h2><span>Veracode</span></h2>
+				<p>Responsive CMS for a large corporation.</p>
 				<a href="#">View more</a>
 			</figcaption>			
 		</figure>

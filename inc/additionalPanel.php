@@ -373,63 +373,27 @@ Work Page panels
 </div> <!-- info-panel -->
 <div class="info-panel panel-6">
     <div class="info-panel-pict">
-        <img src="img/about-profile.jpg" alt="Bio image">
+        <img src="img/work-site-3syll.jpg" alt="3 Syllable Boston">
     </div> <!-- info-panel-pict -->
 
     <div class="bio-content">
-        <h2>panel-6</h2>
-        <p>Since I was six years old, I've been around computers and gadgets. I was the child who meddled with devices and toys; 
-        piecing them apart and seeing what they were made of. I wanted to know what made things work, why it was attractive to me,
-        and how I could improve it. I was naturally drawn to fine arts, performance, and presentation. As a child I drew, sang, 
-        played piano, designed presentations on my PC and made video games for my younger brother and I. I enjoyed impressing people
-        with beautiful art.</p>                
-        
-        <p>I love presentation, and websites are among the epitome of presentations. When I build websites,
-        I don't think about the site, I think about the people I'm building it for. Websites are, as I like to think of them, human 
-        interaction and I apply the interactions from my life to my work. Let's take design into consideration. When you see something 
-        you are attracted to for the first time, you're not immediately evaluating its traits, initially, you are simply indulged 
-        in the attraction; it's intuitive and it's natural; that is beauty. I strive to incorporate these qualities and invoke these 
-        emotions into my design.</p>
-
-        <p>Development is the "electricity" of our industry, its everywhere and involved in practically everything we do. It runs 24/7 behind the curtains and works until the moment it doesn't; our lights turn out, and everything comes to a hault while we suddenly realize how many things it was powering. Solid development works without you noticing. It's rapid, problem-free, and graceful; those are the qualities I focus on when I develop. </p>
-         
-        <p>Great design draws us in, it makes things useable; great development keeps us there, it makes things
-        useful. The marriage of the two creates effective technology and I absolutely love when they come together.</p>
-
-        <p>I love learning new things, this passion led me to develop quite a few hobbies and interests like dancing, playing piano, exercise, singing (shower quality), and trying something new quite often. </p>
+        <h2>3 Syllable Boston</h2>
+        <p>Agency PJA labs partnered with College Bound Dorchester to launch a mobile game campaign to "bring goodwill and education together in a fun, engaging way for everyone to enjoy". I lead the front-end development of the project, managing layout, styles, and interactivity.</p>
     </div> <!-- bio-content -->
 </div> <!-- info-panel -->
 <div class="info-panel panel-7">
     <div class="info-panel-pict">
-        <img src="img/about-profile.jpg" alt="Bio image">
+        <img src="img/work-site-rdi.jpg" alt="Rubic Design Interactive">
     </div> <!-- info-panel-pict -->
 
     <div class="bio-content">
-        <h2>panel-7</h2>
-        <p>Since I was six years old, I've been around computers and gadgets. I was the child who meddled with devices and toys; 
-        piecing them apart and seeing what they were made of. I wanted to know what made things work, why it was attractive to me,
-        and how I could improve it. I was naturally drawn to fine arts, performance, and presentation. As a child I drew, sang, 
-        played piano, designed presentations on my PC and made video games for my younger brother and I. I enjoyed impressing people
-        with beautiful art.</p>                
-        
-        <p>I love presentation, and websites are among the epitome of presentations. When I build websites,
-        I don't think about the site, I think about the people I'm building it for. Websites are, as I like to think of them, human 
-        interaction and I apply the interactions from my life to my work. Let's take design into consideration. When you see something 
-        you are attracted to for the first time, you're not immediately evaluating its traits, initially, you are simply indulged 
-        in the attraction; it's intuitive and it's natural; that is beauty. I strive to incorporate these qualities and invoke these 
-        emotions into my design.</p>
-
-        <p>Development is the "electricity" of our industry, its everywhere and involved in practically everything we do. It runs 24/7 behind the curtains and works until the moment it doesn't; our lights turn out, and everything comes to a hault while we suddenly realize how many things it was powering. Solid development works without you noticing. It's rapid, problem-free, and graceful; those are the qualities I focus on when I develop. </p>
-         
-        <p>Great design draws us in, it makes things useable; great development keeps us there, it makes things
-        useful. The marriage of the two creates effective technology and I absolutely love when they come together.</p>
-
-        <p>I love learning new things, this passion led me to develop quite a few hobbies and interests like dancing, playing piano, exercise, singing (shower quality), and trying something new quite often. </p>
+        <h2>Rubic Design Interactive</h2>
+        <p>RDI was ready for a website redesign. I took part in planning the user experience, and lead the responsive theme development of the renewed site on the Drupal platform.</p>     
     </div> <!-- bio-content -->
 </div> <!-- info-panel -->
 <div class="info-panel panel-8">
     <div class="info-panel-pict">
-        <img src="img/about-profile.jpg" alt="Bio image">
+        <img src="img/work-site-ver.jpg" alt="Veracode">
     </div> <!-- info-panel-pict -->
 
     <div class="bio-content">

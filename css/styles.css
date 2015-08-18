@@ -526,7 +526,7 @@ summary {
   z-index: 101;
   /* smooth scrolling on mobile phones and tablets */
   -webkit-overflow-scrolling: touch;
-  background: #5c4b51;
+  background: #5D5D5D;
   /* this how we move the author bio section off the canvas */
   -webkit-transform: translateX(270px);
   -moz-transform: translateX(270px);
@@ -559,8 +559,8 @@ summary {
   left: 0;
   width: 100%;
   height: 80px;
-  background: -webkit-linear-gradient(bottom, #5c4b51, rgba(92, 75, 81, 0));
-  background: linear-gradient(to top, #5c4b51, rgba(92, 75, 81, 0)); }
+  background: -webkit-linear-gradient(bottom, #5d5d5d, rgba(92, 75, 81, 0));
+  background: linear-gradient(to top, #5d5d5d, rgba(92, 75, 81, 0)); }
 
 .no-cssgradients .info-panel .info-panel-pict::after {
   display: none; }
@@ -674,7 +674,7 @@ summary {
   width: 100%;
   height: 2000%;
   height: 100vh;
-  background: rgba(138, 163, 190, 0.95);
+  background: rgba(6, 6, 6, 0.95);
   cursor: pointer;
   display: none;
   z-index: 102; }
