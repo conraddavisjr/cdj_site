@@ -270,6 +270,14 @@ summary {
 	-webkit-transition-duration: 0.3s;
 	-moz-transition-duration: 0.3s;
 	transition-duration: 0.3s;
+	@include MQ(S){
+		width:80%;
+		-webkit-transform: translateX(100%);
+		-moz-transform: translateX(100%);
+		-ms-transform: translateX(100%);
+		-o-transform: translateX(100%);
+		transform: translateX(100%);
+	}
 }
 .info-panel.slide-in {
 	/* the author bio section slides in when the user clicks on the team panel picture */
@@ -303,6 +311,9 @@ summary {
 .info-panel .bio-content {
 	padding: 1em;
 	color: #FFF;
+	@include MQ(S){
+		padding: 1em 1em 4em 1em;
+	}
 }
 .info-panel .bio-content h2 {
  @include Ubuntu(20px);
