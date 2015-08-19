@@ -109,6 +109,10 @@ Modules - reusable parts of our design
     .nav-hover-overlay, .page-marquee {
       background-position: 0% 17%; } }
 
+@media only screen and (max-width: 480px) {
+  .nav-hover-overlay {
+    display: none !important; } }
+
 .page-marquee {
   opacity: 0.5;
   background-color: transparent;
@@ -143,6 +147,7 @@ nav {
       display: inline-block;
       width: 33%;
       padding: 13px 0;
+      font-weight: 600;
       text-align: center;
       font-family: 'Cinzel', serif;
       font-size: 32px; }
@@ -175,6 +180,7 @@ nav {
 #site-intro .sub-title {
   position: absolute;
   display: none;
+  font-style: italic;
   font-size: 30px;
   color: #6b6a6a;
   opacity: 0;
@@ -221,6 +227,7 @@ header {
   font-size: 50px;
   color: white;
   text-align: center;
+  font-weight: 600;
   white-space: nowrap;
   z-index: 6; }
   .siteTitle a {
@@ -256,10 +263,12 @@ article.opening-statement {
   margin-top: 18%; }
   article.opening-statement h1 {
     font-family: 'Cinzel', serif;
-    font-size: 35px; }
+    font-size: 35px;
+    font-weight: 600; }
   article.opening-statement h2 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 35px; }
+    font-size: 35px;
+    font-weight: 100; }
   @media only screen and (max-width: 1300px) {
     article.opening-statement {
       margin-top: 23%; } }
@@ -1875,7 +1884,8 @@ div.cs-skin-boxes:focus > span {
 .cs-skin-boxes.cs-active .cs-options li {
   opacity: 1;
   -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1); }
+  transform: scale3d(1, 1, 1);
+  border-radius: 1%; }
 
 .cs-skin-boxes.cs-active .cs-options li:nth-child(2) {
   -webkit-transition-delay: 0.01s;

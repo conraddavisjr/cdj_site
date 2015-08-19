@@ -118,6 +118,11 @@ Modules - reusable parts of our design
     background-position: 0% 17%;
   }
 }
+.nav-hover-overlay{
+  @include MQ(S){
+    display: none !important;
+  }
+}
 .page-marquee{
   opacity: 0.5;
   background-color:transparent;

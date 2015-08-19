@@ -19,6 +19,7 @@ header{
 	@include Cinzel(50px);
 	color: white;
 	text-align: center;
+	font-weight: 600;
 	white-space: nowrap;
 	z-index: 6;
 	a{
@@ -57,9 +58,11 @@ article.opening-statement{
 	margin-top: 18%;
 	h1{
 		@include Cinzel(35px);
+		font-weight: 600;
 	}
 	h2{
 		@include Ubuntu(35px);
+		font-weight: 100;
 	}
 	@include MQ(XL) {
 		margin-top: 23%;

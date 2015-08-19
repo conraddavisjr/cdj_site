@@ -217,7 +217,7 @@
                     <figcaption>Sauce Labs</figcaption>
             </figure>
             <figure>
-                    <img src="img/icons/Parallels.png" alt="Parallels" />
+                    <img src="img/icons/parallels.png" alt="Parallels" />
                     <figcaption>Parallels</figcaption>
             </figure>
             <figure>
@@ -299,7 +299,7 @@
                     <figcaption>Custom CMS</figcaption>
             </figure> 
             <figure>
-                    <img src="img/icons/bootStrap.png" alt="BootStrap" />
+                    <img src="img/icons/bootstrap.png" alt="BootStrap" />
                     <figcaption>BootStrap</figcaption>
             </figure>  
             <figure>
