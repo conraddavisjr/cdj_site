@@ -77,6 +77,21 @@ p {
   text-decoration: none;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("Ubuntu-Bold.ttf");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("Ubuntu-R-webfont.eot");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("Ubuntu-Light.eot");
+  font-weight: 100;
+  font-style: normal; }
 img {
   max-width: 100%; }
 
@@ -1469,7 +1484,8 @@ button.fs-continue {
 
 .fs-form-overview .fs-submit {
   border-color: #232529;
-  color: #232529; }
+  color: #232529;
+  margin-bottom: 6em; }
 
 button.fs-continue {
   position: absolute;
