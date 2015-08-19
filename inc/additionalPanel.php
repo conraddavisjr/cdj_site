@@ -11,7 +11,7 @@
             <h4>Part-time: Freelance Developer | Designer | UX</h4>
             <p>Work closely with clients, to help achieve their objectives using the web, video, and print. Work through the full life of the project through all aspects of its development including strategy, accounts, project management, UX, design, development, social media, analytics, and user testing.</p>
             <h4>Newest Endeavour: Native App Development (Android).</h4>
-            <p>I'm betting that the apps + website combination will have a huge future; I'm gearing up for it.</p>
+            <p>I'm betting that the apps + website package will have a huge future; I'm gearing up for it.</p>
             <h4>Current infatuation: The mobile world and the Internet of things... and coffee.</h4>
         </summary>
     </div> <!-- bio-content -->

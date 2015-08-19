@@ -1,0 +1,257 @@
+.dgmSite{
+	/*Phase 1 */
+	.site-indicator{
+		color: rgb(112, 161, 249);
+	}
+	h2{
+		margin: 80px 0 50px 0;
+		font-size: 40px;
+		text-align: center;
+		color: rgb(205, 205, 205);
+	}
+	h3{
+		font-size: 1.3em;
+	  	text-shadow: 0.5px 0.5px 8px #000;
+	  	text-align: center;
+		.work-story-services{
+			color:#ee9d0f;
+		}
+		.work-story-visit-site{
+			margin-left: 10px;
+			font-size: 1em;
+			color: #f90;
+		}
+	}
+	 p{
+		margin: 70px 0 60px 0;
+		line-height: 25px;
+		font-size: 1.02em;
+	}
+
+
+	//CMS presentation
+	#dgmPBegin{
+		position: relative;
+		width:100%;
+		height:100%;
+		background:black;
+		background:rgba(0,0,0,0.98);
+		z-index: 10;
+		h3{
+			padding-top: 35px;
+			text-align: center;
+			font-size: 25px;
+			color:white;
+		}
+		.find-out{
+			margin:0 auto;
+			width: 35%;
+  			min-width: 288px;
+			text-align: center;
+			cursor: pointer;
+			p{
+				float: left;
+				font-size: 45px;
+				color: #ef972f;
+			}
+			.dgmPlayBtnStyle{
+				position: relative;
+				top: 40px;
+				margin-left: 20px;
+				width: 103px;
+				height: 90px;
+				float: left;
+				text-indent: -9000px;
+				background-size: contain;
+				background: url("../img/dgm-cms-play.png");
+				background-repeat: no-repeat;
+			}
+		}
+	}
+	#dgm-center-console{
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		width:68%;
+		z-index: 3;
+		.overlay-cover{
+			position:absolute;
+			height:100%;
+			width:100%;
+			background:#000;
+			background:rgba(0,0,0,0.9);
+			z-index: 6;
+		}
+		.base{
+			position: absolute;
+			bottom: 0px;
+			width: 100%;
+			height: 91%;
+			background: url("../img/dgm-center-console.png") no-repeat;
+			z-index: 4;
+		}
+		.dgm-cms-bg{
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:74.5%;
+			border:0px dashed red;
+			background:url('../img/dgm-cms-bg-default.jpg') no-repeat;
+			z-index: 3;
+			transition: 1s;
+		}
+		.photo-gallery{
+			position: absolute;
+			top: 54%;
+			right: 12%;
+			border:0px dashed red;
+			height: 55px;
+			width: 105px;
+			background-repeat:no-repeat;
+			z-index: 3;
+			transition: 1s;
+		}
+	}
+	.dgm-cms-sidebar{
+		position:absolute;
+		top:0;
+		left:0;
+		width:30%;
+		height:100%;
+		background:white;
+		background-image:none;
+		z-index: 4;
+		transition: 1s;
+		p{
+			opacity: 0;
+			color: black;
+ 			padding: 0 0 0 10%;
+		}
+	}
+	.location-pre{
+		position: absolute;
+  		top: 0;
+		opacity: 0;
+		width:100%;
+		height: 100%;
+		background:black;
+		background:rgba(0,0,0,0.97);
+		background-repeat: no-repeat;
+		z-index: 1;
+		p{
+			margin: 100px 0 10px 0;
+			font-size: 18px;
+			text-align:center;
+			color:white;
+		}
+		p.easy{
+			margin: 20px 0 10px 0;
+			color:green;
+			font-size:30px;
+		}
+	}
+	#dgmPEnd{
+		position: absolute;
+		top:0;
+		opacity: 0;
+		width:100%;
+		height: 100%;
+		background:black;
+		background:rgba(0,0,0,1);
+		z-index: 1;
+		h3{
+  			padding-top: 35px;
+		}
+		.replay{
+			.dgmRestartBtn{
+			    margin-top: 45px;
+			    text-align: center;
+			    color: #f90;
+			    font-size: 45px;
+			}
+			p{
+		    	text-align: center;
+				margin-top: 120px;
+				color: rgb(128, 128, 128);
+		    }
+		}
+	}
+	/*Phase 1 (END)*/
+
+
+	/*Phase 2*/
+
+	#dgmPhase2{
+		position:relative;
+		padding-top: $top-distance;
+		h4{
+			font-size: 40px;
+		    text-align: left;
+		    margin-bottom: 40px;
+		}
+		.description{
+			margin: 5px 0 20px 0;
+			font-size: 18px;
+		}
+		p{
+			margin: 5px 0 50px 0;
+			line-height: 22px;
+			font-size: 16px;
+			b{
+				font-size: 18px;
+			}
+			span{
+				color:#0FB3EE;
+			}
+		}
+		div{
+			position: relative;
+			float: left;
+			background-size:contain !important;
+			background-repeat:no-repeat;
+			transition: 0.5s;
+		}
+		.desktop{
+			top:-1000px;
+			left:-1000px;
+			width:45%;
+			height:300px;
+			background:url('../img/dgm-responsive-desktop.png') no-repeat;
+		}
+		.tablet{
+			top:-1000px;
+			right:-1000px;
+			margin-left: 6%;
+	  		width: 29%;
+	  		height: 265px;
+			background:url('../img/dgm-responsive-tablet.png') no-repeat;
+		}
+		.phone{
+			clear: both;
+			left:-1000px;
+			bottom:-1000px;
+			margin: 7% 0 0 17.5%;
+			width: 10%;
+			height: 165px;
+			background:url('../img/dgm-responsive-mobile.png') no-repeat;
+		}
+		.laptop{
+			left:-1000px;
+			bottom:-1000px;
+			margin: 2% 0 0 10%;
+		    width: 45%;
+		    height: 210px;
+			background:url('../img/dgm-responsive-laptop.png') no-repeat;
+		}
+		.dgm-p2-in{
+			.desktop, .tablet, .phone, .laptop{
+				top:0; right:0; bottom:0; left:0;
+			}
+		}
+	}
+	/*Phase 2 (END)*/
+}
+
+/*Final phase CTA*/
