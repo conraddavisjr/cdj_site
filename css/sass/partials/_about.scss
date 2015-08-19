@@ -42,64 +42,92 @@ main.slide-out {
 
 @media only screen and (min-width: 1200px) {
 main.slide-out {
-	-webkit-transform: translateX(-800px);
-	-moz-transform: translateX(-800px);
-	-ms-transform: translateX(-800px);
-	-o-transform: translateX(-800px);
-	transform: translateX(-800px);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 }
 .section {
 	padding: 2em 0;
 	text-align: center;
+	@include MQ(M) {
+		padding: 5em 0;
+	}
 }
 .section .container {
 	/* this modifies the .container default max-width */
 	max-width: 768px;
 }
 .section h2 {
- @include Ubuntu(20px);
+ @include Ubuntu(45px);
 	font-weight: bold;
 	text-transform: uppercase;
-	margin-bottom: 1em;
-	font-size: 20px;
-	font-size: 1.25rem;
+	margin-bottom: 0.3em;
+	@include MQ(M) {
+		font-size: 21px;
+	}
 }
 .section p {
 	line-height: 1.4;
+	@include MQ(M) {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
 }
 
 @media only screen and (min-width: 768px) {
-.section {
-	padding: 4em;
-}
-.section p {
-	line-height: 1.6;
-}
+	.section {
+		padding: 14em 4em 8em 4em;
+	}
+	.section p {
+		line-height: 1.6;
+		width: 100%;
+	    max-width: 610px;
+	    margin: 0 auto 20px auto;
+	}
 }
 
 @media only screen and (min-width: 1200px) {
 .section {
-	padding: 6em;
+	padding: 12em 6em 10em 6em;
 }
 .section h2 {
-	margin-bottom: 2em;
+	margin-bottom: 0.2em;
 }
 .section p {
-	line-height: 1.8;
+	line-height: 1.3;
 	font-size: 18px;
+	width: 100%;
+	color:#797979;
+	max-width: 840px;
 	font-size: 1.125rem;
+	&.about-subtitle{
+		color:#6F6F6F;
+		max-width: 520px;
+		font-style:italic;
+	}
 }
 }
 #about {
 	display:none;
+	overflow-y:scroll;
 	background: #fff;
+	-webkit-transform: translateX(16px);
+	-moz-transform: translateX(16px);
+	transform: translateX(16px);
+	@include MQ(M) {
+		-webkit-transform: translateX(0px);
+	    -moz-transform: translateX(0px);
+	    transform: translateX(0px);
+	}
 }
 #about .container {
-	max-width: 1200px;
+	max-width: 1400px;
 }
 #about h2 {
-	color: #1a2f2a;
+	color: #DCDCDC;
 }
 #about li {
 	margin-bottom: 2em;
@@ -108,9 +136,16 @@ main.slide-out {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
+	@include MQ(M) {
+		width: 90%;
+    	margin: 0 auto;
+	}
 }
 .no-touch #about li:hover {
 	box-shadow: 0 0 10px rgba(92, 75, 81, 0.3);
+}
+#about li:hover .img-overlay {
+	opacity: 1;
 }
 .no-touch #about li:hover .img-overlay {
 	opacity: 1;
@@ -149,18 +184,21 @@ main.slide-out {
 	transform: translateX(-50%) translateY(-50%);
 	color: #FFF;
 }
-#about .member-info {
+#about .panel-info {
 	height: 80px;
 	background: #FFF;
 	text-align: center;
- @include Ubuntu(20px);
+ 	@include Ubuntu(20px);
 	font-weight: bold;
 	padding-top: 20px;
 	border-radius: 0 0 .25em .25em;
+	@include MQ(L){
+		font-size: 18px;
+	}
 }
-#about .member-info span {
+#about .panel-info span {
 	display: block;
- @include Ubuntu(20px);
+ 	@include Ubuntu(20px);
 	font-weight: normal;
 	color: #999999;
 	font-size: 14px;
@@ -168,25 +206,58 @@ main.slide-out {
 	margin-top: .5em;
 }
 
+summary {
+	max-width: 840px;
+	margin: 47px auto 70px auto;
+	text-align: left;
+
+	h4{
+		@include Ubuntu(20px);
+		font-weight:500;
+		color:#7B868C;
+	}
+}
+.skillIcons{
+	margin-bottom:25px;
+	figure{
+		margin: 15px;
+		display: inline-block;
+		width:65px;
+		figcaption{
+			margin-top: 5px;
+			font-size: 12px;
+    		text-align: center;
+		}
+	}
+	img{
+		width:auto;
+	}
+	@include MQ(S){
+		figure{
+			width: 75px;
+		}
+	}
+}
+
 @media only screen and (min-width: 768px) {
 #about li {
-	width: 46%;
+	width: 29%;
 	max-width: 400px;
 	margin: 0 1.5%;
 	display: inline-block;
 }
 }
-.member-bio {
+.info-panel {
 	position: fixed;
 	top: 0;
 	right: 0;
 	width: 270px;
 	height: 100%;
 	overflow-y: auto;
+	z-index: 101;
 	/* smooth scrolling on mobile phones and tablets */
 	-webkit-overflow-scrolling: touch;
-	background: #5c4b51;
-	z-index: 1;
+	background: #5D5D5D;
 	/* this how we move the author bio section off the canvas */
 	-webkit-transform: translateX(270px);
 	-moz-transform: translateX(270px);
@@ -199,19 +270,27 @@ main.slide-out {
 	-webkit-transition-duration: 0.3s;
 	-moz-transition-duration: 0.3s;
 	transition-duration: 0.3s;
+	@include MQ(S){
+		width:80%;
+		-webkit-transform: translateX(100%);
+		-moz-transform: translateX(100%);
+		-ms-transform: translateX(100%);
+		-o-transform: translateX(100%);
+		transform: translateX(100%);
+	}
 }
-.member-bio.slide-in {
-	/* the author bio section slides in when the user clicks on the team member picture */
+.info-panel.slide-in {
+	/* the author bio section slides in when the user clicks on the team panel picture */
 	-webkit-transform: translateX(0);
 	-moz-transform: translateX(0);
 	-ms-transform: translateX(0);
 	-o-transform: translateX(0);
 	transform: translateX(0);
 }
-.member-bio .member-bio-pict {
+.info-panel .info-panel-pict {
 	position: relative;
 }
-.member-bio .member-bio-pict::after {
+.info-panel .info-panel-pict::after {
 	/* gradient at the bottom of the image - same color of the background of the section */
 	content: '';
 	position: absolute;
@@ -219,21 +298,24 @@ main.slide-out {
 	left: 0;
 	width: 100%;
 	height: 80px;
-	background: -webkit-linear-gradient( bottom, #5c4b51, rgba(92, 75, 81, 0));
-	background: linear-gradient(to top, #5c4b51, rgba(92, 75, 81, 0));
+	background: -webkit-linear-gradient( bottom, #5D5D5D, rgba(92, 75, 81, 0));
+	background: linear-gradient(to top, #5D5D5D, rgba(92, 75, 81, 0));
 }
-.no-cssgradients .member-bio .member-bio-pict::after {
+.no-cssgradients .info-panel .info-panel-pict::after {
 	display: none;
 }
-.member-bio img {
+.info-panel img {
 	width: 100%;
 	display: block;
 }
-.member-bio .bio-content {
+.info-panel .bio-content {
 	padding: 1em;
 	color: #FFF;
+	@include MQ(S){
+		padding: 1em 1em 4em 1em;
+	}
 }
-.member-bio .bio-content h1 {
+.info-panel .bio-content h2 {
  @include Ubuntu(20px);
 	font-weight: bold;
 	text-transform: uppercase;
@@ -241,16 +323,21 @@ main.slide-out {
 	font-size: 20px;
 	font-size: 1.25rem;
 }
-.member-bio .bio-content p {
+.info-panel .bio-content p {
 	font-size: 14px;
 	font-size: 0.875rem;
 	margin: 1em 0;
 	line-height: 1.4;
 	color: #d7cfd2;
+	a{
+		color:white;
+		font-weight: bold;
+		text-decoration: underline;
+	}
 }
 
 @media only screen and (min-width: 768px) {
-.member-bio {
+.info-panel {
 	width: 600px;
 	-webkit-transform: translateX(600px);
 	-moz-transform: translateX(600px);
@@ -258,29 +345,29 @@ main.slide-out {
 	-o-transform: translateX(600px);
 	transform: translateX(600px);
 }
-.member-bio .bio-content {
+.info-panel .bio-content {
 	padding: 2em;
 }
-.member-bio .bio-content p {
+.info-panel .bio-content p {
 	line-height: 1.6;
-	margin: 2em 0;
+	margin: 0.5em 0 2em 0;
 }
 }
 
 @media only screen and (min-width: 1200px) {
-.member-bio {
-	width: 800px;
-	-webkit-transform: translateX(800px);
-	-moz-transform: translateX(800px);
-	-ms-transform: translateX(800px);
-	-o-transform: translateX(800px);
-	transform: translateX(800px);
+.info-panel {
+	width: 50%;
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	transform: translateX(100%);
 }
-.member-bio .member-bio-pict::after {
+.info-panel .info-panel-pict::after {
 	height: 150px;
 }
-.member-bio .bio-content {
-	padding: 4em;
+.info-panel .bio-content {
+	padding: 0em 3em;
 	/* we move the content up so the title is over the color gradient */
 	-webkit-transform: translateY(-80px);
 	-moz-transform: translateY(-80px);
@@ -288,15 +375,19 @@ main.slide-out {
 	-o-transform: translateY(-80px);
 	transform: translateY(-80px);
 }
-.member-bio .bio-content h1 {
+.info-panel .bio-content h2 {
 	font-size: 40px;
 	font-size: 2.5rem;
 }
-.member-bio .bio-content p {
+.info-panel .bio-content h3 {
+	font-size: 30px;
+    padding-top: 20px;
+}
+.info-panel .bio-content p {
 	font-size: 16px;
 	font-size: 1rem;
 }
-.no-cssgradients .member-bio .bio-content {
+.no-cssgradients .info-panel .bio-content {
 	-webkit-transform: translateY(0);
 	-moz-transform: translateY(0);
 	-ms-transform: translateY(0);
@@ -304,7 +395,7 @@ main.slide-out {
 	transform: translateY(0);
 }
 }
-.member-bio-close {
+.info-panel-close {
 	width: 32px;
 	height: 32px;
 	overflow: hidden;
@@ -317,7 +408,7 @@ main.slide-out {
 	z-index: 3;
 	display: none;
 }
-.member-bio-close.is-visible {
+.info-panel-close.is-visible {
 	display: block;
 	-webkit-animation: move-in 0.8s;
 	-moz-animation: move-in 0.8s;
@@ -325,20 +416,23 @@ main.slide-out {
 }
 
 @media only screen and (min-width: 1200px) {
-.member-bio-close {
+.info-panel-close {
 	right: 20px;
-	top: 20px;
+	top: 80px;
+	z-index:101;
 }
 }
 .overlay {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
-	background: rgba(138, 190, 178, 0.8);
+	height: 2000%;
+	height:100vh;
+	background: rgba(6, 6, 6, 0.95);
 	cursor: pointer;
 	display: none;
+	z-index: 102;
 }
 
 /* -------------------------------- 

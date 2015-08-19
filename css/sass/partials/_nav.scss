@@ -1,0 +1,44 @@
+nav{
+    position: fixed;
+    opacity: 0;
+    width: 100%;
+    border-top: solid 1px black;
+    background-color: rgba(255,255,255,0.9);
+    z-index: 110;
+    ul{
+    	display: block;
+    	margin: 0 auto;
+    	width:auto;
+    	max-width: none;
+    	li{
+    		display: inline-block;
+    		width:33%;
+    		padding: 13px 0;
+            font-weight: 600;
+    		text-align: center;
+    		@include Cinzel(32px);
+            a:hover{
+                color:black;
+            }
+    	}
+    }
+    .nav-active{
+        color: black;
+        text-decoration: overline;
+    }
+    @include MQ(L) {
+       ul{
+            li{
+                width:32%;
+                @include Cinzel(28px);
+            }
+        }
+    }
+    @include MQ(S) {
+       ul{
+            li{
+                @include Cinzel(19px);
+            }
+        }
+    }
+}

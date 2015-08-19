@@ -1,0 +1,202 @@
+header{
+	position: relative;
+	display:none;
+	padding: 15px 0;
+	height:auto;
+	@include Cinzel(50px);
+	background-color:black;
+	background-color:rgba(0,0,0,0.95);
+	z-index:102 !important;
+}
+.header-spacer{
+	display:none;
+	width:100%;
+	height: 80px;
+}
+.siteTitle{
+	display: none;
+	width:50%;
+	@include Cinzel(50px);
+	color: white;
+	text-align: center;
+	font-weight: 600;
+	white-space: nowrap;
+	z-index: 6;
+	a{
+		cursor:pointer;
+		color: white;
+	}
+	@include MQ(M) {
+		font-size: 27px;
+	}
+	@include MQ(S) {
+		font-size: 17.5px;
+	}
+}
+.intro-veil{
+	@include MQ(M) {
+		font-size: 33px;
+	}
+}
+
+#home-page{
+	position: fixed;
+	top:0;
+	margin: 0 auto;
+    padding-top: 100px;
+	height:100%;
+	width:100%;
+	background-color:white;
+}
+#about{
+	position: relative;
+	top: 800px;
+	width: 100%;
+	height: 100vh;
+}
+article.opening-statement{
+	margin-top: 18%;
+	h1{
+		@include Cinzel(35px);
+		font-weight: 600;
+	}
+	h2{
+		@include Ubuntu(35px);
+		font-weight: 100;
+	}
+	@include MQ(XL) {
+		margin-top: 23%;
+	}
+	@include MQ(M) {
+		margin-top: 39%;
+	}
+	@include MQ(S) {
+		margin-top: 31%;
+		h1{
+			@include Cinzel(33px);
+		}
+	}
+
+}
+
+/* -------------------------------- 
+
+Home page clip 
+
+-------------------------------- */
+
+
+.title {
+	position: relative;
+	height: 160px;
+	line-height: 230px;
+	text-align: center;
+
+	h1 {
+		font-size: 2.4rem;
+		font-weight: 700;
+	}
+
+	@include MQ(M) {
+		line-height: 250px;
+	}
+
+	@include MQ(L) {
+		height: 200px;
+		line-height: 300px;
+
+		h1 {
+			font-size: 3rem;
+		}
+	}
+}
+
+.intro {
+	width: 90%;
+	text-align: center;
+}
+
+.intro {
+	margin: 4em auto;
+
+	@include MQ(M) {
+		margin: 5em auto;
+	}
+
+	@include MQ(L) {
+		margin: 6em auto;
+	}
+}
+
+.headline {
+	font-size: 3rem;
+	line-height: 1.2;
+
+	@include MQ(M) {
+		font-size: 4.4rem;
+		font-weight: 300;
+	}
+
+	@include MQ(L) {
+		font-size: 6rem;
+	}
+}
+
+.words-wrapper {
+	display: inline-block;
+	position: relative;
+	text-align: left;
+
+	b {
+		display: inline-block;
+		position: absolute;
+		white-space: nowrap;
+		left: 0;
+		top: 0;
+
+		&.is-visible {
+			position: relative;
+		}
+	}
+
+	.no-js & b {
+		opacity: 0;
+		
+		&.is-visible {
+			opacity: 1;
+		}
+
+	}
+}
+
+.headline.clip {
+
+	span {
+		display: inline-block;
+		padding: .2em 0;
+	}
+
+	.words-wrapper {
+		overflow: hidden;
+		vertical-align: top;
+
+		&::after {
+			/* line */
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 2px;
+			height: 100%;
+			background-color: gray;
+		}
+	}
+
+	b {
+		opacity: 0;
+
+		&.is-visible {
+			opacity: 1;
+		}
+	}
+}

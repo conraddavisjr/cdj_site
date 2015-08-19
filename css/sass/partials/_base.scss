@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section, main {
 }
 body {
 	line-height: 1;
+  overflow-x: none;
 }
 ol, ul {
 	list-style: none;
@@ -75,8 +76,31 @@ body {
 }
 
 a {
-  color: #f25f5c;
+  color: #676767;
   text-decoration: none;
+}
+
+p{
+  text-decoration: none;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('Ubuntu-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('Ubuntu-R-webfont.eot');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('Ubuntu-Light.eot');
+  font-weight: 100;
+  font-style: normal;
 }
 
 img {
@@ -99,4 +123,44 @@ Modules - reusable parts of our design
   content: '';
   display: table;
   clear: both;
+}
+
+.nav-hover-overlay, .page-marquee{
+  position: fixed;
+  opacity: 0;
+  height: 100%;
+  width:100%;
+  background-color:black;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  transform: scale(1.3);
+  z-index: 100;
+  @media (min-width:1200px){
+    background-position: 0% 17%;
+  }
+}
+.nav-hover-overlay{
+  @include MQ(S){
+    display: none !important;
+  }
+}
+.page-marquee{
+  opacity: 0.5;
+  background-color:transparent;
+  background-position: -41% 17%;
+  background-size: 120%;
+  @include MQ(S) {
+      background-position: -41% 3%;
+  }
+}
+.contact-btn{
+  background-size:100%;
+}
+.work-btn{
+  background-size:100%;
+}
+.about-btn{
+  background-size:150%;
 }
