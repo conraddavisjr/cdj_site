@@ -28,6 +28,7 @@ jQuery(function($){
 			this.workPage = $('#work');
 			this.contactPage = $('#contact');
 			this.homeLink = $('.siteTitle a');
+			this.workAnimationStyle = 'notMobile';
 			
 		},
 
@@ -51,11 +52,13 @@ jQuery(function($){
 			if (isBreakPoint(480)) { 
 				main.headerHeight = 55;
 				main.pageMarqueeHeight = '90px';
+				main.workAnimationStyle = 'mobile';
 			} // Breakpoint between 320 and 480
 			if (isBreakPoint(320)) { 
 				main.headerHeight = 47.5;
 				main.pageMarqueeHeight = '90px';
-			} // Breakpoint between 320 and 480
+				main.workAnimationStyle = 'mobile';
+			} // 320 and below
 		},
 		
 		introAnimation: function() {
@@ -374,7 +377,17 @@ jQuery(function($){
 			//slide the work page in
 			TweenLite.to(main.workPage, 1, {bottom: '0%', opacity: 1, paddingTop: main.header.height() + 20});
 			//grid buckets drop effect
-			TweenMax.staggerFrom('.work-bucket', 0.6, {top: '-1000px', delay:1}, 0.1);
+			console.log('workAnimationStyle:' + main.workAnimationStyle);
+			switch(main.workAnimationStyle){
+				case 'notMobile' :
+					TweenMax.staggerFrom('.work-bucket', 0.6, {top: '-1000px', delay:1}, 0.1);
+					break;
+				case 'mobile' :
+					TweenMax.from('.work-bucket', 0.8, {top: '-2000px', delay:1}, 0.1);
+					break;
+				default:
+				TweenMax.from('.work-bucket', 0.6, {top: '-1000px', delay:1}, 0.1);
+			}
 		}
 		
 	};
