@@ -3,7 +3,7 @@ nav{
     opacity: 0;
     width: 100%;
     border-top: solid 1px black;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.9);
     z-index: 110;
     ul{
     	display: block;
@@ -21,6 +21,10 @@ nav{
                 color:black;
             }
     	}
+    }
+    .nav-active{
+        color: black;
+        text-decoration: overline;
     }
     @include MQ(L) {
        ul{

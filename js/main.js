@@ -349,6 +349,8 @@ jQuery(function($){
 			 
 			//clear the sliding overlay
 			$('main, .info-panel').removeClass('slide-in slide-out');
+			//remove overlay close buttons
+			$('.info-panel-close').removeClass('is-visible');
 
 			
 			/*About*/

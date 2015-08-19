@@ -143,7 +143,7 @@ Contact Main
 	content: 'Review & Submit';
 	font-weight: 700;
 	font-size: 1.85em;
-	@media MQ(S){
+	@include MQ(S){
 		margin: 2em 0 1em 0;
 	}
 }
@@ -264,7 +264,7 @@ button.fs-continue,
 	padding: 0 5px 1em 0;
 	font-weight: 700;
 	pointer-events: none;
-	@media MQ(S){
+	@include MQ(S){
 		font-size: 20px;
 	}
 }
@@ -942,7 +942,7 @@ input[type=text]::-ms-clear {
 		right: 0;
 		padding: 1.5em 1em 8em 1em;
 		font-size: 1.5em;
-		@media MQ(S){
+		@include MQ(S){
 			padding: 1.5em 1em 19em 1em;
 		}
 	}

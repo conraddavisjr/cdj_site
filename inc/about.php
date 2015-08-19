@@ -12,7 +12,7 @@
 					</figure>
 
 					<div class="panel-info">
-						Check out my Stats <span>Summary</span>
+						Summary <span>Check out my Stats</span>
 					</div> <!-- panel-info -->
 				</a>
 			</li>
@@ -24,7 +24,7 @@
 					</figure>
 
 					<div class="panel-info">
-						A little bit about Me <span>Bio</span>
+						Bio <span>A little bit about Me</span>
 					</div> <!-- panel-info -->
 				</a>
 			</li>
@@ -36,7 +36,7 @@
 					</figure>
 
 					<div class="panel-info">
-						My Toolbox <span>See the skills</span>
+						Skills <span>See what I can do</span>
 					</div> <!-- panel-info -->
 				</a>
 			</li>
