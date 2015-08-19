@@ -143,6 +143,9 @@ Contact Main
 	content: 'Review & Submit';
 	font-weight: 700;
 	font-size: 1.85em;
+	@media MQ(S){
+		margin: 2em 0 1em 0;
+	}
 }
 
 /* Switch view animation (we hide the current view, switch the view class and show it again) */
@@ -261,6 +264,9 @@ button.fs-continue,
 	padding: 0 5px 1em 0;
 	font-weight: 700;
 	pointer-events: none;
+	@media MQ(S){
+		font-size: 20px;
+	}
 }
 
 .fs-form-full .fs-fields > li label[data-info]::after {
@@ -761,7 +767,7 @@ button.fs-continue:hover {
 		top:-40px;
 	}
 	.fs-numbers{
-		top: 130px;
+		top: 110px;
 	}
 	.fs-nav-dots {
 		top: 33%;
@@ -936,6 +942,9 @@ input[type=text]::-ms-clear {
 		right: 0;
 		padding: 1.5em 1em 8em 1em;
 		font-size: 1.5em;
+		@media MQ(S){
+			padding: 1.5em 1em 19em 1em;
+		}
 	}
 
 	.fs-title {
@@ -997,17 +1006,14 @@ input[type=text]::-ms-clear {
 		transform: translate3d(0,0,0);
 	}
 }
-@media(max-width:640px){
-	button.fs-continue{
-		bottom:350px;
-	}
-	.fs-form.fs-form-overview{
-		padding: 4.5em 1em 33em 1em;
-	}
-}
 @include MQ(L){
 	button.fs-continue{
 		bottom:90px;
+	}
+}
+@include MQ(S){
+	button.fs-continue{
+		top:46%;
 	}
 }
 

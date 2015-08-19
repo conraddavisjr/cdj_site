@@ -1,5 +1,4 @@
 <div id="contact">
-    <script src="js/modernizr.custom.js"></script>
     <div class="contact-inner-container">
         <div class="fs-form-wrap" id="fs-form-wrap">
         	<div id="form-messages"></div>
