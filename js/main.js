@@ -210,13 +210,13 @@ jQuery(function($){
 				.done(function(response) {
 					// Make sure that the formMessages div has the 'success' class.
 					$(formMessages).removeClass('error');
-					$(formMessages).addClass('success');
+					//$(formMessages).addClass('success');
 
 					// Set the message text.
 					$(formMessages).text('Thank You!');
 
 					// Animate the Thankyou msg in.
-						//mailFlyOut();
+					main.thankYouMail();
 				})
 				.fail(function(data) {
 					// Make sure that the formMessages div has the 'error' class.
@@ -231,6 +231,22 @@ jQuery(function($){
 					}
 				});
 			});	
+		},
+
+		thankYouMail : function(){
+			console.log("thankYouMail Called!");
+			//animate the thank-you-message into frame
+			//generate top value for the msg box
+			var thankYouMessageHeight = $('.thank-you-message').height();
+			//generate left value for the msg box
+			var thankYouMessageWidth = $('.thank-you-message').width();
+			TweenLite.to($('.thank-you-message'), 0.5, {
+				top:'50%',
+				marginTop: -(thankYouMessageHeight / 2),
+				marginLeft: -(thankYouMessageWidth / 2)
+			});
+			// wait, then send the message off screen
+			TweenLite.to($('.thank-you-message'), 0.5, {top:'-100%', delay: 2});
 		},
 
 

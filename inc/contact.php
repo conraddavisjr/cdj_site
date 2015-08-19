@@ -61,6 +61,7 @@
             </form><!-- /fs-form -->
         </div><!-- /fs-form-wrap -->
     </div><!-- /container -->
+    <div class="thank-you-message"></div>
     <script src="js/classie.js"></script>
     <script src="js/selectFx.js"></script>
     <script src="js/fullscreenForm.js"></script>

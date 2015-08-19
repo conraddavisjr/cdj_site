@@ -21,12 +21,6 @@ Contact Main
 .clearfix:before, .clearfix:after { content: ''; display: table; }
 .clearfix:after { clear: both; }
 
-#form-messages{
-	position: relative;
-	background: url('../img/thankyou-mail.jpg');
-	background-repeat: no-repeat;
-	background-size: contain;
-}
 
 #form-messages2{
 	text-align:center;
@@ -49,18 +43,23 @@ Contact Main
 		max-width:1095px;
 	}
 }
-.success{
+.thank-you-message{
+	position: fixed;
 	margin: 0 auto;
 	width: 45%;
 	height: 414px;
-	top: 270px;
+	top: 100%;
+	left:50%;
 	text-align: center;
 	font-size: 3em;
 	font-weight: bold;
 	color: rgb(18, 112, 189);
 	text-shadow: 0px 0px 3px #FFFFFF;
 	line-height: 400px;
-	z-index: 1;
+	background: url('../img/thankyou-mail.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	z-index: 102;
 }
 
 #contact{
