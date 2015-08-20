@@ -2,7 +2,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.clearfix:before, .clearfix:after {
+.clearfix:before, .clearfix:after, .group {
   display: table;
   content: ''; }
 
@@ -218,31 +218,39 @@ body {
     opacity: 1;
     background: url("../img/dgmBg.jpg");
     background-size: cover; }
+  body p {
+    margin: 70px auto 60px auto;
+    max-width: 738px;
+    line-height: 1.2;
+    font-size: 1.02em; }
   body #work {
     /*sub-nav*/ }
     body #work .container-1200 {
       margin: 30px auto 0 auto;
       max-width: 1200px;
       overflow: hidden; }
+    body #work .before-and-after-container {
+      width: 100%; }
+    body #work .mobile-devices-container {
+      margin-top: 40px;
+      position: relative; }
     body #work .sub-nav {
       padding-top: 50px;
+      text-align: center;
       transition: 0.3s; }
       body #work .sub-nav .content {
         position: relative;
-        left: 90px;
-        margin: 0 auto;
-        min-width: 550px;
-        max-width: 590px; }
+        margin: 0 auto; }
         body #work .sub-nav .content h1 {
           display: inline-block;
-          font-size: 3em;
+          font-size: 2.5em;
           position: relative;
           top: 3px;
           color: white;
           text-shadow: -1px 2px 8px #000; }
         body #work .sub-nav .content .site-indicator {
           position: relative;
-          left: 22px;
+          margin: 0 22px;
           padding: 0 15px;
           width: auto;
           height: 50px;
@@ -259,8 +267,7 @@ body {
           display: none;
           position: relative;
           height: 40px;
-          top: 1px;
-          float: right;
+          top: -4px;
           line-height: 58px;
           font-size: 25px;
           cursor: pointer;
@@ -366,10 +373,8 @@ body {
       opacity: 1; }
     body #work main {
       margin: 0 auto;
-      margin-left: 85px;
       width: 70%;
       max-width: 840px;
-      padding-left: 1.5%;
       float: left;
       color: white;
       transition: 0.5s; }
@@ -465,7 +470,7 @@ body {
     text-align: center;
     color: #cdcdcd; }
   .dgmSite h3 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-shadow: 0.5px 0.5px 8px #000;
     text-align: center; }
     .dgmSite h3 .work-story-services {
@@ -679,7 +684,7 @@ body {
   /*Phase 6 (END)*/
   /*Final phase(7) CTA*/ }
   .vpdSite h3 {
-    font-size: 1.3em;
+    font-size: 1.25em;
     text-shadow: 0.5px 0.5px 8px #000;
     text-align: center; }
     .vpdSite h3 .work-story-services {
@@ -688,11 +693,6 @@ body {
       margin-left: 10px;
       font-size: 1em;
       color: #d58cb3; }
-  .vpdSite p {
-    margin: 70px 0 60px 0;
-    max-width: 738px;
-    line-height: 25px;
-    font-size: 1.02em; }
   .vpdSite .vpd-left-bush {
     position: relative;
     float: left;
@@ -717,21 +717,17 @@ body {
   .vpdSite #vpdPhase2 {
     padding-top: 200px; }
     .vpdSite #vpdPhase2 p {
-      margin: 70px 0 30px 0; }
+      margin: 70px auto 30px auto; }
+    .vpdSite #vpdPhase2 .before, .vpdSite #vpdPhase2 .after {
+      position: relative;
+      width: 50%;
+      text-align: center;
+      font-size: 36px;
+      color: #cfcfcf; }
     .vpdSite #vpdPhase2 .before {
-      position: relative;
-      left: 13%;
-      float: left;
-      width: 40%;
-      font-size: 36px;
-      color: #cfcfcf; }
+      float: left; }
     .vpdSite #vpdPhase2 .after {
-      position: relative;
-      right: 0%;
-      float: right;
-      width: 42%;
-      font-size: 36px;
-      color: #cfcfcf; }
+      float: right; }
     .vpdSite #vpdPhase2 #slideshow {
       height: 500px; }
     .vpdSite #vpdPhase2 #slideshow > div {
@@ -782,7 +778,9 @@ body {
         background: rgba(0, 0, 0, 0.19); }
         .vpdSite #vpdPhase3 .design-container .pallete-container .title {
           margin-bottom: 16px;
-          font-size: 22px; }
+          height: auto;
+          font-size: 22px;
+          line-height: normal; }
         .vpdSite #vpdPhase3 .design-container .pallete-container .old-pallete-container .colors {
           float: left;
           margin-right: 15px; }
@@ -903,14 +901,15 @@ body {
     .vpdSite #vpdPhase5 .desktop {
       top: -1000px;
       left: -1000px;
-      width: 45%;
+      width: 57%;
       height: 300px;
       background: url("../img/responsive-desktop.png") no-repeat; }
     .vpdSite #vpdPhase5 .tablet {
       top: -1000px;
       right: -1000px;
       margin-left: 6%;
-      width: 29%;
+      float: right;
+      width: 31%;
       height: 265px;
       background: url("../img/responsive-tablet.png") no-repeat; }
     .vpdSite #vpdPhase5 .phone {
@@ -923,9 +922,10 @@ body {
       background: url("../img/responsive-mobile.png") no-repeat; }
     .vpdSite #vpdPhase5 .laptop {
       left: -1000px;
+      float: right;
       bottom: -1000px;
       margin: 2% 0 0 10%;
-      width: 45%;
+      width: 57%;
       height: 210px;
       background: url("../img/responsive-laptop.png") no-repeat; }
     .vpdSite #vpdPhase5 .p5-in .desktop, .vpdSite #vpdPhase5 .p5-in .tablet, .vpdSite #vpdPhase5 .p5-in .phone, .vpdSite #vpdPhase5 .p5-in .laptop {
@@ -989,10 +989,12 @@ body {
             font-size: 16px;
             color: #666; }
   .vpdSite #vpdPhase7 {
-    padding: 200px 0; }
+    padding: 200px 0;
+    display: block;
+    width: 100%; }
     .vpdSite #vpdPhase7 .vpd-cta {
       margin: 0 auto;
-      width: 80%; }
+      width: 100%; }
     .vpdSite #vpdPhase7 div {
       float: left;
       margin-bottom: 30px;

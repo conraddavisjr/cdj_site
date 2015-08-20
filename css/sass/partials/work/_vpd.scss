@@ -1,6 +1,6 @@
 .vpdSite{
 	h3{
-		font-size: 1.3em;
+		font-size: 1.25em;
 	  	text-shadow: 0.5px 0.5px 8px #000;
 	  	text-align: center;
 		.work-story-services{
@@ -13,12 +13,6 @@
 		}
 	}
 
-	 p{
-		margin: 70px 0 60px 0;
-		max-width: 738px;
-		line-height: 25px;
-		font-size: 1.02em;
-	}
 	/* miscellaneous Items*/
 	.vpd-left-bush{
 		position: relative;
@@ -53,23 +47,20 @@
 	#vpdPhase2{
 		padding-top:$top-distance;
 		p{
-	  		margin: 70px 0 30px 0;
+	  		margin: 70px auto 30px auto;
+		}
+		.before, .after{
+			position: relative;
+			width: 50%;
+			text-align: center;
+			font-size: 36px;
+			color: #cfcfcf;
 		}
 		.before{
-			position: relative;
-		    left: 13%;
 		    float: left;
-		    width: 40%;
-		    font-size: 36px;
-		    color: #cfcfcf;
 		}
 		.after{
-			position: relative;
-			right: 0%;
-		    float: right;
-		    width: 42%;
-		    font-size: 36px;
-		    color: #cfcfcf;
+		    float: right;   
 		}
 		#slideshow{
 			height:500px;
@@ -138,7 +129,9 @@
 				background:rgba(0,0,0,0.19);
 				.title{
 					margin-bottom: 16px;
+					height: auto;
 					font-size: 22px;
+					line-height: normal;
 				}
 				.old-pallete-container{
 					.colors{
@@ -294,7 +287,7 @@
 		.desktop{
 			top:-1000px;
 			left:-1000px;
-			width:45%;
+			width: 57%;
 			height:300px;
 			background:url('../img/responsive-desktop.png') no-repeat;
 		}
@@ -302,7 +295,8 @@
 			top:-1000px;
 			right:-1000px;
 			margin-left: 6%;
-	  		width: 29%;
+			float: right;
+	  		width: 31%;
 	  		height: 265px;
 			background:url('../img/responsive-tablet.png') no-repeat;
 		}
@@ -317,9 +311,10 @@
 		}
 		.laptop{
 			left:-1000px;
+			float: right;
 			bottom:-1000px;
 			margin: 2% 0 0 10%;
-		    width: 45%;
+		    width: 57%;
 		    height: 210px;
 			background:url('../img/responsive-laptop.png') no-repeat;
 		}
@@ -405,9 +400,11 @@
 	/*Final phase(7) CTA*/
 	#vpdPhase7{
 		padding:$top-distance 0;
+		display: block;
+    	width: 100%;
 		.vpd-cta{
 			margin:0 auto;
-			width: 80%;
+			width: 100%;
 		}
 		div{
 			float: left;

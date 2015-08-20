@@ -32,24 +32,35 @@ body{
 		background: url("../img/dgmBg.jpg");
 		background-size: cover;
 	}
+	p{
+		margin: 70px auto 60px auto;
+		max-width: 738px;
+		line-height: 1.2;
+		font-size: 1.02em;
+	}
 	#work{
 		.container-1200{
 			margin: 30px auto 0 auto;
 			max-width:1200px;
 			overflow:hidden;
-		}		
+		}
+		.before-and-after-container{
+			width:100%;
+		}
+		.mobile-devices-container{
+			margin-top:40px;
+			position:relative;
+		}	
 		.sub-nav{
 			padding-top: 50px;
+			text-align: center;
 			transition:0.3s;
 			.content{
-				  position: relative;
- 				  left: 90px;
-				  margin: 0 auto;
-				  min-width: 550px;
-				  max-width: 590px;
+				    position: relative;
+				    margin: 0 auto;
 				h1{
 					display: inline-block;
-					font-size: 3em;
+					font-size: 2.5em;
 					position: relative;
 					top: 3px;
 					color: white;
@@ -57,7 +68,7 @@ body{
 				}
 				.site-indicator{
 					position: relative;
-				    left: 22px;
+				    margin: 0 22px;
 				    padding: 0 15px;
 				    width: auto;
 				    height: 50px;
@@ -76,8 +87,7 @@ body{
 					display: none;
 					position: relative;
 					height: 40px;
-  					top: 1px;
-					float: right;
+  					top: -4px;
 					line-height: 58px;
 					font-size: 25px;
 					cursor:pointer;
@@ -215,10 +225,8 @@ body{
 		}
 		main{
 		  margin: 0 auto;
-		  margin-left: 85px;
 	      width: 70%;
 	      max-width: 840px;
-		  padding-left: 1.5%;
 		  float: left;
 		  color:white;
 		  transition: 0.5s;
