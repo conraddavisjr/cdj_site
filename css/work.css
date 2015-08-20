@@ -381,6 +381,47 @@ body {
           background: white;
           height: 40px;
           color: black; }
+      @media only screen and (max-width: 480px) {
+        body #work .sub-nav {
+          padding-top: 15px;
+          /*.content*/ }
+          body #work .sub-nav .content {
+            /*.close-story*/ }
+            body #work .sub-nav .content h1 {
+              display: block;
+              float: left;
+              font-size: 1em; }
+            body #work .sub-nav .content .site-indicator {
+              top: 0px;
+              margin: 0 12px;
+              font-size: 1em; }
+            body #work .sub-nav .content .close-story {
+              margin-left: 5px;
+              text-indent: 100%;
+              width: 20px;
+              display: block;
+              float: right;
+              position: relative;
+              right: 0;
+              top: -4px;
+              height: 20px;
+              color: black;
+              padding: 2px 9px; }
+              body #work .sub-nav .content .close-story span {
+                background: black;
+                margin-left: 5px;
+                border-radius: 50%;
+                display: block;
+                width: auto;
+                font-size: 18px;
+                height: auto;
+                right: 0;
+                top: 0;
+                text-align: center;
+                float: right;
+                position: absolute;
+                color: white;
+                padding: 5px 10px; } }
     body #work .sub-nav-attach {
       position: fixed;
       padding: 10px 0;
@@ -392,6 +433,7 @@ body {
         top: 0;
         font-size: 1.5em; }
       body #work .sub-nav-attach .content .site-indicator {
+        top: 0;
         display: inline;
         font-size: 1.3em; }
       body #work .sub-nav-attach .content .close-story {
@@ -403,13 +445,30 @@ body {
           width: 20px;
           height: 20px;
           color: black;
-          padding: 2px 9px; }
+          padding: 2px 8px; }
       body #work .sub-nav-attach .content .close-story:hover {
         color: black; }
         body #work .sub-nav-attach .content .close-story:hover span {
           background: black;
           height: 40px;
           color: white; }
+      @media only screen and (max-width: 480px) {
+        body #work .sub-nav-attach .content h1 {
+          opacity: 0;
+          top: 2px;
+          font-size: 1em; }
+        body #work .sub-nav-attach .content .site-indicator {
+          font-size: 1em; }
+        body #work .sub-nav-attach .content .close-story span {
+          margin-left: 5px;
+          display: block;
+          width: auto;
+          font-size: 18px;
+          height: auto;
+          right: 0;
+          top: 0;
+          float: right;
+          position: absolute; } }
     body #work .sidebar {
       position: fixed;
       left: -30%;
@@ -458,6 +517,9 @@ body {
     body #work .sidebar-in {
       top: 21%;
       left: 0px; }
+      @media only screen and (max-width: 480px) {
+        body #work .sidebar-in {
+          top: 11%; } }
     body #work .story-nav-container {
       display: none;
       position: fixed;

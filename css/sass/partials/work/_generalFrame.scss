@@ -199,7 +199,48 @@ body{
 				  }
 			}
 			@include MQ(S){
-				
+				padding-top:15px;
+				.content{
+					h1{
+						display: block;
+    					float: left;
+						font-size: 1em;
+					}
+					.site-indicator{
+						top: 0px;
+						margin: 0 12px;
+						font-size: 1em;
+					}
+					.close-story{
+					    margin-left: 5px;
+					    text-indent: 100%;
+					    width: 20px;
+					    display: block;
+					    float: right;
+					    position: relative;
+					    right: 0;
+					    top: -4px;
+					    height: 20px;
+					    color: black;
+					    padding: 2px 9px;
+					    span{
+					    	background: black;
+						    margin-left: 5px;
+						    border-radius: 50%;
+						    display: block;
+						    width: auto;
+						    font-size: 18px;
+						    height: auto;
+						    right: 0;
+						    top: 0;
+						    text-align: center;
+						    float: right;
+						    position: absolute;
+						    color: white;
+						    padding: 5px 10px;	
+					    }
+					} /*.close-story*/
+				} /*.content*/
 			}
 		}/* sub-nav */
 		.sub-nav-attach{
@@ -215,6 +256,7 @@ body{
 		  	  	font-size: 1.5em;
 		  	  }
 		  	  .site-indicator{
+		  	  	top:0;
 		  	  	display: inline;
 		  	  	font-size: 1.3em;
 		  	  }
@@ -227,7 +269,7 @@ body{
 					width: 20px;
 					height: 20px;
 				    color: black;
-					padding: 2px 9px;
+					padding: 2px 8px;
 			  	}
 			  }
 			  .close-story:hover{
@@ -238,6 +280,31 @@ body{
 					    color: white;
 					}
 			  	}
+			}
+			@include MQ(S){
+				.content{
+					h1{
+						opacity:0;
+						top:2px;
+						font-size: 1em;
+					}
+					.site-indicator{
+						font-size: 1em;
+					}
+					.close-story{
+						span{
+							margin-left: 5px;
+						    display: block;
+						    width: auto;
+						    font-size: 18px;
+						    height: auto;
+						    right: 0;
+						    top: 0;
+						    float: right;
+						    position: absolute;
+						}
+					}
+				}
 			}
 		}
 		 /*sub-nav*/
@@ -296,6 +363,9 @@ body{
 		.sidebar-in{
 			top: 21%;
 			left:0px;
+			@include MQ(S){
+				top: 11%;
+			}
 		}
 		.story-nav-container{
 			display:none;
