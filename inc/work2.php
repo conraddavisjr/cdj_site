@@ -34,7 +34,7 @@ if(isset($_GET["client"])){
                 <div id="dgmSite" class="site-icon dgm-icon">GMONEY</div>
                 <div id="vpdSite" class="site-icon vpd-icon">VPD</div>
             </section>
-            <section class="story-nav-container">
+            <!-- <section class="story-nav-container">
                 <div class="story-nav">
                 	<a><div></div></a>
                     <a><div></div></a>
@@ -44,7 +44,7 @@ if(isset($_GET["client"])){
                     <a><div></div></a>
                     <a><div></div></a>
                 </div>
-            </section>
+            </section> -->
             <main>
 				<?php include('inc/work/workIntro.php'); ?>
 				<article id="client-story">	

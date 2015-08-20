@@ -3,8 +3,16 @@
         <p>Every site within this collection tells a story, it has a history, and was crafted with one chief goal in mind; to drive action.</p> 
         <p>These sites are the result of close collaboration with each client and made with the aim to launch something truly special; above and beneath the surface.</p>
     </article>
-    <div class="work-cta">
-        <div class="site-selection-arrow"></div>
-        <p>Select a website to see the story</p>
+    <div class="website-icons">
+    	<ul>
+    		<li><figure>
+    				<img src="img/dgm-sidebar-thumb.jpg">
+    				<figcaption>Mr. 8000</figcaption>
+    			</figure>
+    		</li>
+    		<li><img src="img/dgm-sidebar-thumb.jpg"></li>
+    		<li><img src="img/dgm-sidebar-thumb.jpg"></li>
+    		<li><img src="img/dgm-sidebar-thumb.jpg"></li>
+    	</ul>
     </div>
 </div>
