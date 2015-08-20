@@ -131,8 +131,9 @@ body{
 			}
 		}
 		.mobile-devices-container{
-			margin-top:40px;
-			position:relative;
+			margin-top: 40px;
+			position: relative;
+			text-align: center;
 		}	
 		.sub-nav{
 			padding-top: 50px;
@@ -197,7 +198,10 @@ body{
 					}
 				  }
 			}
-		}
+			@include MQ(S){
+				
+			}
+		}/* sub-nav */
 		.sub-nav-attach{
 		  position: fixed;
 		  padding: 10px 0;
@@ -357,7 +361,7 @@ body{
 		  		padding-left: 3.3%;
 		  		border-left: 1px solid white;
 		  		p{
-		  		    margin: 20px auto 0px;	
+		  		    margin: 1em auto 0px;	
 		  		}
 		  	}
 		  	.work-cta{
@@ -379,10 +383,10 @@ body{
 			}
 		} /*main*/
 		.website-icons{
-	  		position: fixed;
+	  		position: relative;
 		    left: 0;
 		    right: 0;
-		    margin: 2% auto 0 auto;
+		    margin: 2% auto 60px auto;
 		    width: 100%;
 		    max-width: 608px;
 	  		@include transition(1s);
@@ -413,6 +417,7 @@ body{
 		    }
 	  	} /*website-icons*/
 	  	.fly-out-left{
+	  		position: fixed;
 	  		left:-200%;
 	  		bottom: 80px;
 	  	}

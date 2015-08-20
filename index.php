@@ -81,7 +81,6 @@
     </script>
     <!-- Work Page JS -->
     <link rel="stylesheet" href="css/image-comparison.css">
-    <script src="js/jquery.mobile.custom.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/TextPlugin.min.js"></script>

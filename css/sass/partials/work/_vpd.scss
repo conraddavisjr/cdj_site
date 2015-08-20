@@ -46,6 +46,7 @@
 	/*Phase 2*/
 
 	#vpdPhase2{
+		margin: 0 auto;
 		padding-top:$top-distance;
 		p{
 	  		margin: 70px auto 30px auto;
@@ -252,6 +253,7 @@
 
 	#vpdPhase5{
 		position:relative;
+		margin: 0 auto;
 		padding-top:$top-distance;
 		.description{
 			margin: 5px 0 10px 0;
@@ -341,7 +343,7 @@
 						left: -100%;
 						width: 100%;
 						height: 98%;
-						max-height: 176px;
+						max-height: 181px;
 						z-index: 0;
 						background: #0090cb;
 						transition: 1s;
