@@ -248,6 +248,9 @@ body {
       position: absolute;
       bottom: -1px;
       left: 0; }
+    @media only screen and (max-width: 480px) {
+      body .website-features {
+        font-size: 0.7em; } }
   body #work {
     overflow-x: hidden;
     /* sub-nav */
@@ -307,6 +310,9 @@ body {
         float: left; }
       body #work .before-and-after-container .after {
         float: right; }
+      @media only screen and (max-width: 480px) {
+        body #work .before-and-after-container .before, body #work .before-and-after-container .after {
+          font-size: 26px; } }
     body #work .mobile-devices-container {
       margin-top: 40px;
       position: relative;
@@ -388,7 +394,8 @@ body {
           body #work .sub-nav .content {
             /*.close-story*/ }
             body #work .sub-nav .content h1 {
-              display: block;
+              opacity: 0;
+              display: none;
               float: left;
               font-size: 1em; }
             body #work .sub-nav .content .site-indicator {
@@ -399,7 +406,6 @@ body {
               margin-left: 5px;
               text-indent: 100%;
               width: 20px;
-              display: block;
               float: right;
               position: relative;
               right: 0;
@@ -430,6 +436,7 @@ body {
       background: rgba(150, 150, 150, 0.97);
       z-index: 110; }
       body #work .sub-nav-attach .content h1 {
+        opacity: 0;
         top: 0;
         font-size: 1.5em; }
       body #work .sub-nav-attach .content .site-indicator {
@@ -454,7 +461,6 @@ body {
           color: white; }
       @media only screen and (max-width: 480px) {
         body #work .sub-nav-attach .content h1 {
-          opacity: 0;
           top: 2px;
           font-size: 1em; }
         body #work .sub-nav-attach .content .site-indicator {
@@ -519,7 +525,10 @@ body {
       left: 0px; }
       @media only screen and (max-width: 480px) {
         body #work .sidebar-in {
-          top: 11%; } }
+          top: 50px;
+          width: 50px;
+          height: 50px;
+          z-index: 200; } }
     body #work .story-nav-container {
       display: none;
       position: fixed;
@@ -598,6 +607,9 @@ body {
             font-size: 25px; }
       body #work main #client-story {
         display: none; }
+      @media only screen and (max-width: 480px) {
+        body #work main {
+          margin: 0em auto 1em; } }
     body #work .website-icons {
       position: relative;
       left: 0;
@@ -633,6 +645,9 @@ body {
       position: fixed;
       left: -200%;
       bottom: 80px; }
+    @media only screen and (max-width: 480px) {
+      body #work {
+        padding: 48px 2% !important; } }
   body a.ui-slider-handle.ui-state-default.ui-corner-all {
     height: 25px;
     width: 40px;
@@ -695,6 +710,7 @@ body {
   /*Phase 1 */
   /*Phase 1 (END)*/
   /*Phase 2*/
+  /* dgmPhase2 */
   /*Phase 2 (END)*/ }
   .dgmSite .site-indicator {
     color: #70a1f9; }
@@ -852,7 +868,7 @@ body {
       font-size: 18px; }
     .dgmSite #dgmPhase2 p {
       margin: 5px 0 50px 0;
-      line-height: 22px;
+      line-height: 1.2;
       font-size: 16px; }
       .dgmSite #dgmPhase2 p b {
         font-size: 18px; }
@@ -897,6 +913,30 @@ body {
       right: 0;
       bottom: 0;
       left: 0; }
+    @media only screen and (max-width: 480px) {
+      .dgmSite #dgmPhase2 {
+        padding-top: 50px;
+        margin-bottom: 0px;
+        margin-bottom: 40px; }
+        .dgmSite #dgmPhase2 h4 {
+          margin-bottom: 15px;
+          font-size: 28px;
+          text-align: center; }
+        .dgmSite #dgmPhase2 .description {
+          font-size: 14px; }
+        .dgmSite #dgmPhase2 p {
+          margin: 22px auto; }
+        .dgmSite #dgmPhase2 h2 {
+          margin: 30px 0 15px 0;
+          font-size: 28px; }
+        .dgmSite #dgmPhase2 .desktop {
+          height: 150px; }
+        .dgmSite #dgmPhase2 .laptop {
+          height: 150px; }
+        .dgmSite #dgmPhase2 .tablet {
+          height: 147px; }
+        .dgmSite #dgmPhase2 .phone {
+          height: 100px; } }
 
 /*Final phase CTA*/
 .vpdSite {
@@ -944,6 +984,14 @@ body {
     color: #d58cb3; }
   .vpdSite p {
     margin: 60px auto; }
+  @media only screen and (max-width: 480px) {
+    .vpdSite {
+      width: 92%; }
+      .vpdSite p {
+        margin: 30px auto;
+        font-size: 0.7em; }
+      .vpdSite .sub-nav .content h1 {
+        display: none; } }
   .vpdSite #vpdPhase2 {
     margin: 0 auto;
     padding-top: 200px; }
@@ -970,6 +1018,13 @@ body {
       color: #18DA3F;
       font-size: 19px;
       z-index: 10; }
+    @media only screen and (max-width: 480px) {
+      .vpdSite #vpdPhase2 {
+        padding-top: 0px; }
+        .vpdSite #vpdPhase2 #slideshow {
+          height: 210px; }
+        .vpdSite #vpdPhase2 .slideshow-status {
+          display: none; } }
   .vpdSite #vpdPhase3 {
     padding-top: 200px; }
     .vpdSite #vpdPhase3 p {
@@ -1049,6 +1104,29 @@ body {
         .vpdSite #vpdPhase3 .design-container .pallete-container .color-description {
           float: left;
           font-size: 16px; }
+    .vpdSite #vpdPhase3 .design-description {
+      font-size: 14px;
+      line-height: 1.2; }
+    @media only screen and (max-width: 480px) {
+      .vpdSite #vpdPhase3 {
+        padding-top: 60px; }
+        .vpdSite #vpdPhase3 .design-container {
+          margin-top: 40px; }
+          .vpdSite #vpdPhase3 .design-container .design-description {
+            margin-bottom: 20px;
+            line-height: 1.3; }
+          .vpdSite #vpdPhase3 .design-container .pallete-container .new-pallete-container .colors, .vpdSite #vpdPhase3 .design-container .pallete-container .old-pallete-container .colors {
+            margin: 0 auto 20px auto;
+            display: table;
+            float: none; }
+            .vpdSite #vpdPhase3 .design-container .pallete-container .new-pallete-container .colors width:auto
+            div, .vpdSite #vpdPhase3 .design-container .pallete-container .old-pallete-container .colors width:auto
+            div {
+              width: 48px;
+              height: 48px; }
+          .vpdSite #vpdPhase3 .design-container .pallete-container .new-pallete-container .color-description, .vpdSite #vpdPhase3 .design-container .pallete-container .old-pallete-container .color-description {
+            font-size: 14px;
+            text-align: center; } }
   .vpdSite #vpdPhase4 {
     position: relative;
     padding-top: 200px; }
@@ -1102,6 +1180,17 @@ body {
       right: 0;
       bottom: 0;
       left: 0; }
+    @media only screen and (max-width: 480px) {
+      .vpdSite #vpdPhase4 {
+        padding-top: 70px; }
+        .vpdSite #vpdPhase4 .description {
+          font-size: 14px;
+          line-height: 1.3; }
+        .vpdSite #vpdPhase4 p {
+          line-height: 1.3;
+          font-size: 13px; }
+          .vpdSite #vpdPhase4 p p {
+            font-size: 17px; } }
   .vpdSite #vpdPhase5 {
     position: relative;
     margin: 0 auto;
@@ -1158,6 +1247,25 @@ body {
       right: 0;
       bottom: 0;
       left: 0; }
+    @media only screen and (max-width: 480px) {
+      .vpdSite #vpdPhase5 {
+        padding-top: 70px; }
+        .vpdSite #vpdPhase5 .description {
+          font-size: 14px;
+          line-height: 1.3; }
+        .vpdSite #vpdPhase5 .desktop {
+          height: 130px; }
+        .vpdSite #vpdPhase5 .laptop {
+          height: 100px; }
+        .vpdSite #vpdPhase5 .tablet {
+          height: 115px; }
+        .vpdSite #vpdPhase5 .phone {
+          height: 115px; }
+        .vpdSite #vpdPhase5 p {
+          line-height: 1.3;
+          font-size: 13px; }
+          .vpdSite #vpdPhase5 p p {
+            font-size: 17px; } }
   .vpdSite #vpdPhase6 {
     position: relative;
     padding-top: 200px;
@@ -1213,6 +1321,14 @@ body {
             line-height: 23px;
             font-size: 16px;
             color: #666; }
+    @media only screen and (max-width: 480px) {
+      .vpdSite #vpdPhase6 .seo-container .inner-container {
+        padding: 20px 20px; }
+        .vpdSite #vpdPhase6 .seo-container .inner-container .left-col {
+          width: 100%; }
+        .vpdSite #vpdPhase6 .seo-container .inner-container .right-col h4 {
+          font-size: 20px;
+          margin-top: 5px; } }
   .vpdSite #vpdPhase7 {
     padding: 200px 0;
     display: block;

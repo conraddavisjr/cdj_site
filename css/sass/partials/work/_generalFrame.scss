@@ -62,6 +62,9 @@ body{
 		    bottom: -1px;
 		    left: 0;
 		}
+		@include MQ(S){
+		    font-size: 0.7em;	
+		}
 	}
 	#work{
 		overflow-x: hidden;
@@ -128,6 +131,11 @@ body{
 			}
 			.after{
 			    float: right;   
+			}
+			@include MQ(S){
+				.before, .after{
+			    	font-size: 26px 
+				}
 			}
 		}
 		.mobile-devices-container{
@@ -202,7 +210,8 @@ body{
 				padding-top:15px;
 				.content{
 					h1{
-						display: block;
+						opacity: 0;
+						display: none;
     					float: left;
 						font-size: 1em;
 					}
@@ -215,7 +224,6 @@ body{
 					    margin-left: 5px;
 					    text-indent: 100%;
 					    width: 20px;
-					    display: block;
 					    float: right;
 					    position: relative;
 					    right: 0;
@@ -252,6 +260,7 @@ body{
 		  z-index: 110;
 		  .content{
 		  	  h1{
+		  	  	opacity:0;
 		  	  	top:0;
 		  	  	font-size: 1.5em;
 		  	  }
@@ -284,7 +293,6 @@ body{
 			@include MQ(S){
 				.content{
 					h1{
-						opacity:0;
 						top:2px;
 						font-size: 1em;
 					}
@@ -364,7 +372,10 @@ body{
 			top: 21%;
 			left:0px;
 			@include MQ(S){
-				top: 11%;
+				top: 50px;
+				width: 50px;
+				height: 50px;
+				z-index: 200;
 			}
 		}
 		.story-nav-container{
@@ -451,6 +462,9 @@ body{
 		  #client-story{
 				display:none;	
 			}
+			@include MQ(S){
+				margin: 0em auto 1em;
+			}
 		} /*main*/
 		.website-icons{
 	  		position: relative;
@@ -490,6 +504,9 @@ body{
 	  		position: fixed;
 	  		left:-200%;
 	  		bottom: 80px;
+	  	}
+	  	@include MQ(S){
+	  		padding: 48px 2% !important;
 	  	}
 	} /*#work*/
 	/***********
