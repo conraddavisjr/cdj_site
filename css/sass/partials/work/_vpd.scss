@@ -488,12 +488,19 @@
 		    	.inner-container{
 		    	    padding: 20px 20px;	
 		    	    .left-col{
-		    	        width: 100%;	
+		    	        width: 100%;
+		    	        span{
+		    	        	height:96%;
+		    	        }	
 		    	    }
 		    	    .right-col{
 		    	    	h4{
 		    	    	    font-size: 20px;
     						margin-top: 5px;	
+		    	    	}
+		    	    	p{
+		    	    	    line-height: 1.2;
+    						font-size: 14px;	
 		    	    	}
 		    	    }
 		    	}
@@ -532,6 +539,12 @@
 			clear:both;
 			width:100%;
 			background:#000;
+		}
+	}
+	@include MQ(S){
+		padding: 50px 0;
+		div{
+		    font-size: 13px;	
 		}
 	}
 }

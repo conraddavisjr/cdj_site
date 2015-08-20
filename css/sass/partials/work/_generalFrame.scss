@@ -116,6 +116,9 @@ body{
 		.container-1200{
 			margin: 40px auto 0 auto;
 			max-width:1200px;
+			@include MQ(S){
+			    margin: 10px auto 0 auto;	
+			}
 		}
 		.before-and-after-container{
 			width:100%;
@@ -318,7 +321,7 @@ body{
 		 /*sub-nav*/
 		.sidebar{
 			position:fixed;
-			left:-30%;
+			left:-40%;
 			width: 100px;
 			height:100px;
 			background: #3A3A44;
@@ -370,7 +373,8 @@ body{
 		}
 		.sidebar-in{
 			top: 21%;
-			left:0px;
+			left:3px;
+			@include transition(0.5s 1s);
 			@include MQ(S){
 				top: 50px;
 				width: 50px;
@@ -443,6 +447,13 @@ body{
 		  		border-left: 1px solid white;
 		  		p{
 		  		    margin: 1em auto 0px;	
+		  		}
+		  	}
+		  	@include MQ(S){
+		  		.work-intro-copy{
+		  			p{
+		  			    font-size: 0.7em;	
+		  			}
 		  		}
 		  	}
 		  	.work-cta{
