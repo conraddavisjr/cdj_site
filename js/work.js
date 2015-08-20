@@ -20,7 +20,7 @@ jQuery(function($){
 			this.storyBg = $('#work');
 			this.closeStoryBtn = $('.close-story');
 			this.sidebar = $('.sidebar');
-			this.siteIcon = $('.site-icon');
+			this.siteIcon = $('.site-icon, .site-icon-cta');
 			this.workIntro = $('#work-intro');
 			this.clientStory = $("#client-story");
 			this.storyGroup = $('#client-story section');
@@ -59,7 +59,7 @@ jQuery(function($){
 		/////sidebar
 		sideBarIconClickHandler: function(){
 			Work.storyGroup.removeClass('story-reveal');
-			Work.clientId = $(this).attr('id');
+			Work.clientId = $(this).attr('siteId');
 			console.log('clientId: ' + Work.clientId);
 			Work.sidebar.addClass('sidebar-out');
 			Work.workIntro.fadeOut(0);

@@ -294,24 +294,31 @@ body{
 		  	}
 		  	.website-icons{
 		  		position: relative;
-		  		display: inline;
+		  		margin-top: 2%;
     			width: 100%;
 		  		max-width: 608px;
 			    background-color: purple;
 			    ul{
 			    	li{
-			    		display: inline-block;
+			    		display: block;
+			    		float: left;
 			    		margin:2%;
 			    		width:46%;
+			    		height: auto;
+			    		figure{
+			    			position: relative;
+			    		}
 			    		img{
 			    			width:100%;
 			    		}
 			    		figcaption{
-			    			position:relative;
-			    			bottom:-10%;
+			    			position:absolute;
+			    			bottom:0;
 			    			width:100%;
 			    			padding:5px 0;
-			    			background-color:white;
+			    			text-align: center;
+			    			background-color:#C3C3C3;
+			    			background-color: rgba(195, 195, 195, 0.86);
 			    		}
 			    	}
 			    }

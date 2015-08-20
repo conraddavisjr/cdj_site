@@ -31,8 +31,8 @@ if(isset($_GET["client"])){
         <div class="container-1200 group">
             <section class="sidebar">
                 <h4>Most<br><span>Recent</span></h4>
-                <div id="dgmSite" class="site-icon dgm-icon">GMONEY</div>
-                <div id="vpdSite" class="site-icon vpd-icon">VPD</div>
+                <div siteId="dgmSite" class="site-icon dgm-icon">GMONEY</div>
+                <div siteId="vpdSite" class="site-icon vpd-icon">VPD</div>
             </section>
             <!-- <section class="story-nav-container">
                 <div class="story-nav">

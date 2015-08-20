@@ -428,22 +428,28 @@ body {
             margin: 20px auto 0px; }
         body #work main #work-intro .website-icons {
           position: relative;
-          display: inline;
+          margin-top: 2%;
           width: 100%;
           max-width: 608px;
           background-color: purple; }
           body #work main #work-intro .website-icons ul li {
-            display: inline-block;
+            display: block;
+            float: left;
             margin: 2%;
-            width: 46%; }
+            width: 46%;
+            height: auto; }
+            body #work main #work-intro .website-icons ul li figure {
+              position: relative; }
             body #work main #work-intro .website-icons ul li img {
               width: 100%; }
             body #work main #work-intro .website-icons ul li figcaption {
-              position: relative;
-              bottom: -10%;
+              position: absolute;
+              bottom: 0;
               width: 100%;
               padding: 5px 0;
-              background-color: white; }
+              text-align: center;
+              background-color: #C3C3C3;
+              background-color: rgba(195, 195, 195, 0.86); }
         body #work main #work-intro .work-cta {
           margin-top: 80px; }
           body #work main #work-intro .work-cta .site-selection-arrow {
