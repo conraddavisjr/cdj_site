@@ -219,11 +219,6 @@ body {
     background: url("../img/dgmBg.jpg");
     background-size: cover; }
   body #work {
-    position: relative;
-    margin-top: 80px;
-    height: 100%;
-    min-height: 850px;
-    z-index: 2;
     /*sub-nav*/ }
     body #work .container-1200 {
       margin: 30px auto 0 auto;
@@ -290,7 +285,7 @@ body {
       width: 100%;
       background: #969696;
       background: rgba(150, 150, 150, 0.97);
-      z-index: 100; }
+      z-index: 110; }
       body #work .sub-nav-attach .content .close-story span {
         background: white;
         margin-left: 5px;

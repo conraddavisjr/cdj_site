@@ -29,11 +29,11 @@
         <?php include('inc/home.php') ?>
         <!--About-->
         <?php include('inc/about.php') ?>
-        <!--Work-->
-    	<?php //include('inc/work2.php') ?>
     </main>
     <!--Slide-in Side Panel-->
-    <?php //include('inc/additionalPanel.php') ?>
+    <?php include('inc/additionalPanel.php') ?>
+    <!--Work-->
+    <?php include('inc/work2.php') ?>
 	<!--Contact-->
     <?php include('inc/contact.php') ?>
     <a href="#0" class="info-panel-close">Close</a> <!-- close the info panel section -->
@@ -89,8 +89,8 @@
     <script src="js/work/vpd.js"></script>
     <script src="js/work/dgm.js"></script>
     <script src="js/work/windowScroller.js"></script>
-    <script src="js/work/story.js"></script>
     <script src="js/work/storyNav.js"></script>
+    <script src="js/work/story.js"></script>
     <script src="js/work.js"></script>
     <!-- Work Page JS (END) -->
 </body>
