@@ -21,6 +21,38 @@ if(isset($_GET["client"])){
 <script> var clientSite = "<?php echo $client; ?>"; console.log("clientSite: " + clientSite);</script>
 	<div class="storyBg"></div>
 	<div id="work">
+        <div class="siteOverlay">
+            <div class="close-bg"></div>
+            <div class="website-icons group">
+                <div class="close-btn">Close <span>X</span></div>
+                <ul>
+                    <li siteId="dgmSite" class="site-icon-cta">
+                        <figure>
+                            <img src="img/dgm-sidebar-thumb.jpg">
+                            <figcaption>Mr. 8000</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="img/dgm-sidebar-thumb.jpg">
+                            <figcaption>Mr. 8000</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="img/dgm-sidebar-thumb.jpg">
+                            <figcaption>Mr. 8000</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="img/dgm-sidebar-thumb.jpg">
+                            <figcaption>Mr. 8000</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div><!--website-icons-->
+        </div>
         <section class="sub-nav">
             <div class="content">
                 <h1>WORK</h1>

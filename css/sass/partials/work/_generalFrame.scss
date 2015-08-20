@@ -12,7 +12,7 @@ body{
 		height:100%;
 		width:100%;
 		background-size:cover;
-		transition:2s;
+		@include transition(2s);
 	}
 	.vpd-site-indicator{
 		color: #FFBAF4;
@@ -64,6 +64,51 @@ body{
 		}
 	}
 	#work{
+		.siteOverlay{
+			position:fixed;
+			left:-200%;
+			width:100%;
+			height:100%;
+			z-index: 200;
+			.close-bg{
+				position:absolute;
+				opacity: 0;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				background-color: black;
+				background-color: rgba(0,0,0,0.9);
+				@include transition(0.5s);
+			}
+			.website-icons{
+				top:20%;
+				left:-200%;
+			}
+			.close-btn{
+				display: inline;
+			    float: right;
+			    margin-right: 2%;
+			    cursor: pointer;
+			}
+			.close-btn:hover{
+				color:white;
+			}
+			ul{
+				clear: both;
+			}
+		}
+		.siteOverlay-in{
+			&.siteOverlay{
+				left:0%;
+			}
+			.close-bg{
+				opacity: 1;
+			}
+			.website-icons{
+				top:20%;
+			}
+		}
 		.container-1200{
 			margin: 40px auto 0 auto;
 			max-width:1200px;
@@ -92,7 +137,7 @@ body{
 			padding-top: 50px;
 			text-align: center;
 			vertical-align: middle;
-			transition:0.3s;
+			@include transition(0.3s);
 			.content{
 				    position: relative;
 				    margin: 0 auto;
@@ -120,7 +165,7 @@ body{
 					background-repeat:no-repeat;
 					background-position: 0% 50%, 100% 50%;
 					background-size: contain;
-					transition: 0.5s;
+					@include transition(0.5s);
 				}
 				.close-story{
 					display: none;
@@ -131,7 +176,7 @@ body{
 					font-size: 25px;
 					cursor:pointer;
 					color:white;
-					transition:0.3s;
+					@include transition(0.3s);
 					span{
 						background: black;
 					    margin-left: 5px;
@@ -140,7 +185,7 @@ body{
 						height: 40px;
 					    color: white;
 						padding: 5px 11px;
-						transition:0.3s;
+						@include transition(0.3s);
 					}
 				}
 				.close-story:hover{
@@ -198,7 +243,8 @@ body{
 			height:100px;
 			background: #3A3A44;
 			background: rgba(117, 117, 117, 0.29);
-			transition: 0.5s;
+			@include transition(0.5s);
+			cursor: pointer;
 			ul{
 				li{
 					position: absolute;
@@ -243,6 +289,7 @@ body{
 			}
 		}
 		.sidebar-in{
+			top: 21%;
 			left:0px;
 		}
 		.story-nav-container{
@@ -252,7 +299,7 @@ body{
 			top: 44%;
 			right:6%;
 			opacity: 0.5;
-			transition: 0.3s;
+			@include transition(0.3s);
 			.story-nav{
 				.story-nav-item{
 					margin: 15px 0;
@@ -267,7 +314,7 @@ body{
 					background: #DAC3A4;
 					overflow: hidden;
 					opacity: 0.7;
-					transition: 0.5s;
+					@include transition(0.5s);
 				}
 				.story-nav-item:hover{
 					width:150px;
@@ -294,10 +341,10 @@ body{
 		main{
 		  display: block;
 		  margin: 0 auto;
-	      width: 80%;
+	      width: 100%;
 	      max-width: 840px;
 		  color:white;
-		  transition: 0.5s;
+		  @include transition(0.5s);
 		  @media(max-width:1440px){
 		  	//margin-left: 25px;
 		  }
@@ -330,45 +377,43 @@ body{
 			}
 		} /*main*/
 		.website-icons{
-		  		position: fixed;
-			    left: 0;
-			    right: 0;
-			    margin: 2% auto 0 auto;
-			    width: 100%;
-			    max-width: 608px;
-		  		-moz-transition: 1s;
-		  		-webkit-transition: 1s;
-		  		transition: 1s;
-			    ul{
-			    	li{
-			    		display: block;
-			    		float: left;
-			    		margin:2%;
-			    		width:46%;
-			    		height: auto;
-			    		cursor:pointer;
-			    		figure{
-			    			position: relative;
-			    		}
-			    		img{
-			    			width:100%;
-			    		}
-			    		figcaption{
-			    			position:absolute;
-			    			bottom:0;
-			    			width:100%;
-			    			padding:5px 0;
-			    			text-align: center;
-			    			background-color:#C3C3C3;
-			    			background-color: rgba(195, 195, 195, 0.86);
-			    		}
-			    	}
-			    }
-		  	}
-		  	.fly-out-left{
-		  		left:-200%;
-		  		bottom: 80px;
-		  	}
+	  		position: fixed;
+		    left: 0;
+		    right: 0;
+		    margin: 2% auto 0 auto;
+		    width: 100%;
+		    max-width: 608px;
+	  		@include transition(1s);
+		    ul{
+		    	li{
+		    		display: block;
+		    		float: left;
+		    		margin:2%;
+		    		width:46%;
+		    		height: auto;
+		    		cursor:pointer;
+		    		figure{
+		    			position: relative;
+		    		}
+		    		img{
+		    			width:100%;
+		    		}
+		    		figcaption{
+		    			position:absolute;
+		    			bottom:0;
+		    			width:100%;
+		    			padding:5px 0;
+		    			text-align: center;
+		    			background-color:#C3C3C3;
+		    			background-color: rgba(195, 195, 195, 0.86);
+		    		}
+		    	}
+		    }
+	  	} /*website-icons*/
+	  	.fly-out-left{
+	  		left:-200%;
+	  		bottom: 80px;
+	  	}
 	} /*#work*/
 	/***********
 	    Tools 

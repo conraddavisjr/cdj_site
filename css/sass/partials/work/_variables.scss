@@ -12,3 +12,11 @@ $top-distance:200px;
 	background: linear-gradient(25deg,  #26262d 50%,#292930 50%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26262d', endColorstr='#292930',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
+@mixin transition($value){
+	-webkit-transition: $value;
+	-moz-transition: $value;
+	-ms-transition: $value;
+	-o-transition: $value;
+	transition: $value;
+}

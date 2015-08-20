@@ -21,6 +21,9 @@ jQuery(function($){
 			this.storyBg = $('#work');
 			this.closeStoryBtn = $('.close-story');
 			this.sidebar = $('.sidebar');
+			this.siteOverlay = $('.siteOverlay');
+			this.siteOverlayClose = $('.siteOverlay .close-btn, .siteOverlay .close-bg');
+			this.siteOverlayWebIcons = $('.siteOverlay .website-icons');
 			this.siteIcon = $('.site-icon, .site-icon-cta');
 			this.workIntro = $('#work-intro');
 			this.clientStory = $("#client-story");
@@ -34,6 +37,8 @@ jQuery(function($){
 			this.closeStoryBtn.on('click', this.closeStoryBtnHandler);
 			this.siteIcon.on('click', this.siteCtaClickHandler);
 			this.sidebar.hover(this.sideBarOverHandler, this.sideBarOutHandler);
+			this.sidebar.on('click', this.sideBarClickHandler);
+			this.siteOverlayClose.on('click', this.siteOverlayCloseHandler);
 			this.workPage.on('scroll', this.windowScrollHandler);
 		},
 		
@@ -65,6 +70,8 @@ jQuery(function($){
 			console.log('clientId: ' + Work.clientId);
 			Work.websiteIcons.addClass('fly-out-left');
 			Work.sidebar.addClass('sidebar-in');
+			TweenLite.to(Work.siteOverlayWebIcons, 0.1, {left:'-200%'});
+			Work.siteOverlay.removeClass('siteOverlay-in');
 			Work.workIntro.fadeOut(0);
 			Work.storyBg.attr('class','storyBg');
 			Work.storyBg.addClass(Story[Work.clientId].storyBg); //add the corresponding client id class
@@ -114,6 +121,16 @@ jQuery(function($){
 		sideBarOutHandler: function(){
 			//
 		},
+		sideBarClickHandler: function(){
+			Work.siteOverlay.addClass('siteOverlay-in');
+			TweenLite.to(Work.siteOverlayWebIcons, 0.2, {left:'0%'});
+		},
+		siteOverlayCloseHandler: function(){
+			TweenLite.to(Work.siteOverlayWebIcons, 0.1, {left:'-200%'});
+			Work.siteOverlay.removeClass('siteOverlay-in');
+			//$('.siteOverlay .website-icons')
+		},
+		
 		/////sidebar + website Icon CTAs (END)
 		
 		/////window Scroller

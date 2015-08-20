@@ -204,6 +204,10 @@ body {
     height: 100%;
     width: 100%;
     background-size: cover;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
     transition: 2s; }
   body .vpd-site-indicator {
     color: #FFBAF4;
@@ -246,7 +250,46 @@ body {
       left: 0; }
   body #work {
     /*sub-nav*/
-    /*main*/ }
+    /*main*/
+    /*website-icons*/ }
+    body #work .siteOverlay {
+      position: fixed;
+      left: -200%;
+      width: 100%;
+      height: 100%;
+      z-index: 200; }
+      body #work .siteOverlay .close-bg {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        background-color: rgba(0, 0, 0, 0.9);
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s; }
+      body #work .siteOverlay .website-icons {
+        top: 20%;
+        left: -200%; }
+      body #work .siteOverlay .close-btn {
+        display: inline;
+        float: right;
+        margin-right: 2%;
+        cursor: pointer; }
+      body #work .siteOverlay .close-btn:hover {
+        color: white; }
+      body #work .siteOverlay ul {
+        clear: both; }
+    body #work .siteOverlay-in.siteOverlay {
+      left: 0%; }
+    body #work .siteOverlay-in .close-bg {
+      opacity: 1; }
+    body #work .siteOverlay-in .website-icons {
+      top: 20%; }
     body #work .container-1200 {
       margin: 40px auto 0 auto;
       max-width: 1200px; }
@@ -269,6 +312,10 @@ body {
       padding-top: 50px;
       text-align: center;
       vertical-align: middle;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
       transition: 0.3s; }
       body #work .sub-nav .content {
         position: relative;
@@ -295,6 +342,10 @@ body {
           background-repeat: no-repeat;
           background-position: 0% 50%, 100% 50%;
           background-size: contain;
+          -webkit-transition: 0.5s;
+          -moz-transition: 0.5s;
+          -ms-transition: 0.5s;
+          -o-transition: 0.5s;
           transition: 0.5s; }
         body #work .sub-nav .content .close-story {
           display: none;
@@ -305,6 +356,10 @@ body {
           font-size: 25px;
           cursor: pointer;
           color: white;
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -ms-transition: 0.3s;
+          -o-transition: 0.3s;
           transition: 0.3s; }
           body #work .sub-nav .content .close-story span {
             background: black;
@@ -314,6 +369,10 @@ body {
             height: 40px;
             color: white;
             padding: 5px 11px;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            -o-transition: 0.3s;
             transition: 0.3s; }
         body #work .sub-nav .content .close-story:hover span {
           background: white;
@@ -355,7 +414,12 @@ body {
       height: 100px;
       background: #3A3A44;
       background: rgba(117, 117, 117, 0.29);
-      transition: 0.5s; }
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+      cursor: pointer; }
       body #work .sidebar ul li {
         position: absolute;
         display: block;
@@ -389,6 +453,7 @@ body {
         height: 130px;
         cursor: pointer; }
     body #work .sidebar-in {
+      top: 21%;
       left: 0px; }
     body #work .story-nav-container {
       display: none;
@@ -397,6 +462,10 @@ body {
       top: 44%;
       right: 6%;
       opacity: 0.5;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
       transition: 0.3s; }
       body #work .story-nav-container .story-nav .story-nav-item {
         margin: 15px 0;
@@ -411,6 +480,10 @@ body {
         background: #DAC3A4;
         overflow: hidden;
         opacity: 0.7;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
         transition: 0.5s; }
       body #work .story-nav-container .story-nav .story-nav-item:hover {
         width: 150px;
@@ -431,9 +504,13 @@ body {
     body #work main {
       display: block;
       margin: 0 auto;
-      width: 80%;
+      width: 100%;
       max-width: 840px;
       color: white;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
       transition: 0.5s; }
       body #work main #work-intro {
         max-width: none;
@@ -462,8 +539,10 @@ body {
       margin: 2% auto 0 auto;
       width: 100%;
       max-width: 608px;
-      -moz-transition: 1s;
       -webkit-transition: 1s;
+      -moz-transition: 1s;
+      -ms-transition: 1s;
+      -o-transition: 1s;
       transition: 1s; }
       body #work .website-icons ul li {
         display: block;
