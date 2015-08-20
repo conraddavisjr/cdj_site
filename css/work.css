@@ -185,6 +185,7 @@ body {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#26262d', endColorstr='#292930',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
+  /*#work*/
   /***********
       Tools 
   ***********/
@@ -244,11 +245,11 @@ body {
       bottom: -1px;
       left: 0; }
   body #work {
-    /*sub-nav*/ }
+    /*sub-nav*/
+    /*main*/ }
     body #work .container-1200 {
       margin: 40px auto 0 auto;
-      max-width: 1200px;
-      overflow: hidden; }
+      max-width: 1200px; }
     body #work .before-and-after-container {
       width: 100%; }
       body #work .before-and-after-container .before, body #work .before-and-after-container .after {
@@ -349,12 +350,34 @@ body {
           color: white; }
     body #work .sidebar {
       position: fixed;
-      left: 0;
-      padding: 10px;
-      width: 15%;
+      left: -30%;
+      width: 100px;
+      height: 100px;
       background: #3A3A44;
-      background: rgba(58, 58, 68, 0.98);
+      background: rgba(117, 117, 117, 0.29);
       transition: 0.5s; }
+      body #work .sidebar ul li {
+        position: absolute;
+        display: block;
+        margin: 2%;
+        width: 46%;
+        height: 46%; }
+      body #work .sidebar ul li:nth-child(1) {
+        background-color: #020202;
+        left: 0;
+        top: 0; }
+      body #work .sidebar ul li:nth-child(2) {
+        background-color: #232323;
+        right: 0;
+        top: 0; }
+      body #work .sidebar ul li:nth-child(3) {
+        background-color: #E8E8E8;
+        left: 0;
+        bottom: 0; }
+      body #work .sidebar ul li:nth-child(4) {
+        background-color: gray;
+        right: 0;
+        bottom: 0; }
       body #work .sidebar h4 {
         font-size: 1.7em;
         color: white; }
@@ -365,14 +388,8 @@ body {
         width: 100%;
         height: 130px;
         cursor: pointer; }
-      body #work .sidebar .dgm-icon {
-        background: url("../img/dgm-sidebar-thumb.jpg"); }
-      body #work .sidebar .vpd-icon {
-        background: url("../img/vpd-sidebar-thumb.jpg"); }
     body #work .sidebar-in {
       left: 0px; }
-    body #work .sidebar-out {
-      left: -120px; }
     body #work .story-nav-container {
       display: none;
       position: fixed;
@@ -426,30 +443,6 @@ body {
           border-left: 1px solid white; }
           body #work main #work-intro .work-intro-copy p {
             margin: 20px auto 0px; }
-        body #work main #work-intro .website-icons {
-          position: relative;
-          margin-top: 2%;
-          width: 100%;
-          max-width: 608px;
-          background-color: purple; }
-          body #work main #work-intro .website-icons ul li {
-            display: block;
-            float: left;
-            margin: 2%;
-            width: 46%;
-            height: auto; }
-            body #work main #work-intro .website-icons ul li figure {
-              position: relative; }
-            body #work main #work-intro .website-icons ul li img {
-              width: 100%; }
-            body #work main #work-intro .website-icons ul li figcaption {
-              position: absolute;
-              bottom: 0;
-              width: 100%;
-              padding: 5px 0;
-              text-align: center;
-              background-color: #C3C3C3;
-              background-color: rgba(195, 195, 195, 0.86); }
         body #work main #work-intro .work-cta {
           margin-top: 80px; }
           body #work main #work-intro .work-cta .site-selection-arrow {
@@ -462,6 +455,38 @@ body {
             font-size: 25px; }
       body #work main #client-story {
         display: none; }
+    body #work .website-icons {
+      position: fixed;
+      left: 0;
+      right: 0;
+      margin: 2% auto 0 auto;
+      width: 100%;
+      max-width: 608px;
+      -moz-transition: 1s;
+      -webkit-transition: 1s;
+      transition: 1s; }
+      body #work .website-icons ul li {
+        display: block;
+        float: left;
+        margin: 2%;
+        width: 46%;
+        height: auto;
+        cursor: pointer; }
+        body #work .website-icons ul li figure {
+          position: relative; }
+        body #work .website-icons ul li img {
+          width: 100%; }
+        body #work .website-icons ul li figcaption {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          padding: 5px 0;
+          text-align: center;
+          background-color: #C3C3C3;
+          background-color: rgba(195, 195, 195, 0.86); }
+    body #work .fly-out-left {
+      left: -200%;
+      bottom: 80px; }
   body a.ui-slider-handle.ui-state-default.ui-corner-all {
     height: 25px;
     width: 40px;

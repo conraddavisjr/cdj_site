@@ -67,7 +67,6 @@ body{
 		.container-1200{
 			margin: 40px auto 0 auto;
 			max-width:1200px;
-			overflow:hidden;
 		}
 		.before-and-after-container{
 			width:100%;
@@ -194,12 +193,41 @@ body{
 		 /*sub-nav*/
 		.sidebar{
 			position:fixed;
-			left:0;
-			padding: 10px;
-			width: 15%;
+			left:-30%;
+			width: 100px;
+			height:100px;
 			background: #3A3A44;
-			background:rgba(58, 58, 68, 0.98);
+			background: rgba(117, 117, 117, 0.29);
 			transition: 0.5s;
+			ul{
+				li{
+					position: absolute;
+					display: block;
+					margin:2%;
+					width: 46%;
+    				height: 46%;
+				}
+				li:nth-child(1){
+					background-color: #020202;
+					left:0;
+					top:0;
+				}
+				li:nth-child(2){
+				    background-color: #232323;
+					right:0;
+					top:0;
+				}
+				li:nth-child(3){
+				    background-color: #E8E8E8;
+					left:0;
+					bottom:0;
+				}
+				li:nth-child(4){
+					background-color:gray;
+					right:0;
+					bottom:0;
+				}
+			}
 			h4{
 				font-size:1.7em;
 				color:white;
@@ -213,18 +241,9 @@ body{
  			 	height: 130px;
  			 	cursor:pointer;
 			}
-			.dgm-icon{
-				background:url("../img/dgm-sidebar-thumb.jpg");
-			}
-			.vpd-icon{
-				background:url("../img/vpd-sidebar-thumb.jpg");
-			}
 		}
 		.sidebar-in{
 			left:0px;
-		}
-		.sidebar-out{
-			left:-120px;
 		}
 		.story-nav-container{
 			display:none;
@@ -292,12 +311,34 @@ body{
 		  		    margin: 20px auto 0px;	
 		  		}
 		  	}
-		  	.website-icons{
-		  		position: relative;
-		  		margin-top: 2%;
-    			width: 100%;
-		  		max-width: 608px;
-			    background-color: purple;
+		  	.work-cta{
+		  		margin-top:80px;
+		  		.site-selection-arrow{
+		  			float: left;
+		  			width: 150px;
+ 					height: 77px;
+		  			background: url('../img/workCtaArrow.png');
+		  		}
+		  		p{
+		  			line-height: 70px;
+		  			font-size: 25px;
+		  		}
+		  	}
+		  }
+		  #client-story{
+				display:none;	
+			}
+		} /*main*/
+		.website-icons{
+		  		position: fixed;
+			    left: 0;
+			    right: 0;
+			    margin: 2% auto 0 auto;
+			    width: 100%;
+			    max-width: 608px;
+		  		-moz-transition: 1s;
+		  		-webkit-transition: 1s;
+		  		transition: 1s;
 			    ul{
 			    	li{
 			    		display: block;
@@ -305,6 +346,7 @@ body{
 			    		margin:2%;
 			    		width:46%;
 			    		height: auto;
+			    		cursor:pointer;
 			    		figure{
 			    			position: relative;
 			    		}
@@ -323,25 +365,11 @@ body{
 			    	}
 			    }
 		  	}
-		  	.work-cta{
-		  		margin-top:80px;
-		  		.site-selection-arrow{
-		  			float: left;
-		  			width: 150px;
- 					height: 77px;
-		  			background: url('../img/workCtaArrow.png');
-		  		}
-		  		p{
-		  			line-height: 70px;
-		  			font-size: 25px;
-		  		}
+		  	.fly-out-left{
+		  		left:-200%;
+		  		bottom: 80px;
 		  	}
-		  }
-		  #client-story{
-				display:none;	
-			}
-		}
-	}
+	} /*#work*/
 	/***********
 	    Tools 
 	***********/

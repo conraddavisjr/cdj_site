@@ -30,9 +30,12 @@ if(isset($_GET["client"])){
         </section>
         <div class="container-1200 group">
             <section class="sidebar">
-                <h4>Most<br><span>Recent</span></h4>
-                <div siteId="dgmSite" class="site-icon dgm-icon">GMONEY</div>
-                <div siteId="vpdSite" class="site-icon vpd-icon">VPD</div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </section>
             <!-- <section class="story-nav-container">
                 <div class="story-nav">
@@ -66,6 +69,34 @@ if(isset($_GET["client"])){
                     </section>
                 </article>
             </main>
+            <div class="website-icons group">
+                <ul>
+                    <li siteId="dgmSite" class="site-icon-cta">
+                        <figure>
+                            <img src="img/dgm-sidebar-thumb.jpg">
+                            <figcaption>Mr. 8000</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="img/dgm-sidebar-thumb.jpg">
+                            <figcaption>Mr. 8000</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="img/dgm-sidebar-thumb.jpg">
+                            <figcaption>Mr. 8000</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="img/dgm-sidebar-thumb.jpg">
+                            <figcaption>Mr. 8000</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div><!--website-icons-->
         </div>
         <!--<div class="miscellaneous-container">
         	<div class="container-1200 group">

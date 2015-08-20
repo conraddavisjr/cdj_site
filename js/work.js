@@ -16,6 +16,7 @@ jQuery(function($){
 			this.workPage = $('#work');
 			this.navHeader = $('header');
 			this.subNav = $('.sub-nav');
+			this.websiteIcons = $('.website-icons');
 			this.siteIndicator = $('.site-indicator');
 			this.storyBg = $('#work');
 			this.closeStoryBtn = $('.close-story');
@@ -31,7 +32,7 @@ jQuery(function($){
 		},
 		bindEvents: function() {
 			this.closeStoryBtn.on('click', this.closeStoryBtnHandler);
-			this.siteIcon.on('click', this.sideBarIconClickHandler);
+			this.siteIcon.on('click', this.siteCtaClickHandler);
 			this.sidebar.hover(this.sideBarOverHandler, this.sideBarOutHandler);
 			this.workPage.on('scroll', this.windowScrollHandler);
 		},
@@ -45,7 +46,8 @@ jQuery(function($){
 		closeStoryBtnHandler: function(){
 			Work.siteIndicator.html('&nbsp;');
 			Work.siteIndicator.attr('class','site-indicator');
-			Work.sidebar.attr('class', 'sidebar sidebar-in');
+			Work.sidebar.removeClass('sidebar-in');
+			Work.websiteIcons.removeClass('fly-out-left');
 			Work.clientStory.fadeOut(0);
 			Work.storyNavContainer.fadeOut(0);
 			Work.storyBg.attr('class','storyBg');
@@ -56,12 +58,13 @@ jQuery(function($){
 			},100);	
 		},
 		
-		/////sidebar
-		sideBarIconClickHandler: function(){
+		/////sidebar + website Icon CTAs
+		siteCtaClickHandler: function(){
 			Work.storyGroup.removeClass('story-reveal');
 			Work.clientId = $(this).attr('siteId');
 			console.log('clientId: ' + Work.clientId);
-			Work.sidebar.addClass('sidebar-out');
+			Work.websiteIcons.addClass('fly-out-left');
+			Work.sidebar.addClass('sidebar-in');
 			Work.workIntro.fadeOut(0);
 			Work.storyBg.attr('class','storyBg');
 			Work.storyBg.addClass(Story[Work.clientId].storyBg); //add the corresponding client id class
@@ -106,14 +109,12 @@ jQuery(function($){
 			Work.helperFunctions(); //Reinitalize the smooth slider
 		},
 		sideBarOverHandler: function(){
-			Work.sidebar.removeClass('sidebar-in, sidebar-out');
-			Work.sidebar.addClass('sidebar-in');	
+			//	
 		},
 		sideBarOutHandler: function(){
-			Work.sidebar.removeClass('sidebar-in, sidebar-out');
-			Work.sidebar.addClass('sidebar-out');	
+			//
 		},
-		/////sidebar (END)
+		/////sidebar + website Icon CTAs (END)
 		
 		/////window Scroller
 		windowScrollHandler: function(){
@@ -158,7 +159,7 @@ jQuery(function($){
 				Work.clientId = clientSite;
 				console.log("clientId: " + Work.clientId);
 				Work.storyGroup.removeClass('story-reveal');
-				Work.sidebar.addClass('sidebar-out');
+				Work.sidebar.addClass('sidebar-in');
 				Work.workIntro.fadeOut(0);
 				Work.storyBg.attr('class','storyBg');
 				Work.storyBg.addClass(Story[Work.clientId].storyBg); //add the corresponding client id class
