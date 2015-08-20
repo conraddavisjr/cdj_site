@@ -51,13 +51,15 @@ jQuery(function($){
 			//hover over to pause and out to play
 			$('#slideshow').hover(
 				function(e){
-					//update the copy of the playing/paused status
+					//update the copy and color of the playing/paused status
 					slideshowStatus.text('Paused');
+					slideshowStatus.css({color : '#f90'});
 					isPaused = true;
 				},
 				function(e){
 					//update the copy of the playing/paused status
 					slideshowStatus.text('Playing');
+					slideshowStatus.css({color : '#18DA3F'});
 					isPaused = false;
 				}
 			)

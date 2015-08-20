@@ -64,6 +64,7 @@ body{
 		}
 	}
 	#work{
+		overflow-x: hidden;
 		.siteOverlay{
 			position:fixed;
 			left:-200%;
@@ -343,6 +344,7 @@ body{
 		  margin: 0 auto;
 	      width: 100%;
 	      max-width: 840px;
+	      overflow:hidden;
 		  color:white;
 		  @include transition(0.5s);
 		  @media(max-width:1440px){

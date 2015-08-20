@@ -24,33 +24,8 @@ if(isset($_GET["client"])){
         <div class="siteOverlay">
             <div class="close-bg"></div>
             <div class="website-icons group">
-                <div class="close-btn">Close <span>X</span></div>
-                <ul>
-                    <li siteId="dgmSite" class="site-icon-cta">
-                        <figure>
-                            <img src="img/dgm-sidebar-thumb.jpg">
-                            <figcaption>Mr. 8000</figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="img/dgm-sidebar-thumb.jpg">
-                            <figcaption>Mr. 8000</figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="img/dgm-sidebar-thumb.jpg">
-                            <figcaption>Mr. 8000</figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="img/dgm-sidebar-thumb.jpg">
-                            <figcaption>Mr. 8000</figcaption>
-                        </figure>
-                    </li>
-                </ul>
+                <div class="close-btn">Close<span>X</span></div>
+                <?php include 'inc/work/portfolioNav.php'; ?>
             </div><!--website-icons-->
         </div>
         <section class="sub-nav">
@@ -102,32 +77,7 @@ if(isset($_GET["client"])){
                 </article>
             </main>
             <div class="website-icons group">
-                <ul>
-                    <li siteId="dgmSite" class="site-icon-cta">
-                        <figure>
-                            <img src="img/dgm-sidebar-thumb.jpg">
-                            <figcaption>Mr. 8000</figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="img/dgm-sidebar-thumb.jpg">
-                            <figcaption>Mr. 8000</figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="img/dgm-sidebar-thumb.jpg">
-                            <figcaption>Mr. 8000</figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="img/dgm-sidebar-thumb.jpg">
-                            <figcaption>Mr. 8000</figcaption>
-                        </figure>
-                    </li>
-                </ul>
+                <?php include 'inc/work/portfolioNav.php'; ?>
             </div><!--website-icons-->
         </div>
         <!--<div class="miscellaneous-container">

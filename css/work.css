@@ -249,6 +249,7 @@ body {
       bottom: -1px;
       left: 0; }
   body #work {
+    overflow-x: hidden;
     /*sub-nav*/
     /*main*/
     /*website-icons*/ }
@@ -506,6 +507,7 @@ body {
       margin: 0 auto;
       width: 100%;
       max-width: 840px;
+      overflow: hidden;
       color: white;
       -webkit-transition: 0.5s;
       -moz-transition: 0.5s;
@@ -895,10 +897,13 @@ body {
       -webkit-animation: none; }
     .vpdSite #vpdPhase2 .slideshow-status {
       position: absolute;
-      left: -90px;
+      left: -5%;
       top: 42%;
+      padding: 5px;
+      background-color: rgba(0, 0, 0, 0.48);
       color: #18DA3F;
-      font-size: 19px; }
+      font-size: 19px;
+      z-index: 10; }
   .vpdSite #vpdPhase3 {
     padding-top: 200px; }
     .vpdSite #vpdPhase3 p {
