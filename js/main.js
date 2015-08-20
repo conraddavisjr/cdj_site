@@ -375,7 +375,7 @@ jQuery(function($){
 		workPageAnimation : function(){
 			//var workPageTl = new TimelineLite();
 			//slide the work page in
-			TweenLite.to(main.workPage, 1, {bottom: '0%', opacity: 1, paddingTop: main.header.height() + 20});
+			TweenLite.to(main.workPage, 1, {bottom: '0%', opacity: 1, paddingTop: main.header.outerHeight()});
 			//grid buckets drop effect
 			console.log('workAnimationStyle:' + main.workAnimationStyle);
 			switch(main.workAnimationStyle){

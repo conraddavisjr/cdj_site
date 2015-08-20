@@ -1,6 +1,9 @@
 <div id="dgmPhase1">
-    <h3><span class="work-story-services">Services</span> - Custom Build | CMS | Mobile-friendly | Social Media   <span class="work-story-visit-site">Visit the Site</span></h3>
-    <!--<p>Gary LastName, also known as G$MONEY and Mr.8000... Something here about him and the site. Discuss the story and mission behind the site.</p>-->
+    <span class="website-features">
+        <span class="work-story-services">Services</span> - Custom Build | CMS | Mobile-friendly | Social Media
+        <span class="work-story-visit-site">Visit the Site</span>
+    </span>
+    <p>Gary LastName, also known as G$MONEY and Mr.8000... Something here about him and the site. Discuss the story and mission behind the site.</p>
     <h2>Intellegent Content Management</h2>
     <section class="dgm-cms">
         <div id="presentation-stage">

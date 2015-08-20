@@ -3,14 +3,6 @@
 		font-size: 1.25em;
 	  	text-shadow: 0.5px 0.5px 8px #000;
 	  	text-align: center;
-		.work-story-services{
-			color:#ee9d0f;
-		}
-		.work-story-visit-site{
-			margin-left: 10px;
-			font-size: 1em;
-			color: #d58cb3;
-		}
 	}
 
 	/* miscellaneous Items*/
@@ -38,6 +30,15 @@
 	  	background:url('../img/vpd-twig.png') no-repeat;
 	  	z-index: 2;
 	}
+	.work-story-services{
+		color:#ee9d0f;
+	}
+	.work-story-visit-site{
+		color: #d58cb3;
+	}
+	p{
+		margin: 60px auto;
+	}
 	/* miscellaneous Items (END) */
 
 
@@ -48,19 +49,6 @@
 		padding-top:$top-distance;
 		p{
 	  		margin: 70px auto 30px auto;
-		}
-		.before, .after{
-			position: relative;
-			width: 50%;
-			text-align: center;
-			font-size: 36px;
-			color: #cfcfcf;
-		}
-		.before{
-		    float: left;
-		}
-		.after{
-		    float: right;   
 		}
 		#slideshow{
 			height:500px;
