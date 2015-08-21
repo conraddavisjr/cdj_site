@@ -225,6 +225,17 @@ body {
     opacity: 1;
     background: url("../img/dgmBg.jpg");
     background-size: cover; }
+  body .sidebar-icon-overlay {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.84);
+    color: white;
+    text-align: center;
+    font-size: 19px;
+    padding-top: 20%;
+    z-index: 10; }
   body p {
     margin: 50px auto;
     max-width: 738px;
@@ -557,6 +568,8 @@ body {
         width: 100%;
         height: 130px;
         cursor: pointer; }
+    body #work .sidebar:hover .sidebar-icon-overlay {
+      display: block; }
     body #work .sidebar-in {
       top: 21%;
       left: 3px;
@@ -701,7 +714,7 @@ body {
           -o-transition: 0.3s;
           transition: 0.3s; }
         body #work .website-icons ul li figure:hover img {
-          transform: scale(1.2); }
+          transform: scale(1.1); }
         body #work .website-icons ul li figure:hover figcaption {
           color: white;
           background-color: rgba(0, 0, 0, 0.86); }
@@ -1193,7 +1206,8 @@ body {
               background: #000000; }
         .vpdSite #vpdPhase3 .design-container .pallete-container .color-description {
           float: left;
-          font-size: 16px; }
+          font-size: 16px;
+          font-weight: 300; }
     .vpdSite #vpdPhase3 .design-description {
       font-size: 14px;
       line-height: 1.2; }
@@ -1221,7 +1235,8 @@ body {
                 height: 48px; }
             .vpdSite #vpdPhase3 .design-container .pallete-container .new-pallete-container .color-description, .vpdSite #vpdPhase3 .design-container .pallete-container .old-pallete-container .color-description {
               font-size: 14px;
-              text-align: center; } }
+              text-align: center;
+              font-weight: 300; } }
   .vpdSite #vpdPhase4 {
     position: relative;
     padding-top: 200px; }
@@ -1233,7 +1248,8 @@ body {
       line-height: 22px;
       font-size: 16px; }
       .vpdSite #vpdPhase4 p b {
-        font-size: 18px; }
+        font-size: 18px;
+        color: #DA7CD1; }
       .vpdSite #vpdPhase4 p span {
         color: #f8a2d3; }
     .vpdSite #vpdPhase4 .article-container div {

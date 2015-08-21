@@ -366,7 +366,7 @@ jQuery(function($){
 
 			/*Work*/
 			//scroll the work page to the top and slide the work page out
-			TweenLite.to(main.workPage, 1, {bottom: '-100%', opacity: 0});
+			TweenLite.to(main.workPage, 0.5, {bottom: '-100%', opacity: 0});
 			setTimeout(function(){
 				main.workPage.scrollTop(0);
 				Work.closeStoryBtnHandler();

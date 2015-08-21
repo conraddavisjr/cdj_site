@@ -37,6 +37,7 @@ if(isset($_GET["client"])){
         </section>
         <div class="container-1200 group">
             <section class="sidebar">
+                <div class="sidebar-icon-overlay">Show portfolio list</div>
                 <ul>
                     <li></li>
                     <li></li>

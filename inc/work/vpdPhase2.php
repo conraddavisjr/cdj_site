@@ -9,27 +9,27 @@
        <figure class="slideshow-status">Playing</figure>
        <div>
            <figure class="cd-image-container">
-              <img src="img/vpd-home-new.jpg" alt="Redesigned Visnapuu Design Website Home page">
+              <img src="img/vpd-garden-new.jpg" alt="Redesigned Visnapuu Design Website Home page">
               <div class="cd-resize-img"> <!-- the resizable image on top -->
-                  <img src="img/vpd-home-old.jpg" alt="Old Visnapuu Design Website Home page">
+                  <img src="img/vpd-garden-old.jpg" alt="Old Visnapuu Design Website Home page">
               </div>
               <span class="cd-handle"></span>
            </figure> <!-- cd-image-container -->
        </div>
        <div>
            <figure class="cd-image-container">
-                <img src="img/vpd-home-old.jpg" alt="Redesigned Visnapuu Design Website Home page">
+                <img src="img/vpd-contact-new.jpg" alt="Old Visnapuu Design Website Home page">
                 <div class="cd-resize-img"> <!-- the resizable image on top -->
-                    <img src="img/vpd-home-old.jpg" alt="Old Visnapuu Design Website Home page">
+                    <img src="img/vpd-contact-old.jpg" alt="Redesigned Visnapuu Design Website Home page">
                 </div>
                 <span class="cd-handle"></span>
             </figure> <!-- cd-image-container -->
        </div>
        <div>
          <figure class="cd-image-container">
-                <img src="img/vpd-home-old.jpg" alt="Redesigned Visnapuu Design Website Home page">
+          <img src="img/vpd-blog-new.jpg" alt="Old Visnapuu Design Website Home page">
                 <div class="cd-resize-img"> <!-- the resizable image on top -->
-                    <img src="img/vpd-home-new.jpg" alt="Old Visnapuu Design Website Home page">
+                    <img src="img/vpd-blog-old.jpg" alt="Redesigned Visnapuu Design Website Home page">
                 </div>
                 <span class="cd-handle"></span>
             </figure> <!-- cd-image-container -->
