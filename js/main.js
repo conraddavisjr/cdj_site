@@ -21,6 +21,7 @@ jQuery(function($){
 			this.header = $('header');
 			this.nav = $('nav ul');
 			this.navItem = $('nav a');
+			this.workCta = $('.learn-more, .contact');
 			this.navHoverOverlay = $('.nav-hover-overlay');
 			this.pageMarquee = $('.page-marquee');
 			this.mainContainer = $('main, .member-bio');
@@ -183,6 +184,7 @@ jQuery(function($){
 			main.navItem.hover(this.navHoverInOverlayHandler, this.navHoverOutOverlayHandler);
 			main.navItem.on('click', this.callPageHandler);
 			main.homeLink.on('click', this.callPageHandler);
+			main.workCta.on('click', this.callPageHandler);
 		},
 
 		contactForm: function(){
@@ -296,6 +298,7 @@ jQuery(function($){
 			
 		},
 		callPageHandler : function(){
+			console.log('this.text: ' + this.text );
 			//remove all .nav-active classes
 			$('a').removeClass('nav-active');
 			//add .nav-active class to nav item
@@ -303,11 +306,11 @@ jQuery(function($){
 			//open the selected page
 			main.pageCloseHandler(); //close all pages 1st
 			//check which item was clicked
-			switch(this.text){
-				case 'Conrad Davis Jr' :
+			switch($(this).attr('navItem')){
+				case 'home' :
 					// main.pageCloseHandler(); handles the Home pg
 				break;
-				case 'ABOUT' :
+				case 'about' :
 					main.aboutPage.show();
 					main.pageMarquee.css({backgroundImage : 'url(img/about-hover-img.jpg)'});
 					//slide the About Marquee into position
@@ -315,13 +318,13 @@ jQuery(function($){
 					//slide the About page into frame
 					TweenLite.to(main.aboutPage, 1, {position:'fixed', top: main.header.height()});
 				break;
-				case 'WORK' :
+				case 'work' :
 					main.navHoverOverlay.css({backgroundImage : 'url(img/work-hover-img.jpg)'});
 					main.navHoverOverlay.attr('class', 'nav-hover-overlay work-btn');
 					//animate the grid buckets in
 					main.workPageAnimation();
 				break;
-				case 'CONTACT' :
+				case 'contact' :
 				main.navHoverOverlay.css({backgroundImage : 'url(img/contact-hover-img.jpg)'});
 				main.navHoverOverlay.attr('class', 'nav-hover-overlay contact-btn');
 				//slide the Contact page into frame

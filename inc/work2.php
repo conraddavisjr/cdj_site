@@ -73,6 +73,7 @@ if(isset($_GET["client"])){
                     	<?php include('inc/work/dgmPhase1.php'); ?>
                         <?php include('inc/work/dgmPhase2.php'); ?>
                         <?php include('inc/work/dgmPhase3.php'); ?>
+                        <?php include('inc/work/dgmPhase4.php'); ?>
                     </section>
                 </article>
             </main>

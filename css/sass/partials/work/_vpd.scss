@@ -34,15 +34,20 @@
 		color:#ee9d0f;
 	}
 	.work-story-visit-site{
-		margin-top: 6px;
     	display: inline-block;
 		color: #d58cb3;
+		a{
+			color: #d58cb3;
+		}
 	}
 	p{
 		margin: 60px auto;
 	}
 	@include MQ(S){
 		width: 92%;
+		.work-story-visit-site{
+			margin-top: 6px;
+		}
 		p{
 			margin: 30px auto;
 			font-size: 13px;
@@ -212,6 +217,7 @@
 					font-size: 13px;
 				}
 				.pallete-container{
+					padding: 20px 30px;
 					.new-pallete-container, .old-pallete-container{
 						.colors{
 							margin: 0 auto 20px auto;

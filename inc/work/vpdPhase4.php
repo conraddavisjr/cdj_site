@@ -1,6 +1,5 @@
 <div id="vpdPhase4" class="group">
-    <p class="description">Being able to <span>control</span> photos, and text on <span>every page</span> within <br />
-
+    <p class="description">Being able to <span>control</span> photos, and text on <span>every page</span> within
 	her site was very important. Sandra wanted a CMS... consider it done.</p>
     <article class="article-container">
     	<section class="left-col group">
@@ -16,9 +15,7 @@
         <section class="right-col group">
         	<div class="row1">
                 <img src="img/vpd-home-old.jpg">
-                <p><b>Page view</b> - After editing she can click "view" and let the code take it from there. The site will process
-                everything Sandra entered and gracefully fit it into the layout. If content is missing, the code will 
-                compensate for it.</p>
+                <p><b>Page view</b> - After editing she can view her updates and let the code take it from there. The site will process everything Sandra entered and gracefully fit it into the dynamic layout. If content is missing, the code will compensate for it.</p>
             </div>
         </section>
     </article>

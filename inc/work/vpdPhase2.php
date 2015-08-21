@@ -1,5 +1,5 @@
 <div id="vpdPhase2">
-    <p>Not just the home page, her entire website got a facelift. Check it out!</p>
+    <p>Not just the home page, her entire website was upgraded. Check it out!</p>
     <div class="before-and-after-container group">
     	<div class="before"> BEFORE</div>
         <div class="after"> AFTER</div>

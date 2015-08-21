@@ -13,7 +13,7 @@
 </head>
 <body>
 	<div class="nav-hover-overlay"></div>
-	<header class="siteTitle"><a>Conrad Davis Jr</a></header>
+	<header navItem="home" class="siteTitle"><a>Conrad Davis Jr</a></header>
 	<main>
 		<div class="page-marquee"></div>
 		<div class="header-spacer"></div>
@@ -39,10 +39,10 @@
     <a href="#0" class="info-panel-close">Close</a> <!-- close the info panel section -->
     <nav>
     	<ul>
-    		<li><a id="about-btn" href="#about">ABOUT</a></li>
-    		<li><a href="#work">WORK</a></li>
+    		<li><a navItem="about" id="about-btn" href="#about">ABOUT</a></li>
+    		<li><a navItem="work" href="#work">WORK</a></li>
     		<!--<li>LAB</li>-->
-    		<li><a class="contact-btn" href="#contact">CONTACT</a></li>
+    		<li><a navItem="contact" class="contact-btn" href="#contact">CONTACT</a></li>
     	</ul>
     </nav>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
