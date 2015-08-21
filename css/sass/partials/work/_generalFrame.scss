@@ -114,6 +114,7 @@ body{
 			}
 		}
 		.container-1200{
+			display: block;
 			margin: 40px auto 0 auto;
 			max-width:1200px;
 			@include MQ(S){
@@ -256,6 +257,7 @@ body{
 		}/* sub-nav */
 		.sub-nav-attach{
 		  position: fixed;
+		  left: 0;
 		  padding: 10px 0;
 		  width: 100%;
 		  background: #969696;
@@ -471,9 +473,13 @@ body{
 		  	}
 		  }
 		  #client-story{
+		  		margin: 0 auto;
 				display:none;	
 			}
 			@include MQ(S){
+				#client-story{
+				    width: 96%;	
+				}
 				margin: 0em auto 1em;
 			}
 		} /*main*/
@@ -509,6 +515,17 @@ body{
 		    			background-color: rgba(195, 195, 195, 0.86);
 		    		}
 		    	}
+		    }
+		    @include MQ(S){
+			    ul{
+			    	li{
+			    		figcaption{
+			    			font-size: 14px;
+			    			font-weight: 500;	
+			    		}
+			    	}
+			    }				    	
+
 		    }
 	  	} /*website-icons*/
 	  	.fly-out-left{

@@ -61,6 +61,24 @@
 				background-repeat: no-repeat;
 			}
 		}
+		@include MQ(S){
+			h3{
+			    padding-top: 20px;
+			}
+			p{
+				font-size: 0.7em;
+			}
+			.find-out{
+				.dgmPlayBtn{
+					display:none;
+				}
+				.dgmPlayBtnStyle{
+					display: inline-block;
+					margin: 0 auto;	
+					float: none;
+				}
+			}
+		}
 	}
 	#dgm-center-console{
 		position:absolute;

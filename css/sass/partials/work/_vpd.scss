@@ -34,6 +34,8 @@
 		color:#ee9d0f;
 	}
 	.work-story-visit-site{
+		margin-top: 6px;
+    	display: inline-block;
 		color: #d58cb3;
 	}
 	p{
@@ -43,7 +45,7 @@
 		width: 92%;
 		p{
 			margin: 30px auto;
-			font-size: 0.7em;
+			font-size: 13px;
 		}
 		.sub-nav{
 			.content{
@@ -199,11 +201,15 @@
 		}
 		@include MQ(S){
 		    padding-top: 60px;	
+		    .goal-details-container{
+		    	font-size: 13px;
+		    }
 		    .design-container{
-				margin-top:40px;
+				margin-top: 30px;
 				.design-description{
 					margin-bottom: 20px;
 					line-height: 1.3;
+					font-size: 13px;
 				}
 				.pallete-container{
 					.new-pallete-container, .old-pallete-container{
@@ -302,7 +308,12 @@
 			}
 		}
 		@include MQ(S){
-		    padding-top: 70px;	
+		    padding-top: 70px;
+		    .article-container{
+			    .right-col,.left-col{
+			    	width:auto;
+			    }	
+			}
 		    .description{
 		    	font-size: 14px;
 		    	line-height: 1.3;
@@ -387,7 +398,10 @@
 			}
 		}
 		@include MQ(S){
-		    padding-top: 70px;	
+		    padding-top: 70px;
+		    .mobile-devices-container{
+		        margin-top: 20px;	
+		    }	
 		    .description{
 		    	font-size: 14px;
 		    	line-height: 1.3;
@@ -484,6 +498,7 @@
 			}
 		} /*seo container*/
 		@include MQ(S){
+			padding-top: 40px;
 		    .seo-container{
 		    	.inner-container{
 		    	    padding: 20px 20px;	
@@ -494,6 +509,7 @@
 		    	        }	
 		    	    }
 		    	    .right-col{
+		    	    	width: 100%;
 		    	    	h4{
 		    	    	    font-size: 20px;
     						margin-top: 5px;	
@@ -540,11 +556,16 @@
 			width:100%;
 			background:#000;
 		}
-	}
-	@include MQ(S){
-		padding: 50px 0;
-		div{
-		    font-size: 13px;	
+		@include MQ(S){
+			padding: 50px 0;
+			div{
+			    font-size: 13px;	
+			}
+			.vpd-cta{
+				div{
+				    font-size: 14px;	
+				}
+			}
 		}
 	}
 }
