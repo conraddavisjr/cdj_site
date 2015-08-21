@@ -1,52 +1,99 @@
-<div id="work">
-	<div class="grid">
-		<figure class="work-bucket" data-type="panel-3">
-			<img src="img/work-site-vaf.jpg" alt="Vend-A-Friend"/>
-			<figcaption>
-				<h2><span>Vend-A-Friend<span></h2>
-				<p>Mixing creativity and data.</p>
-				<a href="#">View more</a>
-			</figcaption>			
-		</figure>
-		<figure class="work-bucket" data-type="panel-4">
-			<img src="img/work-site-sts.jpg" alt="Straight Talk Switch"/>
-			<figcaption>
-				<h2><span>Straight Talk Switch</span></h2>
-				<p>Tracfone's premier phone service.</p>
-				<a href="#">View more</a>
-			</figcaption>			
-		</figure>
-		<figure class="work-bucket" data-type="panel-5">
-			<img src="img/work-site-vpd.jpg" alt="Visnapuu Design"/>
-			<figcaption>
-				<h2><span>Visnapuu Design</span></h2>
-				<p>Complete website redesign.</p>
-				<a href="#">View more</a>
-			</figcaption>			
-		</figure>
-		<figure class="work-bucket" data-type="panel-6">
-			<img src="img/work-site-3syll.jpg" alt="3 Syllable Boston"/>
-			<figcaption>
-				<h2><span>3 Syllable Boston</span></h2>
-				<p>A partnership that lead to a Boston-wide mobile campaign.</p>
-				<a href="#">View more</a>
-			</figcaption>			
-		</figure>
-		<figure class="work-bucket" data-type="panel-7">
-			<img src="img/work-site-rdi.jpg" alt="Rubic Design Interactive"/>
-			<figcaption>
-				<h2><span>Rubic Design Interactive</span></h2>
-				<p>Company website redesign on the Drupal platform.</p>
-				<a href="#">View more</a>
-			</figcaption>			
-		</figure>
-		<figure class="work-bucket" data-type="panel-8">
-			<img src="img/work-site-ver.jpg" alt="Veracode"/>
-			<figcaption>
-				<h2><span>Veracode</span></h2>
-				<p>Responsive CMS for a large corporation.</p>
-				<a href="#">View more</a>
-			</figcaption>			
-		</figure>
-	</div>
-</div>
+<?php // Check if a client site is being called
+if(isset($_GET["client"])){
+	$client = $_GET["client"];
+}else{
+	$client = "";
+}
+?>
+
+<?php //Set a href URL on the home Button
+	$url_path = $_SERVER['PHP_SELF'];
+	$tokens = explode('/', $url_path);
+	$tokens_explode = $tokens[sizeof($tokens)-1];
+	$url_path = $tokens_explode;
+	if($url_path == "work.php"){
+		//$home_link = "href=\"/\" ";
+		$home_link = "href=\"/\" ";
+	}else{
+		$home_link ='';
+	}
+?>
+<script> var clientSite = "<?php echo $client; ?>"; console.log("clientSite: " + clientSite);</script>
+	<div class="storyBg"></div>
+	<div id="work">
+        <div class="siteOverlay">
+            <div class="close-bg"></div>
+            <div class="website-icons group">
+                <div class="close-btn">Close<span>X</span></div>
+                <?php include 'inc/work/portfolioNav.php'; ?>
+            </div><!--website-icons-->
+        </div>
+        <section class="sub-nav">
+            <div class="content">
+                <h1>WORK</h1>
+                <div class="site-indicator">&nbsp;</div>
+                <div class="close-story">Close<span>X</span></div>
+            </div>
+        </section>
+        <div class="container-1200 group">
+            <section class="sidebar">
+                <div class="sidebar-icon-overlay">Show portfolio list</div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+            <!-- <section class="story-nav-container">
+                <div class="story-nav">
+                	<a><div></div></a>
+                    <a><div></div></a>
+                    <a><div></div></a>
+                    <a><div></div></a>
+                    <a><div></div></a>
+                    <a><div></div></a>
+                    <a><div></div></a>
+                </div>
+            </section> -->
+            <main>
+				<?php include('inc/work/workIntro.php'); ?>
+				<article id="client-story">	
+                	<!--VPD-->
+                    <section class="vpdSite">
+						<?php include('inc/work/vpdPhase1.php'); ?>
+                        <?php include('inc/work/vpdPhase2.php'); ?>
+                        <?php include('inc/work/vpdPhase3.php'); ?>
+                        <?php include('inc/work/vpdPhase4.php'); ?>
+                        <?php include('inc/work/vpdPhase5.php'); ?>
+                        <?php include('inc/work/vpdPhase6.php'); ?>
+                        <?php include('inc/work/vpdPhase7.php'); ?>
+                    </section>
+                    <!--DGM-->
+                     <section class="dgmSite">
+                    	<?php include('inc/work/dgmPhase1.php'); ?>
+                        <?php include('inc/work/dgmPhase2.php'); ?>
+                        <?php include('inc/work/dgmPhase3.php'); ?>
+                        <?php include('inc/work/dgmPhase4.php'); ?>
+                    </section>
+                    <!--VAF-->
+                     <section class="vafSite">
+                        <?php include('inc/work/vafPhase1.php'); ?>
+                        <?php include('inc/work/vafPhase2.php'); ?>
+                    </section>
+                </article>
+            </main>
+            <div class="website-icons group">
+                <?php include 'inc/work/portfolioNav.php'; ?>
+            </div><!--website-icons-->
+        </div>
+        <!--<div class="miscellaneous-container">
+        	<div class="container-1200 group">
+                <div class="vpd-left-bush"></div>
+                <div class="vpd-right-bush"></div>
+                <div class="vpd-twig"></div>
+            </div>
+        </div>-->
+    </div>
+</body>
+</html>

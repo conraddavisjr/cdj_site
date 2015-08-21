@@ -65,6 +65,7 @@ jQuery(function($){
 		
 		/////sidebar + website Icon CTAs
 		siteCtaClickHandler: function(){
+			main.workPage.scrollTop(0);
 			Work.storyGroup.removeClass('story-reveal');
 			Work.clientId = $(this).attr('siteId');
 			console.log('clientId: ' + Work.clientId);

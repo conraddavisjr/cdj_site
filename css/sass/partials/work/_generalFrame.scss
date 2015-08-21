@@ -24,6 +24,10 @@ body{
 		color: rgb(112, 161, 249);
 		text-shadow: 0px 0px 8px rgba(77, 73, 73, 0.58);
 	}
+	.vaf-site-indicator{
+		color: #FFE639;
+		text-shadow: 0px 0px 8px rgba(77, 73, 73, 0.58);
+	}
 	.vpd-bg{
 		opacity:1;
 		background: url("../img/vpdBg.jpg");
@@ -32,6 +36,11 @@ body{
 	.dgm-bg{
 		opacity:1;
 		background: url("../img/dgmBg.jpg");
+		background-size: cover;
+	}
+	.vaf-bg{
+		opacity:1;
+		background: url("../img/vafBg.jpg");
 		background-size: cover;
 	}
 	.sidebar-icon-overlay{

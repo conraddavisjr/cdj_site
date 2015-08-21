@@ -33,7 +33,7 @@
     <!--Slide-in Side Panel-->
     <?php include('inc/additionalPanel.php') ?>
     <!--Work-->
-    <?php include('inc/work2.php') ?>
+    <?php include('inc/work.php') ?>
 	<!--Contact-->
     <?php include('inc/contact.php') ?>
     <a href="#0" class="info-panel-close">Close</a> <!-- close the info panel section -->

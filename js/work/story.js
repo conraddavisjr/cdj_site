@@ -18,6 +18,14 @@ jQuery(function($){
 			siteIndicatorStyle:"dgm-site-indicator",
 			navigation: ['CMS', 'Responsive', 'Social Media'],
 			navigationLinks: ['#dgmPhase1','#dgmPhase2','#dgmPhase3','#dgmPhase4','#dgmPhase5'],
+		},
+		vafSite:{
+			switchId: 3,
+			storyBg: "vaf-bg",
+			siteIndicatorName: "Vend-A-Friend",
+			siteIndicatorStyle:"vaf-site-indicator",
+			navigation: ['CMS', 'Responsive', 'Social Media'],
+			navigationLinks: ['#dgmPhase1','#dgmPhase2','#dgmPhase3','#dgmPhase4','#dgmPhase5'],
 		}
 	};
 	window.Story = Story;
