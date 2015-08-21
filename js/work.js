@@ -57,7 +57,7 @@ jQuery(function($){
 			Work.storyNavContainer.fadeOut(0);
 			Work.storyBg.attr('class','storyBg');
 			Work.closeStoryBtn.css('display','none');
-			$('.' + Work.clientId).removeClass('story-reveal');//hide the corresponding client story via the clientId
+			//$('.' + Work.clientId).removeClass('story-reveal');//hide the corresponding client story via the clientId
 			setTimeout(function(){
 				Work.workIntro.fadeIn(1500);
 			},100);	

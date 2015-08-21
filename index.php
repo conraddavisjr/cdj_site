@@ -39,10 +39,10 @@
     <a href="#0" class="info-panel-close">Close</a> <!-- close the info panel section -->
     <nav>
     	<ul>
-    		<li><a navItem="about" id="about-btn" href="#about">ABOUT</a></li>
-    		<li><a navItem="work" href="#work">WORK</a></li>
+    		<li><a navItem="about" id="navAbout" href="#about">ABOUT</a></li>
+    		<li><a id="navWork" navItem="work" href="#work">WORK</a></li>
     		<!--<li>LAB</li>-->
-    		<li><a navItem="contact" class="contact-btn" href="#contact">CONTACT</a></li>
+    		<li><a id="navContact" navItem="contact" class="contact-btn" href="#contact">CONTACT</a></li>
     	</ul>
     </nav>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

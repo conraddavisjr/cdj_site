@@ -678,9 +678,15 @@ body {
         height: auto;
         cursor: pointer; }
         body #work .website-icons ul li figure {
-          position: relative; }
+          position: relative;
+          overflow: hidden; }
         body #work .website-icons ul li img {
-          width: 100%; }
+          width: 100%;
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -ms-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
         body #work .website-icons ul li figcaption {
           position: absolute;
           bottom: 0;
@@ -688,7 +694,17 @@ body {
           padding: 5px 0;
           text-align: center;
           background-color: #C3C3C3;
-          background-color: rgba(195, 195, 195, 0.86); }
+          background-color: rgba(195, 195, 195, 0.86);
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -ms-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
+        body #work .website-icons ul li figure:hover img {
+          transform: scale(1.2); }
+        body #work .website-icons ul li figure:hover figcaption {
+          color: white;
+          background-color: rgba(0, 0, 0, 0.86); }
       @media only screen and (max-width: 480px) {
         body #work .website-icons ul li figcaption {
           font-size: 14px;

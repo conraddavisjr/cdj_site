@@ -540,9 +540,11 @@ body{
 		    		cursor:pointer;
 		    		figure{
 		    			position: relative;
+		    			overflow:hidden;
 		    		}
 		    		img{
 		    			width:100%;
+		    			@include transition(0.3s);
 		    		}
 		    		figcaption{
 		    			position:absolute;
@@ -552,7 +554,17 @@ body{
 		    			text-align: center;
 		    			background-color:#C3C3C3;
 		    			background-color: rgba(195, 195, 195, 0.86);
+		    			@include transition(0.3s);
 		    		}
+		    		figure:hover{
+				  		img{
+				  			transform: scale(1.2);		
+				  		}
+				  		figcaption{
+				  			color: white;
+				  			background-color: rgba(0, 0, 0, 0.86);
+				  		}
+				  	}
 		    	}
 		    }
 		    @include MQ(S){
@@ -567,9 +579,10 @@ body{
 
 		    }
 	  	} /*website-icons*/
+
 	  	.fly-out-left{
 	  		position: fixed;
-	  		left:-200%;
+	  		left: -200%;
 	  		bottom: 80px;
 	  	}
 	  	@include MQ(S){

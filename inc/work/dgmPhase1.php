@@ -3,7 +3,7 @@
         <span class="work-story-services">Services</span> - Custom Build | CMS | Mobile-friendly | Social Media
         <span class="work-story-visit-site"><a href="http://mr8000.com/">Visit the Site</a></span>
     </span>
-    <p>Gary Hawkins, also known as DJ G$MONEY and Mr.8000 is well known in the Big Apple for mixing records after hours at hit venues like Club Rebel, After Dark Lounge, and Village virsa hall to name a few. Gary and I collaborated to build a hub for all of his social media, events, photos, and mixtapes. I built a mobile-friendly CMS that allowed him very little to no effort to update and maintain his website. Since its launch in February of 2015, Gary's website has had hundreds of downloads and thousands of visitors.</p>
+    <p>Gary Hawkins, also known as DJ G$MONEY and Mr.8000 is well known in the Big Apple for mixing records at hit venues like Club Rebel, After Dark Lounge, and Village virsa hall to name a few. Gary and I collaborated to build a hub for all of his social media, events, photos, and mixtapes. I built a mobile-friendly CMS that allowed him very little to no effort to update and maintain his website. Since its launch in February of 2015, Gary's website has had hundreds of downloads and thousands of visitors.</p>
     <h2>Intellegent Content Management</h2>
     <section class="dgm-cms">
         <div id="presentation-stage">
