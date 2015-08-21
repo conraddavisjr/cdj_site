@@ -316,6 +316,9 @@ jQuery(function($){
 					TweenLite.to(main.pageMarquee, 1, {height: main.pageMarqueeHeight, opacity: 1});    
 					//slide the About page into frame
 					TweenLite.to(main.aboutPage, 1, {position:'fixed', top: main.header.height()});
+					//reveal the info-panel
+					$('.info-panel').show();
+
 				break;
 				case 'work' :
 					$('#navWork').addClass('nav-active'); //add .nav-active class to nav item

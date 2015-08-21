@@ -52,9 +52,6 @@
     <script src="js/main.js"></script>
     <script src="js/home.js"></script>
     <script src="js/slidePanel.js"></script>
-    <!--styles that can load after page intro-->
-    <link href="css/sitePages.css" type="text/css" rel="stylesheet"> 
-    <link href="css/work.css" type="text/css" rel="stylesheet">
     <!-- post load func--> 
     <script src="js/classie.js"></script>
     <script src="js/selectFx.js"></script>
@@ -93,5 +90,8 @@
     <script src="js/work/story.js"></script>
     <script src="js/work.js"></script>
     <!-- Work Page JS (END) -->
+    <!--styles that can load after page intro-->
+    <link href="css/sitePages.css" type="text/css" rel="stylesheet"> 
+    <link href="css/work.css" type="text/css" rel="stylesheet">
 </body>
 </html>

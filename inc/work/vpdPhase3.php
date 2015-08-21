@@ -1,5 +1,5 @@
 <div id="vpdPhase3" class="group">
-    <section class="goal-details-container">
+    <!-- <section class="goal-details-container">
     	<h3>Website Goals:</h3>
         <ul>
         	<li>Redesign</li>
@@ -7,7 +7,7 @@
             <li>Mobile friendly</li>
             <li>Higher ranking on Google search</li>
         </ul>
-    </section>
+    </section> -->
     <section class="design-container">
     	<div class="design-description">
         	After a full audit of her original site, I gathered its design elements and 

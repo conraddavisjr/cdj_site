@@ -227,6 +227,7 @@ summary {
     margin: 0 1.5%;
     display: inline-block; } }
 .info-panel {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;

@@ -194,7 +194,7 @@ body {
   /***********
       Tools (END)
   ***********/ }
-  body .vpdSite, body .dgmSite {
+  body .vpdSite, body .dgmSite, body .vafSite {
     display: none; }
   body .story-reveal {
     display: block;
@@ -1212,8 +1212,9 @@ body {
             .vpdSite #vpdPhase3 .design-container .pallete-container .new-pallete-container .colors div:nth-child(6) {
               background: #000000; }
         .vpdSite #vpdPhase3 .design-container .pallete-container .color-description {
-          float: left;
-          font-size: 16px;
+          font-size: 14px;
+          text-align: left;
+          font-weight: 300;
           font-weight: 300; }
     .vpdSite #vpdPhase3 .design-description {
       font-size: 14px;
