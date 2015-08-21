@@ -71,8 +71,9 @@ main.slide-out {
 .section p {
 	line-height: 1.4;
 	@include MQ(M) {
-		font-size: 14px;
-		margin-bottom: 10px;
+		font-size: 12px;
+	    margin-top: 8px;
+	    margin-bottom: 10px;
 	}
 }
 
@@ -136,8 +137,9 @@ main.slide-out {
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 	@include MQ(M) {
-		width: 90%;
-    	margin: 0 auto;
+		width: 40%;
+	    display: inline-block;
+	    margin: 0 auto;
 	}
 }
 .no-touch #about li:hover {
@@ -194,6 +196,10 @@ main.slide-out {
 	@include MQ(L){
 		font-size: 18px;
 	}
+	@include MQ(S){
+		padding: 5px 0;
+		height: auto;
+	}
 }
 #about .panel-info span {
 	display: block;
@@ -203,6 +209,9 @@ main.slide-out {
 	font-size: 14px;
 	font-size: 0.875rem;
 	margin-top: .5em;
+	@include MQ(S){
+		display: none;
+	}
 }
 
 summary {

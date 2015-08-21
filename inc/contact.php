@@ -61,27 +61,4 @@
         </div><!-- /fs-form-wrap -->
     </div><!-- /container -->
     <div class="thank-you-message"></div>
-    <script src="js/classie.js"></script>
-    <script src="js/selectFx.js"></script>
-    <script src="js/fullscreenForm.js"></script>
-    <script>
-        (function() {
-            var formWrap = document.getElementById( 'fs-form-wrap' );
-    
-            [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
-                new SelectFx( el, {
-                    stickyPlaceholder: false,
-                    onChange: function(val){
-                       document.querySelector('span.cs-placeholder').style.background = val;
-                    }
-                });
-            } );
-    
-            new FForm( formWrap, {
-                onReview : function() {
-                    classie.add( document.body, 'overview' ); // for demo purposes only
-                }
-            } );
-        })();
-    </script>
 </div>

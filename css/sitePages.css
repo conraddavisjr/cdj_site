@@ -67,7 +67,8 @@ main.slide-out .overlay {
   line-height: 1.4; }
   @media only screen and (max-width: 768px) {
     .section p {
-      font-size: 14px;
+      font-size: 12px;
+      margin-top: 8px;
       margin-bottom: 10px; } }
 
 @media only screen and (min-width: 768px) {
@@ -125,7 +126,8 @@ main.slide-out .overlay {
   transition: all 0.3s; }
   @media only screen and (max-width: 768px) {
     #about li {
-      width: 90%;
+      width: 40%;
+      display: inline-block;
       margin: 0 auto; } }
 
 .no-touch #about li:hover {
@@ -183,6 +185,10 @@ main.slide-out .overlay {
   @media only screen and (max-width: 1170px) {
     #about .panel-info {
       font-size: 18px; } }
+  @media only screen and (max-width: 480px) {
+    #about .panel-info {
+      padding: 5px 0;
+      height: auto; } }
 
 #about .panel-info span {
   display: block;
@@ -193,6 +199,9 @@ main.slide-out .overlay {
   font-size: 14px;
   font-size: 0.875rem;
   margin-top: .5em; }
+  @media only screen and (max-width: 480px) {
+    #about .panel-info span {
+      display: none; } }
 
 summary {
   max-width: 840px;
