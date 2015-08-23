@@ -19,7 +19,7 @@ Contact Main
 		text-align: center;
 		h3{
 			margin: 0 0 5px 0;
-			padding-top: 20%;
+			padding-top: 25%;
 			font-size: 30px;
 		}
 		p{
@@ -44,6 +44,17 @@ Contact Main
 			margin: 0;
 			font-size: 14px;
 		}
+	}
+	@include MQ(S){
+		.basic-info{
+		    padding-top: 23%;	
+		}
+		.form-cta{
+			h4{
+			    font-size: 22px;	
+			}	
+		}
+		
 	}
 }
 .contact-inner-container {
@@ -97,6 +108,12 @@ Contact Main
 	background-repeat: no-repeat;
 	background-size: contain;
 	z-index: 102;
+	@include MQ(S){
+		width: 80%;
+    	height: auto;
+		font-size: 1.3em;
+	    line-height: 250px;	
+	}
 }
 
 #contact{
