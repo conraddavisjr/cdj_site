@@ -9,6 +9,43 @@ Contact Main
     z-index: 101;
     width: 100%;
 }
+.contact-cover{
+	position:fixed;
+	width:100%;
+	height:100%;
+	background-color:white;
+	z-index:1;
+	.basic-info{
+		text-align: center;
+		h3{
+			margin: 0 0 5px 0;
+			padding-top: 20%;
+			font-size: 30px;
+		}
+		p{
+			font-size: 16px;
+		    margin: 0;
+    		max-width: none;	
+		}
+	}
+	.form-cta{
+	    display: table;
+	    position: relative;
+	    margin: 30px auto 0 auto;
+	    padding: 15px 3%;
+	    cursor: pointer;
+	    text-align: center;
+	    color: #FFFFFF;
+	    background-color: tan;
+		h4{
+			font-size: 25px;
+		}
+		p{
+			margin: 0;
+			font-size: 14px;
+		}
+	}
+}
 .contact-inner-container {
 	position:fixed;
 	width:100%;

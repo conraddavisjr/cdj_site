@@ -137,8 +137,9 @@ main.slide-out {
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 	@include MQ(M) {
-		width: 40%;
+		width: 34%;
 	    display: inline-block;
+	    padding: 0.5%;
 	    margin: 0 auto;
 	}
 }
@@ -153,6 +154,11 @@ main.slide-out {
 }
 #about figure {
 	position: relative;
+	@include MQ(S){
+	    overflow-y: hidden;
+	    position: relative;
+	    height: 100px;	
+	}
 }
 #about img {
 	display: block;
@@ -316,6 +322,9 @@ summary {
 .info-panel img {
 	width: 100%;
 	display: block;
+	@include MQ(S){
+		padding-top: 14%;
+	}
 }
 .info-panel .bio-content {
 	padding: 1em;

@@ -1,4 +1,15 @@
 <div id="contact">
+    <div class="contact-cover">
+        <div class="basic-info">
+            <h3>Conrad Davis Jr.</h3>
+            <p>347.576.3069</p>
+            <p>Cdj@pyloninnovation.com</p>
+        </div>
+        <div class="form-cta">
+            <h4>Let's build something great!</h4>
+            <p>Fill an interactive form</p>
+        </div>
+    </div>
     <div class="contact-inner-container">
         <div class="fs-form-wrap" id="fs-form-wrap">
         	<div id="form-messages"></div>

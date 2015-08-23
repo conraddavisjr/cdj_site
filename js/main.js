@@ -192,6 +192,12 @@ jQuery(function($){
 			// Contact Form JS
 			//////
 
+			//close contact form overlay
+			$('.form-cta').on('click', function(){
+				$('.contact-cover').fadeOut();
+				$('.form-cta').hide();
+			});
+
 			// Get the form.
 			var form = $('#contactForm');
 
@@ -222,6 +228,9 @@ jQuery(function($){
 
 					// Animate the Thankyou msg in.
 					main.thankYouMail();
+					//reveal the contact summary and remove the form summary
+					$('.contact-inner-container').fadeOut();
+					$('.contact-cover').fadeIn();
 				})
 				.fail(function(data) {
 					// Make sure that the formMessages div has the 'error' class.
