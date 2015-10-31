@@ -71,5 +71,5 @@
             </form><!-- /fs-form -->
         </div><!-- /fs-form-wrap -->
     </div><!-- /container -->
-    <div class="thank-you-message"></div>
+    <div class="thank-you-message">Thank You!</div>
 </div>
