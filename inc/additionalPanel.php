@@ -6,7 +6,7 @@
     <div class="bio-content">
         <h2>What I'm up to</h2>
         <summary>
-            <h4>Fulltime: Web Developer | PJA Advertizing + Marketing</h4>
+            <h4>Fulltime: Creative Developer | <a href="http://www.akqa.com" target="_blank">AKQA</a></h4>
             <p>Develop websites, web applications, CMSs, and Rich Media Ads using the latest technologies and techniques including HTML5, CSS3, jQuery, AJAX, AS3, responsive design, standards-based markup, 3rd party API integration, and more.</p>
             <h4>Part-time: Freelance Developer | Designer | UX</h4>
             <p>Work closely with clients, to help achieve their objectives using the web, video, and print. Work through the full life of the project through all aspects of its development including strategy, accounts, project management, UX, design, development, social media, analytics, and user testing.</p>

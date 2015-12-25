@@ -265,6 +265,8 @@ summary {
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   transition-duration: 0.3s; }
+  .info-panel a {
+    color: #B2C1CA; }
   @media only screen and (max-width: 480px) {
     .info-panel {
       width: 80%;

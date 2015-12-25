@@ -254,12 +254,12 @@ summary {
 }
 
 @media only screen and (min-width: 768px) {
-#about li {
-	width: 29%;
-	max-width: 400px;
-	margin: 0 1.5%;
-	display: inline-block;
-}
+	#about li {
+		width: 29%;
+		max-width: 400px;
+		margin: 0 1.5%;
+		display: inline-block;
+	}
 }
 .info-panel {
 	display: none;
@@ -270,6 +270,9 @@ summary {
 	height: 100%;
 	overflow-y: auto;
 	z-index: 101;
+	a{
+		color:#B2C1CA;
+	}
 	/* smooth scrolling on mobile phones and tablets */
 	-webkit-overflow-scrolling: touch;
 	background: #5D5D5D;
