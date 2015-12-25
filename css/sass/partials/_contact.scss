@@ -1,13 +1,61 @@
 /*
 Contact Main
 */
-
 #contact{
+	display:block;
 	position: fixed;
     top: 100%;
     left: 0;
     z-index: 101;
     width: 100%;
+}
+.contact-cover{
+	position:fixed;
+	width:100%;
+	height:100%;
+	background-color:white;
+	z-index:1;
+	.basic-info{
+		text-align: center;
+		h3{
+			margin: 0 0 5px 0;
+			padding-top: 25%;
+			font-size: 30px;
+		}
+		p{
+			font-size: 16px;
+		    margin: 0;
+    		max-width: none;	
+		}
+	}
+	.form-cta{
+	    display: table;
+	    position: relative;
+	    margin: 30px auto 0 auto;
+	    padding: 15px 3%;
+	    cursor: pointer;
+	    text-align: center;
+	    color: #FFFFFF;
+	    background-color: tan;
+		h4{
+			font-size: 25px;
+		}
+		p{
+			margin: 0;
+			font-size: 14px;
+		}
+	}
+	@include MQ(S){
+		.basic-info{
+		    padding-top: 23%;	
+		}
+		.form-cta{
+			h4{
+			    font-size: 22px;	
+			}	
+		}
+		
+	}
 }
 .contact-inner-container {
 	position:fixed;
@@ -60,6 +108,12 @@ Contact Main
 	background-repeat: no-repeat;
 	background-size: contain;
 	z-index: 102;
+	@include MQ(S){
+		width: 80%;
+    	height: auto;
+		font-size: 1.3em;
+	    line-height: 250px;	
+	}
 }
 
 #contact{

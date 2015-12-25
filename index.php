@@ -6,14 +6,25 @@
 	<meta name="author" content="Conrad Davis Jr" />
 	<link id="page_favicon" href="img/icons/favicon.ico" rel="icon" type="image/x-icon" />
 	<link href='http://fonts.googleapis.com/css?family=Cinzel:700|Ubuntu:300italic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/intro.css">
 	<script src="js/modernizr.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-46364716-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
     
 	<title>Conrad Davis Jr</title>
 </head>
 <body>
 	<div class="nav-hover-overlay"></div>
-	<header class="siteTitle"><a>Conrad Davis Jr</a></header>
+	<header navItem="home" class="siteTitle"><a>Conrad Davis Jr</a></header>
 	<main>
 		<div class="page-marquee"></div>
 		<div class="header-spacer"></div>
@@ -29,29 +40,69 @@
         <?php include('inc/home.php') ?>
         <!--About-->
         <?php include('inc/about.php') ?>
-        <!--Work-->
-    	<?php include('inc/work.php') ?>
     </main>
     <!--Slide-in Side Panel-->
     <?php include('inc/additionalPanel.php') ?>
+    <!--Work-->
+    <?php include('inc/work.php') ?>
 	<!--Contact-->
     <?php include('inc/contact.php') ?>
-</div>
-	<a href="#0" class="info-panel-close">Close</a> <!-- close the info panel section -->
-	<nav>
-		<ul>
-			<li><a id="about-btn" href="#about">ABOUT</a></li>
-			<li><a href="#work">WORK</a></li>
-			<!--<li>LAB</li>-->
-			<li><a class="contact-btn" href="#contact">CONTACT</a></li>
-		</ul>
-	</nav>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<!--GSAP-->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
-<!--GSAP (END)-->
-<script src="js/main.js"></script>
-<script src="js/home.js"></script>
-<script src="js/slidePanel.js"></script>
+    <a href="#0" class="info-panel-close">Close</a> <!-- close the info panel section -->
+    <nav>
+    	<ul>
+    		<li><a navItem="about" id="navAbout" href="#about">ABOUT</a></li>
+    		<li><a id="navWork" navItem="work" href="#work">WORK</a></li>
+    		<!--<li>LAB</li>-->
+    		<li><a id="navContact" navItem="contact" class="contact-btn" href="#contact">CONTACT</a></li>
+    	</ul>
+    </nav>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!--GSAP-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+    <!--GSAP (END)-->
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/slidePanel.js"></script>
+    <!-- post load func--> 
+    <script src="js/classie.js"></script>
+    <script src="js/selectFx.js"></script>
+    <script src="js/fullscreenForm.js"></script>
+    <script>
+        (function() {
+            var formWrap = document.getElementById( 'fs-form-wrap' );
+
+            [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+                new SelectFx( el, {
+                    stickyPlaceholder: false,
+                    onChange: function(val){
+                       document.querySelector('span.cs-placeholder').style.background = val;
+                    }
+                });
+            } );
+
+            new FForm( formWrap, {
+                onReview : function() {
+                    classie.add( document.body, 'overview' );
+                }
+            } );
+        })();
+    </script>
+    <!-- Work Page JS -->
+    <link rel="stylesheet" href="css/image-comparison.css">
+    <script src="js/jquery.mobile.custom.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/TextPlugin.min.js"></script>
+    <script src="js/image-comparison.js"></script>
+    <script src="js/work/vpd.js"></script>
+    <script src="js/work/dgm.js"></script>
+    <script src="js/work/windowScroller.js"></script>
+    <script src="js/work/storyNav.js"></script>
+    <script src="js/work/story.js"></script>
+    <script src="js/work.js"></script>
+    <!-- Work Page JS (END) -->
+    <!--styles that can load after page intro-->
+    <link href="css/sitePages.css" type="text/css" rel="stylesheet"> 
+    <link href="css/work.css" type="text/css" rel="stylesheet">
 </body>
 </html>

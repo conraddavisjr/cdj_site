@@ -21,6 +21,7 @@ jQuery(function($){
 			this.header = $('header');
 			this.nav = $('nav ul');
 			this.navItem = $('nav a');
+			this.workCta = $('.learn-more, .contact');
 			this.navHoverOverlay = $('.nav-hover-overlay');
 			this.pageMarquee = $('.page-marquee');
 			this.mainContainer = $('main, .member-bio');
@@ -183,12 +184,19 @@ jQuery(function($){
 			main.navItem.hover(this.navHoverInOverlayHandler, this.navHoverOutOverlayHandler);
 			main.navItem.on('click', this.callPageHandler);
 			main.homeLink.on('click', this.callPageHandler);
+			main.workCta.on('click', this.callPageHandler);
 		},
 
 		contactForm: function(){
 			///////
 			// Contact Form JS
 			//////
+
+			//close contact form overlay
+			$('.form-cta').on('click', function(){
+				$('.contact-cover').fadeOut();
+				$('.form-cta').hide();
+			});
 
 			// Get the form.
 			var form = $('#contactForm');
@@ -220,6 +228,9 @@ jQuery(function($){
 
 					// Animate the Thankyou msg in.
 					main.thankYouMail();
+					//reveal the contact summary and remove the form summary
+					$('.contact-inner-container').fadeOut();
+					$('.contact-cover').fadeIn();
 				})
 				.fail(function(data) {
 					// Make sure that the formMessages div has the 'error' class.
@@ -296,36 +307,41 @@ jQuery(function($){
 			
 		},
 		callPageHandler : function(){
+			console.log('this.text: ' + this.text );
 			//remove all .nav-active classes
 			$('a').removeClass('nav-active');
-			//add .nav-active class to nav item
-			$(this).addClass('nav-active');
 			//open the selected page
 			main.pageCloseHandler(); //close all pages 1st
 			//check which item was clicked
-			switch(this.text){
-				case 'Conrad Davis Jr' :
+			switch($(this).attr('navItem')){
+				case 'home' :
 					// main.pageCloseHandler(); handles the Home pg
 				break;
-				case 'ABOUT' :
+				case 'about' :
+					$('#navAbout').addClass('nav-active'); //add .nav-active class to nav item
 					main.aboutPage.show();
 					main.pageMarquee.css({backgroundImage : 'url(img/about-hover-img.jpg)'});
 					//slide the About Marquee into position
 					TweenLite.to(main.pageMarquee, 1, {height: main.pageMarqueeHeight, opacity: 1});    
 					//slide the About page into frame
 					TweenLite.to(main.aboutPage, 1, {position:'fixed', top: main.header.height()});
+					//reveal the info-panel
+					$('.info-panel').show();
+
 				break;
-				case 'WORK' :
+				case 'work' :
+					$('#navWork').addClass('nav-active'); //add .nav-active class to nav item
 					main.navHoverOverlay.css({backgroundImage : 'url(img/work-hover-img.jpg)'});
 					main.navHoverOverlay.attr('class', 'nav-hover-overlay work-btn');
 					//animate the grid buckets in
 					main.workPageAnimation();
 				break;
-				case 'CONTACT' :
-				main.navHoverOverlay.css({backgroundImage : 'url(img/contact-hover-img.jpg)'});
-				main.navHoverOverlay.attr('class', 'nav-hover-overlay contact-btn');
-				//slide the Contact page into frame
-				TweenLite.to(main.contactPage, 1, {top: 0});
+				case 'contact' :
+					$('#navContact').addClass('nav-active'); //add .nav-active class to nav item
+					main.navHoverOverlay.css({backgroundImage : 'url(img/contact-hover-img.jpg)'});
+					main.navHoverOverlay.attr('class', 'nav-hover-overlay contact-btn');
+					//slide the Contact page into frame
+					TweenLite.to(main.contactPage, 1, {top: 0});
 				break;
 				default:
 				//do nothing
@@ -361,10 +377,12 @@ jQuery(function($){
 			TweenLite.to(main.aboutPage, 1, {position:'fixed', top: '100%'});
 
 			/*Work*/
-			//stagger and slide the Work page out of frame
-			//TweenMax.staggerTo('.work-bucket', 0.6, {top: '-1000px', delay:1}, 0.1);
-			//slide the work page out
-			TweenLite.to(main.workPage, 1, {bottom: '-100%', opacity: 0});
+			//scroll the work page to the top and slide the work page out
+			TweenLite.to(main.workPage, 0.5, {bottom: '-100%', opacity: 0});
+			setTimeout(function(){
+				main.workPage.scrollTop(0);
+				Work.closeStoryBtnHandler();
+			}, 1000);
 
 			/*Contact*/
 			//slide the Contact page out of frame
@@ -375,7 +393,7 @@ jQuery(function($){
 		workPageAnimation : function(){
 			//var workPageTl = new TimelineLite();
 			//slide the work page in
-			TweenLite.to(main.workPage, 1, {bottom: '0%', opacity: 1, paddingTop: main.header.height() + 20});
+			TweenLite.to(main.workPage, 1, {bottom: '0%', opacity: 1, paddingTop: main.header.outerHeight()});
 			//grid buckets drop effect
 			console.log('workAnimationStyle:' + main.workAnimationStyle);
 			switch(main.workAnimationStyle){

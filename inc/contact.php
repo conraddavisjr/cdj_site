@@ -1,4 +1,15 @@
 <div id="contact">
+    <div class="contact-cover">
+        <div class="basic-info">
+            <h3>Conrad Davis Jr.</h3>
+            <p>347.576.3069</p>
+            <p>Cdj@pyloninnovation.com</p>
+        </div>
+        <div class="form-cta">
+            <h4>Let's build something great!</h4>
+            <p>Fill an interactive form</p>
+        </div>
+    </div>
     <div class="contact-inner-container">
         <div class="fs-form-wrap" id="fs-form-wrap">
         	<div id="form-messages"></div>
@@ -60,28 +71,5 @@
             </form><!-- /fs-form -->
         </div><!-- /fs-form-wrap -->
     </div><!-- /container -->
-    <div class="thank-you-message"></div>
-    <script src="js/classie.js"></script>
-    <script src="js/selectFx.js"></script>
-    <script src="js/fullscreenForm.js"></script>
-    <script>
-        (function() {
-            var formWrap = document.getElementById( 'fs-form-wrap' );
-    
-            [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
-                new SelectFx( el, {
-                    stickyPlaceholder: false,
-                    onChange: function(val){
-                       document.querySelector('span.cs-placeholder').style.background = val;
-                    }
-                });
-            } );
-    
-            new FForm( formWrap, {
-                onReview : function() {
-                    classie.add( document.body, 'overview' ); // for demo purposes only
-                }
-            } );
-        })();
-    </script>
+    <div class="thank-you-message">Thank You!</div>
 </div>
